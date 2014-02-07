@@ -1,0 +1,212 @@
+@charset "UTF-8";
+@import "../sp-style/mod-bnr-style";
+
+//旧方式のコピーのため要改修
+
+//##################################################
+//  mod-bnr_ver2
+//##################################################
+.mod-bnr_ver2 {
+  .ex-style_#{$baseEx_01A1} &,
+  .ex-style_#{$baseEx_02A1} & {
+    @include pat-item-bnr-b1;
+  }
+  .ex-style_#{$baseEx_01A2} &,
+  .ex-style_#{$baseEx_02A2} & {
+    @include pat-item-bnr-b2;
+  }
+  .ex-style_#{$baseEx_01A3} &,
+  .ex-style_#{$baseEx_02A3} & {
+    @include pat-item-bnr-b3;
+  }
+  .ex-style_#{$baseEx_01B1} &,
+  .ex-style_#{$baseEx_02B1} & {
+    @include pat-item-bnr-c1;
+  }
+  .ex-style_#{$baseEx_01B2} &,
+  .ex-style_#{$baseEx_02B2} & {
+    @include pat-item-bnr-c2;
+  }
+  .ex-style_#{$baseEx_01B3} &,
+  .ex-style_#{$baseEx_02B3} & {
+    @include pat-item-bnr-c3;
+  }
+  .ex-style_#{$baseEx_01C1} &,
+  .ex-style_#{$baseEx_02C1} & {
+    @include pat-item-bnr-d1;
+  }
+  .ex-style_#{$baseEx_01C2} &,
+  .ex-style_#{$baseEx_02C2} & {
+    @include pat-item-bnr-d2;
+  }
+  .ex-style_#{$baseEx_01C3} &,
+  .ex-style_#{$baseEx_02C3} & {
+    @include pat-item-bnr-d3;
+  }
+}
+
+
+//##################################################
+//  mod-bnr-pic
+//##################################################
+.mod-bnr-pic {
+  .ex-style_#{$baseEx_01A1} & {
+    @include pat-item-bnr-pic-k1;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include pat-item-bnr-pic-k2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include pat-item-bnr-pic-k3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include pat-item-bnr-pic-k4;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include pat-item-bnr-pic-k5;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include pat-item-bnr-pic-k6;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include pat-item-bnr-pic-k7;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include pat-item-bnr-pic-k8;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include pat-item-bnr-pic-k9;
+  }
+}
+
+
+//##################################################
+// mod-bnr-side
+//  mod-bnr-1st-side
+//  mod-bnr-2nd-side
+//##################################################
+
+.mod-bnr-side {
+  .ex-style_#{$baseEx_01A1} & {
+    @include pat-item-bnr-side-f1;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include pat-item-bnr-side-f2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include pat-item-bnr-side-f3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include pat-item-bnr-side-f1;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include pat-item-bnr-side-f2;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include pat-item-bnr-side-f3;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include pat-item-bnr-side-f1;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include pat-item-bnr-side-f2;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include pat-item-bnr-side-f3;
+  }
+}
+
+
+.mod-bnr-1st-side {
+  .ex-style_#{$baseEx_01A1} & {
+    @include pat-item-bnr-side-f1;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include pat-item-bnr-side-f2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include pat-item-bnr-side-f3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include pat-item-bnr-side-f1;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include pat-item-bnr-side-f2;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include pat-item-bnr-side-f3;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include pat-item-bnr-side-f1;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include pat-item-bnr-side-f2;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include pat-item-bnr-side-f3;
+  }
+}
+
+.mod-bnr-2nd-side {
+  .ex-style_#{$baseEx_01A1} & {
+    @include pat-item-bnr-2nd-side-f1;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include pat-item-bnr-2nd-side-f2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include pat-item-bnr-2nd-side-f3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include pat-item-bnr-2nd-side-f1;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include pat-item-bnr-2nd-side-f2;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include pat-item-bnr-2nd-side-f3;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include pat-item-bnr-2nd-side-f1;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include pat-item-bnr-2nd-side-f2;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include pat-item-bnr-2nd-side-f3;
+  }
+}
+
+
+//##################################################
+//  mod-bnr-footer
+//##################################################
+.mod-bnr-footer {
+  .ex-style_#{$baseEx_01A1} & {
+    @include pat-item-bnr-footer-b7;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include pat-item-bnr-footer-b8;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include pat-item-bnr-footer-b9;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include pat-item-bnr-footer-b10;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include pat-item-bnr-footer-b11;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include pat-item-bnr-footer-b12;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include pat-item-bnr-footer-d7;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include pat-item-bnr-footer-d8;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include pat-item-bnr-footer-d9;
+  }
+}

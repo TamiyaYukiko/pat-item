@@ -1,0 +1,724 @@
+@charset "UTF-8";
+@import "../sp-style/mod-h-style";
+
+//旧方式のコピーのため要改修
+
+// ------------------------------
+//
+// block-style ex-alignにおける設定について
+// カラーでは変わらないがdesignごとに変わっていくるため。h_2,h_3では@mixin mod-h_2-01Aの単位でつけること推奨
+// それ以外ではそもそもぶち抜きでないので、commonでよいかと
+//
+// ------------------------------
+@mixin block-style-ex-align {  //左右に-25pxのマージンをとっていないもの。汎用的設定
+  &.ex-align-center {
+    text-align: center;
+    margin-left: auto;//align対応のためショートハンド不使用
+    margin-right: auto;
+    p, .mod-h {
+      text-align: center;
+    }
+  }
+  &.ex-align-right {
+    text-align: right;
+    margin-left: auto;//align対応のためショートハンド不使用
+    p, .mod-h {
+      text-align: right;
+    }
+  }
+  &.ex-align-left {
+    text-align: left;
+    margin-right: auto;//align対応のためショートハンド不使用
+    p, .mod-h {
+      text-align: left;
+    }
+  }
+}
+
+@mixin block-style-ex-align-buchinuki {  //左右に-25pxのマージンをとっていて、下線や囲みのあるタイプの見出し（theme1におけるh2,h3）
+  &.ex-align-center {
+    width: 109%;
+    text-align: center;
+    margin-left: -15px;//align対応のためショートハンド不使用
+    margin-right: -15px;
+    p, .mod-h {
+      text-align: center;
+    }
+  }
+  &.ex-align-right {
+    width: 109%;
+    text-align: right;
+    margin-left: -15px;//align対応のためショートハンド不使用
+    margin-right: -15px;
+    p, .mod-h {
+      text-align: right;
+    }
+  }
+  &.ex-align-left {
+    width: 109%;
+    text-align: left;
+    margin-left: -15px;//align対応のためショートハンド不使用
+    margin-right: -15px;
+    p, .mod-h {
+      text-align: left;
+    }
+  }
+}
+@mixin block-style-ex-align-buchinuki-2 {  //左右に-25pxのマージンをとっていて、下線や囲みのないタイプの見出し（theme1におけるh2,h3）
+  &.ex-align-center {
+    width: auto;
+    text-align: center;
+    margin-left: auto;//align対応のためショートハンド不使用
+    margin-right: auto;
+    p, .mod-h {
+      text-align: center;
+    }
+    a {
+      width: auto;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  &.ex-align-right {
+    width: auto;
+    text-align: right;
+    margin-left: auto;//align対応のためショートハンド不使用
+    margin-right: -15px;
+    p, .mod-h {
+      text-align: right;
+    }
+    a {
+      width: auto;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  &.ex-align-left {
+    width: auto;
+    text-align: left;
+    margin-left: -15px;//align対応のためショートハンド不使用
+    margin-right: auto;
+    p, .mod-h {
+      text-align: auto;
+    }
+    a {
+      width: auto;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
+
+
+//##################################################
+//  mod-h_2_ver2
+//##################################################
+.mod-h_2_ver2 {
+  @include block-style-ex-align-buchinuki;
+  @include mod-h_2-common-style;
+  .ex-style_#{$baseEx_01A1} &,
+  .ex-style_#{$baseEx_02A1} & {
+    @include mod-h_2-style;
+  }
+  .ex-style_#{$baseEx_01A2} &,
+  .ex-style_#{$baseEx_02A2} & {
+    @include mod-h_2-style2;
+  }
+  .ex-style_#{$baseEx_01A3} &,
+  .ex-style_#{$baseEx_02A3} & {
+    @include mod-h_2-style3;
+  }
+  .ex-style_#{$baseEx_01B1} &,
+  .ex-style_#{$baseEx_02B1} & {
+    @include mod-h_2-style4;
+  }
+  .ex-style_#{$baseEx_01B2} &,
+  .ex-style_#{$baseEx_02B2} & {
+    @include mod-h_2-style5;
+  }
+  .ex-style_#{$baseEx_01B3} &,
+  .ex-style_#{$baseEx_02B3} & {
+    @include mod-h_2-style6;
+  }
+  .ex-style_#{$baseEx_01C1} &,
+  .ex-style_#{$baseEx_02C1} & {
+    @include mod-h_2-style7;
+  }
+  .ex-style_#{$baseEx_01C2} &,
+  .ex-style_#{$baseEx_02C2} & {
+    @include mod-h_2-style8;
+  }
+  .ex-style_#{$baseEx_01C3} &,
+  .ex-style_#{$baseEx_02C3} & {
+    @include mod-h_2-style9;
+  }
+}
+
+
+//##################################################
+//  mod-h_3_ver2
+//##################################################
+.mod-h_3_ver2 {
+  @include block-style-ex-align-buchinuki;
+  @include mod-h_3-common-style;
+  .ex-style_#{$baseEx_01A1} &,
+  .ex-style_#{$baseEx_02A1} & {
+    @include mod-h_3-style;
+  }
+  .ex-style_#{$baseEx_01A2} &,
+  .ex-style_#{$baseEx_02A2} & {
+    @include mod-h_3-style2;
+  }
+  .ex-style_#{$baseEx_01A3} &,
+  .ex-style_#{$baseEx_02A3} & {
+    @include mod-h_3-style3;
+  }
+  .ex-style_#{$baseEx_01B1} &,
+  .ex-style_#{$baseEx_02B1} & {
+    @include mod-h_3-style4;
+    @include block-style-ex-align-buchinuki-2;
+  }
+  .ex-style_#{$baseEx_01B2} &,
+  .ex-style_#{$baseEx_02B2} & {
+    @include mod-h_3-style5;
+    @include block-style-ex-align-buchinuki-2;
+  }
+  .ex-style_#{$baseEx_01B3} &,
+  .ex-style_#{$baseEx_02B3} & {
+    @include mod-h_3-style6;
+    @include block-style-ex-align-buchinuki-2;
+  }
+  .ex-style_#{$baseEx_01C1} &,
+  .ex-style_#{$baseEx_02C1} & {
+    @include mod-h_3-style7;
+  }
+  .ex-style_#{$baseEx_01C2} &,
+  .ex-style_#{$baseEx_02C2} & {
+    @include mod-h_3-style8;
+  }
+  .ex-style_#{$baseEx_01C3} &,
+  .ex-style_#{$baseEx_02C3} & {
+    @include mod-h_3-style9;
+  }
+}
+
+
+//##################################################
+//  mod-h_5_ver2
+//##################################################
+.mod-h_5_ver2 {
+  @include mod-h_5-common-style;
+  .ex-style_#{$baseEx_01A1} &,
+  .ex-style_#{$baseEx_02A1} & {
+    @include mod-h_5-style;
+  }
+  .ex-style_#{$baseEx_01A2} &,
+  .ex-style_#{$baseEx_02A2} & {
+    @include mod-h_5-style2;
+  }
+  .ex-style_#{$baseEx_01A3} &,
+  .ex-style_#{$baseEx_02A3} & {
+    @include mod-h_5-style3;
+  }
+  .ex-style_#{$baseEx_01B1} &,
+  .ex-style_#{$baseEx_02B1} & {
+    @include mod-h_5-style4;
+  }
+  .ex-style_#{$baseEx_01B2} &,
+  .ex-style_#{$baseEx_02B2} & {
+    @include mod-h_5-style5;
+  }
+  .ex-style_#{$baseEx_01B3} &,
+  .ex-style_#{$baseEx_02B3} & {
+    @include mod-h_5-style6;
+  }
+  .ex-style_#{$baseEx_01C1} &,
+  .ex-style_#{$baseEx_02C1} & {
+    @include mod-h_5-style7;
+  }
+  .ex-style_#{$baseEx_01C2} &,
+  .ex-style_#{$baseEx_02C2} & {
+    @include mod-h_5-style8;
+  }
+  .ex-style_#{$baseEx_01C3} &,
+  .ex-style_#{$baseEx_02C3} & {
+    @include mod-h_5-style9;
+  }
+}
+
+
+//##################################################
+//  mod-h_5_6_ver2
+//##################################################
+.mod-h_5_6_ver2 {
+  @include mod-h_5_6-common-style;
+  .ex-style_#{$baseEx_01A1} & {
+    @include mod-h_5_6-style;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include mod-h_5_6-style2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include mod-h_5_6-style3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include mod-h_5_6-style4;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include mod-h_5_6-style5;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include mod-h_5_6-style6;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include mod-h_5_6-style7;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include mod-h_5_6-style8;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include mod-h_5_6-style9;
+  }
+}
+
+
+//##################################################
+//  mod-h_5_23_ver2
+//##################################################
+.mod-h_5_23_ver2 {
+  @include mod-h_5_23-common-style;
+  .ex-style_#{$baseEx_01A1} & {
+    @include mod-h_5_23-style;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include mod-h_5_23-style2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include mod-h_5_23-style3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include mod-h_5_23-style4;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include mod-h_5_23-style5;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include mod-h_5_23-style6;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include mod-h_5_23-style7;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include mod-h_5_23-style8;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include mod-h_5_23-style9;
+  }
+}
+
+
+
+
+//##################################################
+//  mod-h_5_list
+//##################################################
+.mod-h_5_list_top {
+  @include mod-h_5_list-common-style;
+  @include mod-h_5_list;
+  .ex-style_#{$baseEx_01A1} &,
+  .ex-style_#{$baseEx_02A1} & {
+    @include deco-style-mod-h_5_hyo-01A1;
+  }
+  .ex-style_#{$baseEx_01A2} &,
+  .ex-style_#{$baseEx_02A2} & {
+    @include deco-style-mod-h_5_hyo-01A2;
+  }
+  .ex-style_#{$baseEx_01A3} &,
+  .ex-style_#{$baseEx_02A3} & {
+    @include deco-style-mod-h_5_hyo-01A3;
+  }
+  .ex-style_#{$baseEx_01B1} &,
+  .ex-style_#{$baseEx_02B1} & {
+    @include deco-style-mod-h_5_hyo-01B1;
+  }
+  .ex-style_#{$baseEx_01B2} &,
+  .ex-style_#{$baseEx_02B2} & {
+    @include deco-style-mod-h_5_hyo-01B2;
+  }
+  .ex-style_#{$baseEx_01B3} &,
+  .ex-style_#{$baseEx_02B3} & {
+    @include deco-style-mod-h_5_hyo-01B3;
+  }
+  .ex-style_#{$baseEx_01C1} &,
+  .ex-style_#{$baseEx_02C1} & {
+    @include deco-style-mod-h_5_hyo-01C1;
+  }
+  .ex-style_#{$baseEx_01C2} &,
+  .ex-style_#{$baseEx_02C2} & {
+    @include deco-style-mod-h_5_hyo-01C2;
+  }
+  .ex-style_#{$baseEx_01C3} &,
+  .ex-style_#{$baseEx_02C3} & {
+    @include deco-style-mod-h_5_hyo-01C3;
+  }
+}
+
+
+//##################################################
+//  mod-h_5_list
+//##################################################
+.mod-h_5_list_bottom {
+  @include mod-h_5_list-common-style;
+  @include mod-h_5_list;
+  .ex-style_#{$baseEx_01A1} &,
+  .ex-style_#{$baseEx_02A1} & {
+    @include deco-style-mod-h_5_hyo-01A1;
+  }
+  .ex-style_#{$baseEx_01A2} &,
+  .ex-style_#{$baseEx_02A2} & {
+    @include deco-style-mod-h_5_hyo-01A2;
+  }
+  .ex-style_#{$baseEx_01A3} &,
+  .ex-style_#{$baseEx_02A3} & {
+    @include deco-style-mod-h_5_hyo-01A3;
+  }
+  .ex-style_#{$baseEx_01B1} &,
+  .ex-style_#{$baseEx_02B1} & {
+    @include deco-style-mod-h_5_hyo-01B1;
+  }
+  .ex-style_#{$baseEx_01B2} &,
+  .ex-style_#{$baseEx_02B2} & {
+    @include deco-style-mod-h_5_hyo-01B2;
+  }
+  .ex-style_#{$baseEx_01B3} &,
+  .ex-style_#{$baseEx_02B3} & {
+    @include deco-style-mod-h_5_hyo-01B3;
+  }
+  .ex-style_#{$baseEx_01C1} &,
+  .ex-style_#{$baseEx_02C1} & {
+    @include deco-style-mod-h_5_hyo-01C1;
+  }
+  .ex-style_#{$baseEx_01C2} &,
+  .ex-style_#{$baseEx_02C2} & {
+    @include deco-style-mod-h_5_hyo-01C2;
+  }
+  .ex-style_#{$baseEx_01C3} &,
+  .ex-style_#{$baseEx_02C3} & {
+    @include deco-style-mod-h_5_hyo-01C3;
+  }
+}
+
+
+
+
+//##################################################
+//  mod-h_5_pic_top
+//##################################################
+.mod-h_5_pic_top {
+  @include mod-h_5_pic-common-style;
+  @include mod-h_5_pic;
+  .ex-style_#{$baseEx_01A1} &,
+  .ex-style_#{$baseEx_02A1} & {
+    @include deco-style-mod-h_5_pic-01A1;
+  }
+  .ex-style_#{$baseEx_01A2} &,
+  .ex-style_#{$baseEx_02A2} & {
+    @include deco-style-mod-h_5_pic-01A2;
+  }
+  .ex-style_#{$baseEx_01A3} &,
+  .ex-style_#{$baseEx_02A3} & {
+    @include deco-style-mod-h_5_pic-01A3;
+  }
+  .ex-style_#{$baseEx_01B1} &,
+  .ex-style_#{$baseEx_02B1} & {
+    @include deco-style-mod-h_5_pic-01B1;
+  }
+  .ex-style_#{$baseEx_01B2} &,
+  .ex-style_#{$baseEx_02B2} & {
+    @include deco-style-mod-h_5_pic-01B2;
+  }
+  .ex-style_#{$baseEx_01B3} &,
+  .ex-style_#{$baseEx_02B3} & {
+    @include deco-style-mod-h_5_pic-01B3;
+  }
+  .ex-style_#{$baseEx_01C1} &,
+  .ex-style_#{$baseEx_02C1} & {
+    @include deco-style-mod-h_5_pic-01C1;
+  }
+  .ex-style_#{$baseEx_01C2} &,
+  .ex-style_#{$baseEx_02C2} & {
+    @include deco-style-mod-h_5_pic-01C2;
+  }
+  .ex-style_#{$baseEx_01C3} &,
+  .ex-style_#{$baseEx_02C3} & {
+    @include deco-style-mod-h_5_pic-01C3;
+  }
+  .mod-img + & { //mod-h_5_hyoの表下用記述
+    @include mod-h_5_hyo_bottom;
+  }
+}
+
+
+//##################################################
+//  mod-h_5_pic_bottom
+//##################################################
+.mod-h_5_pic_bottom {
+  @include mod-h_5_pic-common-style;
+  @include mod-h_5_pic;
+  @include mod-h_5_pic_bottom;
+  .ex-style_#{$baseEx_01A1} &,
+  .ex-style_#{$baseEx_02A1} & {
+    @include deco-style-mod-h_5_pic-01A1;
+  }
+  .ex-style_#{$baseEx_01A2} &,
+  .ex-style_#{$baseEx_02A2} & {
+    @include deco-style-mod-h_5_pic-01A2;
+  }
+  .ex-style_#{$baseEx_01A3} &,
+  .ex-style_#{$baseEx_02A3} & {
+    @include deco-style-mod-h_5_pic-01A3;
+  }
+  .ex-style_#{$baseEx_01B1} &,
+  .ex-style_#{$baseEx_02B1} & {
+    @include deco-style-mod-h_5_pic-01B1;
+  }
+  .ex-style_#{$baseEx_01B2} &,
+  .ex-style_#{$baseEx_02B2} & {
+    @include deco-style-mod-h_5_pic-01B2;
+  }
+  .ex-style_#{$baseEx_01B3} &,
+  .ex-style_#{$baseEx_02B3} & {
+    @include deco-style-mod-h_5_pic-01B3;
+  }
+  .ex-style_#{$baseEx_01C1} &,
+  .ex-style_#{$baseEx_02C1} & {
+    @include deco-style-mod-h_5_pic-01C1;
+  }
+  .ex-style_#{$baseEx_01C2} &,
+  .ex-style_#{$baseEx_02C2} & {
+    @include deco-style-mod-h_5_pic-01C2;
+  }
+  .ex-style_#{$baseEx_01C3} &,
+  .ex-style_#{$baseEx_02C3} & {
+    @include deco-style-mod-h_5_pic-01C3;
+  }
+}
+
+//##################################################
+//  mod-h_5_hyo_top
+//##################################################
+.mod-h_5_hyo_top {
+  @include mod-h_5_hyo-common-style;
+  @include mod-h_5_pic;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style-mod-h_5_pic-01A1;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style-mod-h_5_pic-01A2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style-mod-h_5_pic-01A3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include deco-style-mod-h_5_pic-01B1;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include deco-style-mod-h_5_pic-01B2;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include deco-style-mod-h_5_pic-01B3;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include deco-style-mod-h_5_pic-01C1;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include deco-style-mod-h_5_pic-01C2;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include deco-style-mod-h_5_pic-01C3;
+  }
+}
+
+
+//##################################################
+//  mod-h_5_hyo_bottom
+//##################################################
+.mod-h_5_hyo_bottom {
+  @include mod-h_5_hyo-common-style;
+  @include mod-h_5_pic;
+  @include mod-h_5_hyo_bottom;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style-mod-h_5_pic-01A1;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style-mod-h_5_pic-01A2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style-mod-h_5_pic-01A3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include deco-style-mod-h_5_pic-01B1;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include deco-style-mod-h_5_pic-01B2;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include deco-style-mod-h_5_pic-01B3;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include deco-style-mod-h_5_pic-01C1;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include deco-style-mod-h_5_pic-01C2;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include deco-style-mod-h_5_pic-01C3;
+  }
+}
+
+
+
+//side
+
+//##################################################
+//  mod-h_5_side
+//##################################################
+
+
+.mod-h_5_side {
+  @include common-style-mod-h_5_side;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style01A1-mod-h_5_side;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style01A2-mod-h_5_side;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style01A3-mod-h_5_side;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include deco-style01A1-mod-h_5_side;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include deco-style01A2-mod-h_5_side;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include deco-style01A3-mod-h_5_side;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include deco-style01A1-mod-h_5_side;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include deco-style01A2-mod-h_5_side;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include deco-style01A3-mod-h_5_side;
+  }
+}
+
+//##################################################
+//  mod-h_5_list_top_side
+//##################################################
+
+
+.mod-h_5_list_top_side {
+  @include mod-h_5-list-side-common-style;
+  @include mod-h_5-list-side-01A;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style-mod-h_5-list-side-01A1;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style-mod-h_5-list-side-01A2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style-mod-h_5-list-side-01A3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include deco-style-mod-h_5-list-side-01A1;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include deco-style-mod-h_5-list-side-01A2;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include deco-style-mod-h_5-list-side-01A3;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include deco-style-mod-h_5-list-side-01A1;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include deco-style-mod-h_5-list-side-01A2;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include deco-style-mod-h_5-list-side-01A3;
+  }
+}
+
+
+
+//##################################################
+//  mod-h_5_pic_top_side
+//##################################################
+.mod-h_5_pic_top_side {
+  @include mod-h_5_pic_side-common-style;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style-mod-h_5_pic_top_side-01A1;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style-mod-h_5_pic_top_side-01A2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style-mod-h_5_pic_top_side-01A3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include deco-style-mod-h_5_pic_top_side-01A1;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include deco-style-mod-h_5_pic_top_side-01A2;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include deco-style-mod-h_5_pic_top_side-01A3;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include deco-style-mod-h_5_pic_top_side-01A1;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include deco-style-mod-h_5_pic_top_side-01A2;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include deco-style-mod-h_5_pic_top_side-01A3;
+  }
+}
+
+//##################################################
+//  mod-h_5_pic_bottom_side
+//##################################################
+.mod-h_5_pic_bottom_side {
+  @include mod-h_5-pic-side-common-style;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style-mod-h_5_pic_top_side-01A1;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style-mod-h_5_pic_top_side-01A2;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style-mod-h_5_pic_top_side-01A3;
+  }
+  .ex-style_#{$baseEx_01B1} & {
+    @include deco-style-mod-h_5_pic_top_side-01A1;
+  }
+  .ex-style_#{$baseEx_01B2} & {
+    @include deco-style-mod-h_5_pic_top_side-01A2;
+  }
+  .ex-style_#{$baseEx_01B3} & {
+    @include deco-style-mod-h_5_pic_top_side-01A3;
+  }
+  .ex-style_#{$baseEx_01C1} & {
+    @include deco-style-mod-h_5_pic_top_side-01A1;
+  }
+  .ex-style_#{$baseEx_01C2} & {
+    @include deco-style-mod-h_5_pic_top_side-01A2;
+  }
+  .ex-style_#{$baseEx_01C3} & {
+    @include deco-style-mod-h_5_pic_top_side-01A3;
+  }
+}

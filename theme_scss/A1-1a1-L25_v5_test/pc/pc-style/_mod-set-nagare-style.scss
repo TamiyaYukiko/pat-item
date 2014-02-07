@@ -1,0 +1,17 @@
+@charset "UTF-8";
+// -----------------------------------
+//
+// mod-set-nagare の共通定義
+//
+// -----------------------------------
+
+%common-style-mod-set-nagare {
+}
+
+@mixin module-style-mod-set-nagare-4col {
+	.mod-4col-inner, .mod-4col-inner2, .mod-4col-inner3, .mod-4col-inner4 {
+		.mod-bnr_ver2 {
+			width: 100%;
+		}
+	}
+}
