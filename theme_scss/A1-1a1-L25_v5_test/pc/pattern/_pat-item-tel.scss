@@ -16,91 +16,399 @@
 //  pat-item-tel-iig の個別設定
 // -------------------------------------
 @mixin pat-item-tel-iig-1 {
-  @include common-style-pat-item-tel;
+  @include common-style-pat-item-tel-iig;
   @include module-style-pat-item-tel-iig;
-  @include deco-sytle-pat-item-tel-iig-1;
+  @include deco-style-pat-item-tel-iig-1;
 }
 @mixin pat-item-tel-iig-2 {
-  @include common-style-pat-item-tel;
+  @include common-style-pat-item-tel-iig;
   @include module-style-pat-item-tel-iig;
-  @include deco-sytle-pat-item-tel-iig-2;
+  @include deco-style-pat-item-tel-iig-2;
 }
 @mixin pat-item-tel-iig-3 {
-  @include common-style-pat-item-tel;
+  @include common-style-pat-item-tel-iig;
   @include module-style-pat-item-tel-iig;
-  @include deco-sytle-pat-item-tel-iig-3;
+  @include deco-style-pat-item-tel-iig-3;
 }
 @mixin pat-item-tel-iig-4 {
-  @include common-style-pat-item-tel;
+  @include common-style-pat-item-tel-iig;
   @include module-style-pat-item-tel-iig;
-  @include deco-sytle-pat-item-tel-iig-4;
+  @include deco-style-pat-item-tel-iig-4;
 }
 @mixin pat-item-tel-iig-5 {
-  @include common-style-pat-item-tel;
+  @include common-style-pat-item-tel-iig;
   @include module-style-pat-item-tel-iig;
-  @include deco-sytle-pat-item-tel-iig-5;
+  @include deco-style-pat-item-tel-iig-5;
 }
 @mixin pat-item-tel-iig-6 {
-  @include common-style-pat-item-tel;
+  @include common-style-pat-item-tel-iig;
   @include module-style-pat-item-tel-iig;
-  @include deco-sytle-pat-item-tel-iig-6;
+  @include deco-style-pat-item-tel-iig-6;
 }
 @mixin pat-item-tel-iig-7 {
-  @include common-style-pat-item-tel;
+  @include common-style-pat-item-tel-iig;
   @include module-style-pat-item-tel-iig;
-  @include deco-sytle-pat-item-tel-iig-7;
+  @include deco-style-pat-item-tel-iig-7;
 }
 @mixin pat-item-tel-iig-8 {
-  @include common-style-pat-item-tel;
+  @include common-style-pat-item-tel-iig;
   @include module-style-pat-item-tel-iig;
-  @include deco-sytle-pat-item-tel-iig-8;
+  @include deco-style-pat-item-tel-iig-8;
 }
 @mixin pat-item-tel-iig-9 {
-  @include common-style-pat-item-tel;
+  @include common-style-pat-item-tel-iig;
   @include module-style-pat-item-tel-iig;
-  @include deco-sytle-pat-item-tel-iig-9;
+  @include deco-style-pat-item-tel-iig-9;
 }
 
 // -------------------------------------
 //  pat-item-tel-ii-footer の個別設定
 // -------------------------------------
 @mixin pat-item-tel-ii-footer-1 {
-  @include common-style-pat-item-tel;
+  @include common-style-pat-item-tel-iig;
   @include module-style-pat-item-tel-ii-footer;
-  @include deco-sytle-pat-item-tel-ii-footer-1;
+  @include deco-style-pat-item-tel-ii-footer-1;
 }
 @mixin pat-item-tel-ii-footer-2 {
-  @include common-style-pat-item-tel;
+  @include common-style-pat-item-tel-iig;
   @include module-style-pat-item-tel-ii-footer;
-  @include deco-sytle-pat-item-tel-ii-footer-2;
+  @include deco-style-pat-item-tel-ii-footer-2;
 }
 @mixin pat-item-tel-ii-footer-3 {
-  @include common-style-pat-item-tel;
+  @include common-style-pat-item-tel-iig;
   @include module-style-pat-item-tel-ii-footer;
-  @include deco-sytle-pat-item-tel-ii-footer-3;
+  @include deco-style-pat-item-tel-ii-footer-3;
 }
 @mixin pat-item-tel-ii-footer-4 {
-  @include common-style-pat-item-tel;
+  @include common-style-pat-item-tel-iig;
   @include module-style-pat-item-tel-ii-footer;
-  @include deco-sytle-pat-item-tel-ii-footer-4;
+  @include deco-style-pat-item-tel-ii-footer-4;
 }
 @mixin pat-item-tel-ii-footer-5 {
-  @include common-style-pat-item-tel;
+  @include common-style-pat-item-tel-iig;
   @include module-style-pat-item-tel-ii-footer;
-  @include deco-sytle-pat-item-tel-ii-footer-5;
+  @include deco-style-pat-item-tel-ii-footer-5;
 }
 @mixin pat-item-tel-ii-footer-6 {
-  @include common-style-pat-item-tel;
+  @include common-style-pat-item-tel-iig;
   @include module-style-pat-item-tel-ii-footer;
-  @include deco-sytle-pat-item-tel-ii-footer-6;
+  @include deco-style-pat-item-tel-ii-footer-6;
 }
 @mixin pat-item-tel-ii-footer-7 {
-  @include common-style-pat-item-tel;
+  @include common-style-pat-item-tel-iig;
   @include module-style-pat-item-tel-ii-footer;
-  @include deco-sytle-pat-item-tel-ii-footer-7;
+  @include deco-style-pat-item-tel-ii-footer-7;
 }
 @mixin pat-item-tel-ii-footer-8 {
-  @include common-style-pat-item-tel;
+  @include common-style-pat-item-tel-iig;
   @include module-style-pat-item-tel-ii-footer;
-  @include deco-sytle-pat-item-tel-ii-footer-8;
+  @include deco-style-pat-item-tel-ii-footer-8;
+}
+
+// -------------------------------------
+//  pat-item-tel-ig の個別設定
+// -------------------------------------
+@mixin pat-item-tel-g-side-1 {
+  @include common-style-pat-item-tel-ig;
+  @include module-style-pat-item-tel-g-side;
+  @include size-style-pat-item-tel-g-side;
+  @include deco-style-pat-item-tel-g-side-1;
+}
+@mixin pat-item-tel-g-side-2 {
+  @include common-style-pat-item-tel-ig;
+  @include module-style-pat-item-tel-g-side;
+  @include size-style-pat-item-tel-g-side;
+  @include deco-style-pat-item-tel-g-side-2;
+}
+@mixin pat-item-tel-g-side-3 {
+  @include common-style-pat-item-tel-ig;
+  @include module-style-pat-item-tel-g-side;
+  @include size-style-pat-item-tel-g-side;
+  @include deco-style-pat-item-tel-g-side-3;
+}
+
+// -------------------------------------
+//  pat-item-tel-ig の個別設定
+// -------------------------------------
+@mixin pat-item-tel-ig-side-1 {
+  @include common-style-pat-item-tel-ig;
+  @include module-style-pat-item-tel-ig-side;
+  @include size-style-pat-item-tel-g-side;
+  @include deco-style-pat-item-tel-g-side-1;
+  @include deco-style-pat-item-tel-ig-side-1;
+}
+@mixin pat-item-tel-ig-side-2 {
+  @include common-style-pat-item-tel-ig;
+  @include module-style-pat-item-tel-ig-side;
+  @include size-style-pat-item-tel-g-side;
+  @include deco-style-pat-item-tel-g-side-2;
+  @include deco-style-pat-item-tel-ig-side-2;
+}
+@mixin pat-item-tel-ig-side-3 {
+  @include common-style-pat-item-tel-ig;
+  @include module-style-pat-item-tel-ig-side;
+  @include size-style-pat-item-tel-g-side;
+  @include deco-style-pat-item-tel-g-side-3;
+  @include deco-style-pat-item-tel-ig-side-3;
+}
+
+// -------------------------------------
+//  pat-item-ftel-ig の個別設定
+// -------------------------------------
+@mixin pat-item-ftel-ig-side-1 {
+  @include common-style-pat-item-tel-ig;
+  @include module-style-pat-item-ftel-ig-side;
+  @include size-style-pat-item-tel-g-side;
+  @include deco-style-pat-item-tel-g-side-1;
+}
+@mixin pat-item-ftel-ig-side-2 {
+  @include common-style-pat-item-tel-ig;
+  @include module-style-pat-item-ftel-ig-side;
+  @include size-style-pat-item-tel-g-side;
+  @include deco-style-pat-item-tel-g-side-2;
+}
+@mixin pat-item-ftel-ig-side-3 {
+  @include common-style-pat-item-tel-ig;
+  @include module-style-pat-item-ftel-ig-side;
+  @include size-style-pat-item-tel-g-side;
+  @include deco-style-pat-item-tel-g-side-3;
+}
+
+// -------------------------------------
+//  pat-item-tel-sitename の個別設定
+// -------------------------------------
+@mixin pat-item-tel-sitename-1 {
+  @include common-style-pat-item-tel-sitename;
+  @include module-style-pat-item-tel-sitename;
+  @include deco-style-pat-item-tel-sitename-1;
+}
+@mixin pat-item-tel-sitename-2 {
+  @include common-style-pat-item-tel-sitename;
+  @include module-style-pat-item-tel-sitename;
+  @include deco-style-pat-item-tel-sitename-2;
+}
+@mixin pat-item-tel-sitename-3 {
+  @include common-style-pat-item-tel-sitename;
+  @include module-style-pat-item-tel-sitename;
+  @include deco-style-pat-item-tel-sitename-3;
+}
+@mixin pat-item-tel-sitename-4 {
+  @include common-style-pat-item-tel-sitename;
+  @include module-style-pat-item-tel-sitename;
+  @include deco-style-pat-item-tel-sitename-4;
+}
+@mixin pat-item-tel-sitename-5 {
+  @include common-style-pat-item-tel-sitename;
+  @include module-style-pat-item-tel-sitename;
+  @include deco-style-pat-item-tel-sitename-5;
+}
+@mixin pat-item-tel-sitename-6 {
+  @include common-style-pat-item-tel-sitename;
+  @include module-style-pat-item-tel-sitename;
+  @include deco-style-pat-item-tel-sitename-6;
+}
+@mixin pat-item-tel-sitename-7 {
+  @include common-style-pat-item-tel-sitename;
+  @include module-style-pat-item-tel-sitename;
+  @include deco-style-pat-item-tel-sitename-7;
+}
+@mixin pat-item-tel-sitename-8 {
+  @include common-style-pat-item-tel-sitename;
+  @include module-style-pat-item-tel-sitename;
+  @include deco-style-pat-item-tel-sitename-8;
+}
+@mixin pat-item-tel-sitename-9 {
+  @include common-style-pat-item-tel-sitename;
+  @include module-style-pat-item-tel-sitename;
+  @include deco-style-pat-item-tel-sitename-9;
+}
+@mixin pat-item-tel-sitename-10 {
+  @include common-style-pat-item-tel-sitename;
+  @include module-style-pat-item-tel-sitename-2;
+  @include deco-style-pat-item-tel-sitename-10;
+}
+
+@mixin pat-item-tel-sitename-L-1 {
+  @include common-style-pat-item-tel-sitename;
+  @include module-style-pat-item-tel-sitename;
+  @include size-style-mod-tel-sitename-L;
+  @include deco-style-pat-item-tel-sitename-1;
+}
+@mixin pat-item-tel-sitename-L-2 {
+  @include common-style-pat-item-tel-sitename;
+  @include module-style-pat-item-tel-sitename;
+  @include size-style-mod-tel-sitename-L;
+  @include deco-style-pat-item-tel-sitename-2;
+}
+@mixin pat-item-tel-sitename-L-3 {
+  @include common-style-pat-item-tel-sitename;
+  @include module-style-pat-item-tel-sitename;
+  @include size-style-mod-tel-sitename-L;
+  @include deco-style-pat-item-tel-sitename-3;
+}
+@mixin pat-item-tel-sitename-L-4 {
+  @include common-style-pat-item-tel-sitename;
+  @include module-style-pat-item-tel-sitename;
+  @include size-style-mod-tel-sitename-L;
+  @include deco-style-pat-item-tel-sitename-4;
+}
+@mixin pat-item-tel-sitename-L-5 {
+  @include common-style-pat-item-tel-sitename;
+  @include module-style-pat-item-tel-sitename;
+  @include size-style-mod-tel-sitename-L;
+  @include deco-style-pat-item-tel-sitename-5;
+}
+@mixin pat-item-tel-sitename-L-6 {
+  @include common-style-pat-item-tel-sitename;
+  @include module-style-pat-item-tel-sitename;
+  @include size-style-mod-tel-sitename-L;
+  @include deco-style-pat-item-tel-sitename-6;
+}
+@mixin pat-item-tel-sitename-L-7 {
+  @include common-style-pat-item-tel-sitename;
+  @include module-style-pat-item-tel-sitename;
+  @include size-style-mod-tel-sitename-L;
+  @include deco-style-pat-item-tel-sitename-7;
+}
+@mixin pat-item-tel-sitename-L-8 {
+  @include common-style-pat-item-tel-sitename;
+  @include module-style-pat-item-tel-sitename;
+  @include size-style-mod-tel-sitename-L;
+  @include deco-style-pat-item-tel-sitename-8;
+}
+@mixin pat-item-tel-sitename-L-9 {
+  @include common-style-pat-item-tel-sitename;
+  @include module-style-pat-item-tel-sitename;
+  @include size-style-mod-tel-sitename-L;
+  @include deco-style-pat-item-tel-sitename-9;
+}
+
+
+// -------------------------------------
+//  pat-item-tel のクラス名へのinclude
+// -------------------------------------
+.mod-tel-iig {
+  .ex-style_01A1 & {
+    @include pat-item-tel-iig-1;
+  }
+  .ex-style_01A2 & {
+    @include pat-item-tel-iig-2;
+  }
+  .ex-style_01A3 & {
+    @include pat-item-tel-iig-3;
+  }
+  .ex-style_01B1 & {
+    @include pat-item-tel-iig-4;
+  }
+  .ex-style_01B2 & {
+    @include pat-item-tel-iig-5;
+  }
+  .ex-style_01B3 & {
+    @include pat-item-tel-iig-6;
+  }
+  .ex-style_01C1 & {
+    @include pat-item-tel-iig-7;
+  }
+  .ex-style_01C2 & {
+    @include pat-item-tel-iig-8;
+  }
+  .ex-style_01C3 & {
+    @include pat-item-tel-iig-9;
+  }
+}
+
+// .mod-tel-ii-footer {
+//   .ex-style_01A1 & {
+//     @include pat-item-tel-ii-footer-1;
+//   }
+//   .ex-style_01A2 & {
+//     @include pat-item-tel-ii-footer-2;
+//   }
+//   .ex-style_01A3 & {
+//     @include pat-item-tel-ii-footer-3;
+//   }
+//   .ex-style_01B1 & {
+//     @include pat-item-tel-ii-footer-4;
+//   }
+//   .ex-style_01B2 & {
+//     @include pat-item-tel-ii-footer-5;
+//   }
+//   .ex-style_01B3 & {
+//     @include pat-item-tel-ii-footer-6;
+//   }
+//   .ex-style_01C1 & {
+//     @include pat-item-tel-ii-footer-7;
+//   }
+//   .ex-style_01C2 & {
+//     @include pat-item-tel-ii-footer-8;
+//   }
+//   .ex-style_01C3 & {
+//     @include pat-item-tel-ii-footer-9;
+//   }
+// }
+
+.mod-tel-ig-side {
+  .ex-style_01A1 &,
+  .ex-style_01B1 &,
+  .ex-style_01C1 & {
+    @include pat-item-tel-ig-side-1;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01B2 &,
+  .ex-style_01C2 & {
+    @include pat-item-tel-ig-side-2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01B3 &,
+  .ex-style_01C3 & {
+    @include pat-item-tel-ig-side-3;
+  }
+}
+
+.mod-tel-g-side {
+  .ex-style_01A1 &,
+  .ex-style_01B1 &,
+  .ex-style_01C1 & {
+    @include pat-item-tel-g-side-1;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01B2 &,
+  .ex-style_01C2 & {
+    @include pat-item-tel-g-side-2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01B3 &,
+  .ex-style_01C3 & {
+    @include pat-item-tel-g-side-3;
+  }
+}
+
+.mod-tel-sitename {
+  .ex-style_01A1 & {
+    @include pat-item-tel-sitename-1;
+  }
+  .ex-style_01A2 & {
+    @include pat-item-tel-sitename-2;
+  }
+  .ex-style_01A3 & {
+    @include pat-item-tel-sitename-3;
+  }
+  .ex-style_01B1 & {
+    @include pat-item-tel-sitename-4;
+  }
+  .ex-style_01B2 & {
+    @include pat-item-tel-sitename-5;
+  }
+  .ex-style_01B3 & {
+    @include pat-item-tel-sitename-6;
+  }
+  .ex-style_01C1 & {
+    @include pat-item-tel-sitename-7;
+  }
+  .ex-style_01C2 & {
+    @include pat-item-tel-sitename-8;
+  }
+  .ex-style_01C3 & {
+    @include pat-item-tel-sitename-9;
+  }
 }

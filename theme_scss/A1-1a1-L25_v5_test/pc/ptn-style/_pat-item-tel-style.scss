@@ -9,7 +9,7 @@
 // -------------------------------------
 // pat-item-tel-ii+g系 の共通スタイル
 // -------------------------------------
-@mixin common-style-pat-item-tel-ii {
+@mixin common-style-pat-item-tel-iig {
   margin: 10px 0 0 0;
   padding: 0;
   display: table;
@@ -77,7 +77,7 @@
 //  pat-item-tel-iig の個別設定
 // -------------------------------------
 // Mサイズ
-@mixin deco-sytle-pat-item-tel-iig-1 {
+@mixin deco-style-pat-item-tel-iig-1 {
   .mod-icon_tel {
     background-image: url("img/_pat-item/tel/bg.png");
   }
@@ -87,7 +87,7 @@
     }
   }
 }
-@mixin deco-sytle-pat-item-tel-iig-2 {
+@mixin deco-style-pat-item-tel-iig-2 {
   .mod-icon_tel {
     background-image: url("img/_pat-item/tel/bg_2.png");
   }
@@ -97,7 +97,7 @@
     }
   }
 }
-@mixin deco-sytle-pat-item-tel-iig-3 {
+@mixin deco-style-pat-item-tel-iig-3 {
   .mod-icon_tel {
     background-image: url("img/_pat-item/tel/bg_3.png");
   }
@@ -107,7 +107,7 @@
     }
   }
 }
-@mixin deco-sytle-pat-item-tel-iig-4 {
+@mixin deco-style-pat-item-tel-iig-4 {
   .mod-icon_tel {
     background-image: url("img/_pat-item/tel/bg_4.png");
   }
@@ -117,7 +117,7 @@
     }
   }
 }
-@mixin deco-sytle-pat-item-tel-iig-5 {
+@mixin deco-style-pat-item-tel-iig-5 {
   .mod-icon_tel {
     background-image: url("img/_pat-item/tel/bg_5.png");
   }
@@ -127,7 +127,7 @@
     }
   }
 }
-@mixin deco-sytle-pat-item-tel-iig-6 {
+@mixin deco-style-pat-item-tel-iig-6 {
   .mod-icon_tel {
     background-image: url("img/_pat-item/tel/bg_6.png");
   }
@@ -137,7 +137,7 @@
     }
   }
 }
-@mixin deco-sytle-pat-item-tel-iig-7 {
+@mixin deco-style-pat-item-tel-iig-7 {
   .mod-icon_tel {
     background-image: url("img/_pat-item/tel/bg_7.png");
   }
@@ -147,7 +147,7 @@
     }
   }
 }
-@mixin deco-sytle-pat-item-tel-iig-8 {
+@mixin deco-style-pat-item-tel-iig-8 {
   .mod-icon_tel {
     background-image: url("img/_pat-item/tel/bg_8.png");
   }
@@ -157,7 +157,7 @@
     }
   }
 }
-@mixin deco-sytle-pat-item-tel-iig-9 {
+@mixin deco-style-pat-item-tel-iig-9 {
   .mod-icon_tel {
     background-image: url("img/_pat-item/tel/bg_9.png");
   }
@@ -169,7 +169,7 @@
 }
 
 //ii-footer
-@mixin deco-sytle-pat-item-tel-ii-footer-1 {
+@mixin deco-style-pat-item-tel-ii-footer-1 {
   .mod-icon_ftel {
     background-image: url("img/mod-tel/_32/bg_a.png");
   }
@@ -180,7 +180,7 @@
     color: #333333;
   }
 }
-@mixin deco-sytle-pat-item-tel-ii-footer-2 {
+@mixin deco-style-pat-item-tel-ii-footer-2 {
   .mod-icon_ftel {
     background-image: url("img/mod-tel/_32/bg_a_2.png");
   }
@@ -191,7 +191,7 @@
     color: #333333;
   }
 }
-@mixin deco-sytle-pat-item-tel-ii-footer-3 {
+@mixin deco-style-pat-item-tel-ii-footer-3 {
   .mod-icon_ftel {
     background-image: url("img/mod-tel/_32/bg_a_3.png");
   }
@@ -202,7 +202,7 @@
     color: #45330d;
   }
 }
-@mixin deco-sytle-pat-item-tel-ii-footer-4 {
+@mixin deco-style-pat-item-tel-ii-footer-4 {
   .mod-icon_ftel {
     background-image: url("img/mod-tel/_32/bg_b.png");
   }
@@ -213,7 +213,7 @@
     color: #ffffff;
   }
 }
-@mixin deco-sytle-pat-item-tel-ii-footer-5 {
+@mixin deco-style-pat-item-tel-ii-footer-5 {
   .mod-icon_ftel {
     background-image: url("img/mod-tel/_32/bg_b_3.png");
   }
@@ -224,7 +224,7 @@
     color: #443308;
   }
 }
-@mixin deco-sytle-pat-item-tel-ii-footer-6 {
+@mixin deco-style-pat-item-tel-ii-footer-6 {
   .mod-icon_ftel {
     background-image: url("img/mod-tel/_32/bg_c.png");
   }
@@ -235,7 +235,7 @@
     color: #28446b;
   }
 }
-@mixin deco-sytle-pat-item-tel-ii-footer-7 {
+@mixin deco-style-pat-item-tel-ii-footer-7 {
   .mod-icon_ftel {
     background-image: url("img/mod-tel/_32/bg_c_2.png");
   }
@@ -246,7 +246,7 @@
     color: #45494c;
   }
 }
-@mixin deco-sytle-pat-item-tel-ii-footer-8 {
+@mixin deco-style-pat-item-tel-ii-footer-8 {
   .mod-icon_ftel {
     background-image: url("img/mod-tel/_32/bg_c_3.png");
   }
@@ -262,7 +262,7 @@
 // -------------------------------------
 // pat-item-tel-ig or g系 の共通スタイル
 // -------------------------------------
-@mixin common-style-pat-item-mod-tel-ig {
+@mixin common-style-pat-item-tel-ig {
   @extend %inlineBlock;
   margin: 10px 0 0 0;
   padding: 0;
@@ -283,7 +283,7 @@
     line-height: 1.0;
   }
 }
-@mixin size-style-pat-item-mod-tel-g-side {
+@mixin size-style-pat-item-tel-g-side {
   .mod-tel-inner {
     font-size: $sideFontSizeS;
   }
@@ -300,7 +300,7 @@
 // -------------------------------------
 //  pat-item-tel-ig or g系 module-style
 // -------------------------------------
-@mixin module-style-pat-item-mod-tel-ig-side { //mod-tel17
+@mixin module-style-pat-item-tel-ig-side { //mod-tel17
   .mod-tel-inner {
     padding: 0 0 0 30px;
   }
@@ -308,7 +308,7 @@
     padding: 6px 0 0 30px;
   }
 }
-@mixin module-style-pat-item-mod-ftel-ig-side { //mod-tel17
+@mixin module-style-pat-item-ftel-ig-side { //mod-tel17
   .mod-tel-inner {
     padding: 0 0 0 30px;
   }
@@ -317,7 +317,7 @@
     background-image: url("img/mod-ftel/bg.png");
   }
 }
-@mixin module-style-pat-item-mod-tel-g-side { //mod-tel18
+@mixin module-style-pat-item-tel-g-side { //mod-tel18
   .mod-tel-inner2 {
     padding: 6px 0 0 0;
   }
@@ -326,7 +326,7 @@
 // -------------------------------------
 //  pat-item-tel-ig の個別設定
 // -------------------------------------
-@mixin deco-style-mod-tel-g-side-1 {
+@mixin deco-style-pat-item-tel-g-side-1 {
   .mod-ftel-inner {
     color: #333333;
   }
@@ -334,7 +334,7 @@
     color: #f7931d;
   }
 }
-@mixin deco-style-mod-tel-g-side-2 {
+@mixin deco-style-pat-item-tel-g-side-2 {
   .mod-ftel-inner {
     color: #333333;
   }
@@ -342,7 +342,7 @@
     color: #426ca6;
   }
 }
-@mixin deco-style-mod-tel-g-side-3 {
+@mixin deco-style-pat-item-tel-g-side-3 {
   .mod-ftel-inner {
     color: #45320b;
   }
@@ -351,17 +351,17 @@
   }
 }
 // igはgの下に入れる前提
-@mixin deco-style-mod-tel-ig-side-1 {
+@mixin deco-style-pat-item-tel-ig-side-1 {
   .mod-tel-inner2 {
     background-image: url(img/mod-tel/bg08.png);
   }
 }
-@mixin deco-style-mod-tel-ig-side-2 {
+@mixin deco-style-pat-item-tel-ig-side-2 {
   .mod-tel-inner2 {
     background-image: url(img/mod-tel/bg08_2.png);
   }
 }
-@mixin deco-style-mod-tel-ig-side-3 {
+@mixin deco-style-pat-item-tel-ig-side-3 {
   .mod-tel-inner2 {
     background-image: url(img/mod-tel/bg08_3.png);
   }
@@ -371,10 +371,11 @@
 // --------------------------------------------
 // 電話番号　mod-tel-sitename
 // --------------------------------------------
-@mixin common-style-mod-tel-sitename {
+@mixin common-style-pat-item-tel-sitename {
   display: table;
   vertical-align: bottom;//
   margin: 0 auto;//
+  padding: 0;
   i {
     display: table-cell;
     width: 31px;//
@@ -385,6 +386,8 @@
     background-image: url("img/mod-sitename/bg_10.png");//
   }
   .mod-tel-inner {
+    margin: 0;
+    padding: 0;
     display: table-cell;
     padding-left: 3px;//
     .mod-telnum-sitename {
@@ -401,7 +404,8 @@
     text-align: right;
     font-size: $fontSizeS;
     line-height: 1;
-    margin-top: 7px;
+    margin: 7px 0 0 0;
+    padding: 0;
   }
   p.mod-telnum-sitename {
     margin-top: 3px;
@@ -414,8 +418,8 @@
 // -------------------------------------
 //  pat-item-tel-sitename module-style
 // -------------------------------------
-@mixin module-style-mod-tel-sitename {}
-@mixin module-style-mod-tel-sitename-2 { //toiawaseの中
+@mixin module-style-pat-item-tel-sitename {}
+@mixin module-style-pat-item-tel-sitename-2 { //toiawaseの中
   .mod-icon_tel {
     background-image: url("img/mod-sitename/bg_7.png");
   }
@@ -446,7 +450,7 @@
 // -------------------------------------
 //  pat-item-tel-sitename deco-style
 // -------------------------------------
-@mixin deco-style-mod-tel-sitename-1 {
+@mixin deco-style-pat-item-tel-sitename-1 {
   .mod-icon_tel {
     background-image: url("img/mod-sitename/bg_1.png");
   }
@@ -455,7 +459,7 @@
   }
 }
 
-@mixin deco-style-mod-tel-sitename-2 {
+@mixin deco-style-pat-item-tel-sitename-2 {
   .mod-icon_tel {
     background-image: url("img/mod-sitename/bg_2.png");
   }
@@ -464,7 +468,7 @@
   }
 }
 
-@mixin deco-style-mod-tel-sitename-3 {
+@mixin deco-style-pat-item-tel-sitename-3 {
   .mod-icon_tel {
     background-image: url("img/mod-sitename/bg_3.png");
   }
@@ -473,7 +477,7 @@
   }
 }
 
-@mixin deco-style-mod-tel-sitename-4 {
+@mixin deco-style-pat-item-tel-sitename-4 {
   .mod-icon_tel {
     background-image: url("img/mod-sitename/bg_4.png");
   }
@@ -485,7 +489,7 @@
   }
 }
 
-@mixin deco-style-mod-tel-sitename-5 {
+@mixin deco-style-pat-item-tel-sitename-5 {
   .mod-icon_tel {
     background-image: url("img/mod-sitename/bg_4.png");
   }
@@ -497,7 +501,7 @@
   }
 }
 
-@mixin deco-style-mod-tel-sitename-6 {
+@mixin deco-style-pat-item-tel-sitename-6 {
   .mod-icon_tel {
     background-image: url("img/mod-sitename/bg_1.png");
   }
@@ -506,7 +510,7 @@
   }
 }
 
-@mixin deco-style-mod-tel-sitename-7 {
+@mixin deco-style-pat-item-tel-sitename-7 {
   .mod-icon_tel {
     background-image: url("img/mod-sitename/bg_1.png");
   }
@@ -515,7 +519,7 @@
   }
 }
 
-@mixin deco-style-mod-tel-sitename-8 {
+@mixin deco-style-pat-item-tel-sitename-8 {
   .mod-icon_tel {
     background-image: url("img/mod-sitename/bg_5.png");
   }
@@ -524,7 +528,7 @@
   }
 }
 
-@mixin deco-style-mod-tel-sitename-9 {
+@mixin deco-style-pat-item-tel-sitename-9 {
   .mod-icon_tel {
     background-image: url("img/mod-sitename/bg_6.png");
   }
@@ -533,7 +537,7 @@
   }
 }
 
-@mixin deco-style-mod-tel-sitename-10 { //toiawaseの中
+@mixin deco-style-pat-item-tel-sitename-10 { //toiawaseの中
   .mod-icon_tel {
     background-image: url("img/mod-sitename/bg_7.png");
   }
