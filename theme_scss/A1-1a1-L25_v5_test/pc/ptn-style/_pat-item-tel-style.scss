@@ -50,7 +50,7 @@
       line-height: 1.0;
     }
     .mod-tel-inner-3 {
-      margin-top: 3px;
+      margin: 3px 0 0 0;
       word-break: break-all;
       font-weight: bold;
       font-size: $fontSizeL + 14;
@@ -387,10 +387,10 @@
   }
   .mod-tel-inner {
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 3px;
     display: table-cell;
-    padding-left: 3px;//
     .mod-telnum-sitename {
+      margin: 0;
       padding: 0;
       background-image: none;
     }
