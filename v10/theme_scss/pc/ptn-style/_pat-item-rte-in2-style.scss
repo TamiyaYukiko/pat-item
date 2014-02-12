@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-item-rte-in2
+//
+// --------------------------------------------------------------------------
+
+// -------------------------------------
+// pat-item-rte-in2 の共通スタイル
+// -------------------------------------
+
+@mixin common-style-pat-item-rte-in2 {
+  margin: 30px auto 0 auto;
+  padding: 0;
+  width: 395px;
+  background-color: transparent;
+  color: $co-black-1;
+  text-align: left;
+  font-size: $fontSizeS + 1;
+  line-height: 1.6;
+  .mod-rte-inner {
+    padding: 10px 15px;
+      .mod-rte-inner2 {
+      > p {
+        margin: 15px 0 0 0;
+        line-height: 1.6;
+      }
+      > p:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+
+// -------------------------------------
+//  pat-item-rte-in2 の共通デザイン
+// -------------------------------------
+
+// なし
+
+
+// -------------------------------------
+// pat-item-rte-in2  の装飾スタイル
+// -------------------------------------
+
+// ドット用
+@mixin deco-style-pat-item-rte-in2-1 {
+  padding: 10px 15px;
+}
+
+// 二重線用
+@mixin deco-style-pat-item-rte-in2-2 {
+  padding: 10px 15px;
+}
+
+// -------------------------------------
+// pat-item-rte-in2  の装飾スタイル
+// -------------------------------------
+// ドット
+@mixin pat-item-rte-in2-dotted-1 {
+  border-top: 2px dotted $bo-blue-21;
+  border-bottom: 2px dotted $bo-blue-21;
+  color: $co-gray-6;
+}
+@mixin pat-item-rte-in2-dotted-2 {
+  border-top: 2px dotted $bo-yellow-14;
+  border-bottom: 2px dotted $bo-yellow-14;
+  color: $co-gray-6;
+}
+@mixin pat-item-rte-in2-dotted-3 {
+  border-top: 2px dotted $bo-orange-7;
+  border-bottom: 2px dotted $bo-orange-7;
+  color: $co-gray-6;
+}
+
+// 二重
+@mixin pat-item-rte-in2-double-1 {
+  border-top: 3px double $bo-blue-37;
+  border-bottom: 3px double $bo-blue-37;
+  color: $co-black-1;
+}
+@mixin pat-item-rte-in2-double-2 {
+  border-top: 3px double $bo-blue-37;
+  border-bottom: 3px double $bo-blue-37;
+  color: $co-black-1;
+}
+@mixin pat-item-rte-in2-double-3 {
+  border-top: 3px double $bo-blue-37;
+  border-bottom: 3px double $bo-blue-37;
+  color: $co-black-1;
+}
+@mixin pat-item-rte-in2-double-4 {
+  border-top: 3px double $bo-brown-8;
+  border-bottom: 3px double $bo-brown-8;
+  color: $co-black-1;
+}
+@mixin pat-item-rte-in2-double-5 {
+  border-top: 3px double $bo-yellow-15;
+  border-bottom: 3px double $bo-yellow-15;
+  color: $co-black-1;
+}
+@mixin pat-item-rte-in2-double-6 {
+  border-top: 3px double $bo-brown-8;
+  border-bottom: 3px double $bo-brown-8;
+  color: $co-black-1;
+}

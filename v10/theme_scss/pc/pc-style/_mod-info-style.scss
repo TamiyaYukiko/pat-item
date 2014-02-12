@@ -1,0 +1,778 @@
+@charset "UTF-8";
+
+
+//info基本形（メインエリア） 現在は１モジュールだけのcommonですが、サンクスページ部品用として追加予定
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//common-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+@mixin common-style-mod-info {
+  margin: 10px 0 0 0;
+  th {
+    padding: 0 0 10px 0;
+    vertical-align: top;
+    font-weight: normal;
+    > p {
+      @include border-radius();
+      padding: 0 20px 0 20px;
+      width: 60px;
+      text-align: center;
+      font-size: $fontSizeM;
+    }
+  }
+  td {
+    padding: 1px 0 10px 10px;
+    max-width: 220px;
+    vertical-align: top;
+    font-size: $fontSizeM;
+  }
+}
+
+@mixin common-style-mod-info-side {
+  @include border-radius();
+  @extend %inlineBlock; //横幅可変設定
+  margin-top: 15px !important; //p要素のため
+  padding: 0 13px;
+  text-align: left;
+  font-size: $sideFontSizeM;
+  font-weight: normal;
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//module-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//info基本形（メインエリア）
+@mixin module-style-mod-info {}
+@mixin module-style-mod-info-side {}
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//deco-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+//info基本形（メインエリア）
+@mixin deco-style01A1-mod-info {
+  th {
+    > p {
+      background-color: $bg-blue-30;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01A2-mod-info {
+  th {
+    > p {
+    background-color: $bg-yellow-9;
+    color: $co-blue-6;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01A3-mod-info {
+  th {
+    > p {
+    background-color: $bg-blue-25;
+    color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-gray-5;
+  }
+}
+
+@mixin deco-style01B1-mod-info {
+  th {
+    > p {
+    background-color: $bg-blue-32;
+    color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+
+@mixin deco-style01B2-mod-info {
+  th {
+    > p {
+    background-color: $bg-green-31;
+    color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01B3-mod-info {
+  th {
+    > p {
+    background-color: $bg-brown-5;
+    color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01C1-mod-info {
+  th {
+    > p {
+    background-color: $bg-blue-24;
+    color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01C2-mod-info {
+  th {
+    > p {
+    background-color: $bg-green-17;
+    color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01C3-mod-info {
+  th {
+    > p {
+    background-color: $bg-yellow-28;
+    color: $co-brown-6;
+    }
+  }
+  td {
+    color: $co-brown-6;
+  }
+}
+
+@mixin deco-style01A1-mod-info-side {
+  background-color: $bg-orange-19;
+  color: $co-white-1;
+}
+
+
+@mixin deco-style01A2-mod-info-side {
+  background-color: #7fcfd8;
+  color: $co-white-1;
+}
+
+
+@mixin deco-style01A3-mod-info-side {
+  background-color: $bg-blue-25;
+  color: $co-white-1;
+}
+
+//新着情報用
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//common-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+@mixin common-style-mod-info-news {
+  margin: 10px 0 0 0;
+  > p:first-child { //info9のinnerにクラス名が指定されていなかったので要素特定
+    @include border-radius();
+    text-align: center;
+    width: 140px;
+  }
+}
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//module-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+@mixin module-style-mod-info-news {
+  @extend %cf;
+  > p:first-child {
+    float: left;
+    margin:0 15px 0 0;
+  }
+  > p + p {
+    float: left;
+    overflow: hidden;
+  }
+}
+
+@mixin module-style-mod-info-news2 {
+  > p + p {
+    margin: 10px 0 0 0;
+  }
+}
+
+
+
+
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//deco-style
+//＊＊＊＊＊＊＊＊＊＊＊＊
+
+@mixin deco-style01A1-mod-info-news {
+  > p:first-child {
+    background-color: $bg-orange-19;
+    background-image: none;
+    color: $co-white-1;
+  }
+  > p + p {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01A2-mod-info-news {
+  > p:first-child {
+    background-color: $bg-yellow-9;
+    background-image: none;
+    color: $co-black-1;
+  }
+  > p + p {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01A3-mod-info-news {
+  > p:first-child {
+    background-color: $bg-blue-25;
+    background-image: none;
+    color: $co-white-1;
+  }
+  > p + p {
+    color: $co-gray-5;
+  }
+}
+
+@mixin deco-style01B1-mod-info-news {
+  > p:first-child {
+    background-color: $bg-blue-32;
+    background-image: url("img/mod-info/bg.png");
+    background-position: left top;
+    background-repeat: repeat-x;
+    color: $co-white-1;
+  }
+  > p + p {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01B2-mod-info-news {
+  > p:first-child {
+    background-color: $bg-yellow-17;
+    background-image: url("img/mod-info/bg_2.png");
+    background-position: left top;
+    background-repeat: repeat-x;
+    color: $co-green-7;
+  }
+  > p + p {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01B3-mod-info-news {
+  > p:first-child {
+    background-color: $bg-blue-18;
+    background-image: url("img/mod-info/bg_3.png");
+    background-position: left top;
+    background-repeat: repeat-x;
+    color: $co-white-1;
+  }
+  > p + p {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01C1-mod-info-news {
+  border-bottom: 1px dotted $bo-gray-6;
+  > p:first-child {
+    background-image: url("img/mod-info/bg03.png");
+    background-position: left 6px;
+    background-repeat: no-repeat;
+    color: $co-orange-3;
+  }
+  > p + p {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01C2-mod-info-news {
+  border-bottom: 1px dotted $bo-gray-6;
+  > p:first-child {
+    background-image: url("img/mod-info/bg03_2.png");
+    background-position: left 6px;
+    background-repeat: no-repeat;
+    color: $co-green-8;
+  }
+  > p + p {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01C3-mod-info-news {
+  border-bottom: 1px dotted $bo-gray-6;
+  > p:first-child {
+    background-image: url("img/mod-info/bg03_3.png");
+    background-position: left 6px;
+    background-repeat: no-repeat;
+    color: $co-blue-4;
+  }
+  > p + p {
+    color: $co-brown-6;
+  }
+}
+
+
+
+
+
+// 変数対応用
+// //////////////////////////////////////////////////
+// //  deco
+// // info_a
+// =deco-style-pat-item-info_a
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: $bg-blue-30
+//       color: $co-white-1
+//   td
+//     color: $co-black-1
+
+// =deco-style-pat-item-info_a2
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: $bg-yellow-9
+//       color: $co-blue-6
+//   td
+//     color: $co-black-1
+
+// =deco-style-pat-item-info_a3
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: $bg-blue-25
+//       color: $co-white-1
+//   td
+//     color: $co-gray-5
+
+// =deco-style-pat-item-info_a4
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: $bg-blue-32
+//       color: $co-white-1
+//   td
+//     color: $co-black-1
+
+// =deco-style-pat-item-info_a5
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: $bg-green-31
+//       color: $co-white-1
+//   td
+//     color: $co-black-1
+
+// =deco-style-pat-item-info_a6
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: $bg-brown-5
+//       color: $co-white-1
+//   td
+//     color: $co-black-1
+
+// =deco-style-pat-item-info_a7
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: $bg-blue-24
+//       color: $co-white-1
+//   td
+//     color: $co-black-1
+
+// =deco-style-pat-item-info_a8
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: $bg-green-17
+//       color: $co-white-1
+//   td
+//     color: $co-black-1
+
+// =deco-style-pat-item-info_a9
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: $bg-yellow-28
+//       color: $co-brown-6
+//   td
+//     color: $co-brown-6
+
+// =deco-style-pat-item-info_a10
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: $bg-orange-10
+//       color: $co-white-1
+//   td
+//     color: $co-black-1
+
+// =deco-style-pat-item-info_a11
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: #365a8a
+//       color: $co-white-1
+//   td
+//     color: $co-blue-5
+
+// =deco-style-pat-item-info_a12
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: #45320b
+//       color: $co-white-1
+//   td
+//     color: $co-brown-6
+
+// =deco-style-pat-item-info_a13
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: $bg-yellow-28
+//       color: #2e4a72
+//   td
+//     color: $co-white-1
+
+// =deco-style-pat-item-info_a14
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: $bg-yellow-28
+//       color: #178893
+//   td
+//     color: $co-white-1
+
+// =deco-style-pat-item-info_a15
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: $bg-orange-21
+//       color: $co-white-1
+//   td
+//     color: $co-brown-6
+
+// =deco-style-pat-item-info_a16
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: $bg-orange-10
+//       color: $co-white-1
+//   td
+//     color: $co-blue-10
+
+// =deco-style-pat-item-info_a17
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: $bg-green-28
+//       color: $co-white-1
+//   td
+//     color: $co-orange-3
+
+// =deco-style-pat-item-info_a18
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: $bg-blue-25
+//       color: $co-white-1
+//   td
+//     color: $co-brown-6
+
+// =deco-style-pat-item-info_a20
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: $bg-green-28
+//       color: $co-white-1
+//   td
+//     color: $co-black-1
+
+// =deco-style-pat-item-info_a21
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: $bg-blue-25
+//       color: $co-white-1
+//   td
+//     color: $co-black-1
+
+// =deco-style-pat-item-info_a22
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: #2b3f5b
+//       color: $co-white-1
+//   td
+//     color: $co-white-1
+
+// =deco-style-pat-item-info_a23
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: $bg-green-31
+//       color: $co-white-1
+//   td
+//     color: $co-white-1
+
+// =deco-style-pat-item-info_a24
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: $bg-brown-5
+//       color: $co-white-1
+//   td
+//     color: $co-brown-6
+
+// =deco-style-pat-item-info_a25
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: #3f88f7
+//       color: $co-white-1
+//   td
+//     color: $co-black-1
+
+// =deco-style-pat-item-info_a27
+//   th
+//     background-color: transparent
+//     color: inherit
+//     > p
+//       background-color: $bg-yellow-7
+//       color: $co-brown-6
+//   td
+//     color: $co-black-1
+
+// =deco-style-pat-item-info_a28
+//   th
+//     background-color: $bg-orange-10
+//     color: $co-white-1
+//     > p
+//       background-color: transparent
+//       color: inherit
+//   td
+//     color: $co-black-1
+
+// =deco-style-pat-item-info_a29
+//   th
+//     background-color: $bg-green-28
+//     color: $co-white-1
+//     > p
+//       background-color: transparent
+//       color: inherit
+//   td
+//     color: $co-black-1
+
+// =deco-style-pat-item-info_a30
+//   th
+//     background-color: $bg-blue-25
+//     color: $co-white-1
+//     > p
+//       background-color: transparent
+//       color: inherit
+//   td
+//     color: $co-black-1
+
+// =deco-style-pat-item-info_a31
+//   th
+//     background-color: #2b3f5b
+//     color: $co-white-1
+//     > p
+//       background-color: transparent
+//       color: inherit
+//   td
+//     color: $co-white-1
+
+// =deco-style-pat-item-info_a32
+//   th
+//     background-color: $bg-green-31
+//     color: $co-white-1
+//     > p
+//       background-color: transparent
+//       color: inherit
+//   td
+//     color: $co-white-1
+
+// =deco-style-pat-item-info_a33
+//   th
+//     background-color: $bg-brown-5
+//     color: $co-white-1
+//     > p
+//       background-color: transparent
+//       color: inherit
+//   td
+//     color: $co-brown-6
+
+// =deco-style-pat-item-info_a34
+//   th
+//     background-color: #3f88f7
+//     color: $co-white-1
+//     > p
+//       background-color: transparent
+//       color: inherit
+//   td
+//     color: $co-black-1
+
+// =deco-style-pat-item-info_a36
+//   th
+//     background-color: $bg-yellow-7
+//     color: $co-brown-6
+//     > p
+//       background-color: transparent
+//       color: inherit
+//   td
+//     color: $co-black-1
+
+// // info_b
+// =deco-style-pat-item-info_b
+//   background-color: $bg-orange-19
+//   color: $co-white-1
+
+// =deco-style-pat-item-info_b2
+//   background-color: #7fcfd8
+//   color: $co-white-1
+
+// =deco-style-pat-item-info_b3
+//   background-color: $bg-blue-25
+//   color: $co-white-1
+
+// // info_c
+// =deco-style-pat-item-info_c
+//   > p
+//     &:first-child
+//       background-color: $bg-orange-19
+//       background-image: none
+//       color: $co-white-1
+//     + p
+//       color: $co-black-1
+
+// =deco-style-pat-item-info_c2
+//   > p
+//     &:first-child
+//       background-color: $bg-yellow-9
+//       background-image: none
+//       color: $co-black-1
+//     + p
+//       color: $co-black-1
+
+// =deco-style-pat-item-info_c3
+//   > p
+//     &:first-child
+//       background-color: $bg-blue-25
+//       background-image: none
+//       color: $co-white-1
+//     + p
+//       color: $co-gray-5
+
+// =deco-style-pat-item-info_c4
+//   > p
+//     &:first-child
+//       background-color: $bg-blue-32
+//       background-image: url("img/mod-info/bg.png")
+//       background-position: left top
+//       background-repeat: repeat-x
+//       color: $co-white-1
+//     + p
+//       color: $co-black-1
+
+// =deco-style-pat-item-info_c5
+//   > p
+//     &:first-child
+//       background-color: $bg-yellow-17
+//       background-image: url("img/mod-info/bg_2.png")
+//       background-position: left top
+//       background-repeat: repeat-x
+//       color: $co-green-7
+//     + p
+//       color: $co-black-1
+
+// =deco-style-pat-item-info_c6
+//   > p
+//     &:first-child
+//       background-color: $bg-blue-18
+//       background-image: url("img/mod-info/bg_3.png")
+//       background-position: left top
+//       background-repeat: repeat-x
+//       color: $co-white-1
+//     + p
+//       color: $co-black-1
+
+// =deco-style-pat-item-info_c7
+//   border-bottom: 1px dotted $bo-gray-6
+//   > p
+//     &:first-child
+//       background-image: url("img/mod-info/bg03.png")
+//       background-position: left 6px
+//       background-repeat: no-repeat
+//       color: $co-orange-3
+//     + p
+//       color: $co-black-1
+
+// =deco-style-pat-item-info_c8
+//   border-bottom: 1px dotted $bo-gray-6
+//   > p
+//     &:first-child
+//       background-image: url("img/mod-info/bg03_2.png")
+//       background-position: left 6px
+//       background-repeat: no-repeat
+//       color: $co-green-8
+//     + p
+//       color: $co-black-1
+
+// =deco-style-pat-item-info_c9
+//   border-bottom: 1px dotted $bo-gray-6
+//   > p
+//     &:first-child
+//       background-image: url("img/mod-info/bg03_3.png")
+//       background-position: left 6px
+//       background-repeat: no-repeat
+//       color: $co-blue-4
+//     + p
+//       color: $co-brown-6

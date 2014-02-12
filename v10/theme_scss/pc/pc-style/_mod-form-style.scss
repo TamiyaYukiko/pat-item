@@ -1,0 +1,534 @@
+@charset "UTF-8";
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// mod-form
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//—————————block-style—————————
+@mixin block-style-mod-form-button-common {
+  @include border-radius();
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  background-repeat: repeat-x;
+  @include text-shadow(1px 1px 1px #ffffff);
+}
+@mixin block-style-mod-form-button-deco {
+  background-image: url("img/mod-form/bg06.png");
+  background-color: $bg-gray-2;//ブラウザのデフォルトスタイル解除
+  border: 1px solid $bo-gray-10;//ブラウザのデフォルトスタイル解除
+  color: $co-black-1;
+  &:hover {
+    border: 1px solid $bo-blue-11;
+    background-color: $bg-blue-13;
+    background-image: url("img/mod-form/bg07.png");
+    color: $co-blue-9;
+  }
+  &:active {
+    border: 1px solid $bo-gray-13;
+    background-color: $bg-gray-6;
+    background-image: url("img/mod-form/bg08.png");
+  }
+}
+//—————————common-style—————————
+@mixin common-style-mod-form {
+  margin: 30px 0 0 0;
+  .mod-form-items {
+    @include box-sizing(border-box);
+    display: table;
+    margin: 0 auto 15px auto;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .mod-form-item {
+    @include box-sizing(border-box);
+    display: table-row;
+    width: 100%;
+    .mod-form-label {
+      @include box-sizing(border-box);
+      display: table-cell;
+      padding: 0 15px 0 15px;
+      width: 240px;
+      vertical-align: middle;
+      word-break: break-word;
+    }
+    .mod-form-required {
+      @include border-radius(3px);
+      display: inline-block;
+      margin: 0 0 0 8px;
+      padding: 3px 0 2px 0;
+      width: 32px;
+      text-align: center;
+      font-size: 11px;
+    }
+    .mod-form-part {
+      @include box-sizing(border-box);
+      display: table-cell;
+      padding: 10px 15px 10px 15px;
+      vertical-align: middle;
+      input[type="text"] {
+        @include box-sizing(border-box);
+        width: 200px;
+      }
+      ul {
+        padding: 0;
+        list-style-type: none;
+        li {
+          display: inline;
+          input[type="radio"] {
+            margin: 0 4px 0 0;
+          }
+          + li > input[type="radio"] {
+            margin: 0 0 0 6px;
+          }
+          input[type="checkbox"] {
+            margin: 5px 4px 5px 0;
+          }
+          + li > input[type="checkbox"] {
+            margin: 0 0 0 6px;
+          }
+        }
+      }
+      &.ex-vertical ul {
+        li {
+          display: block;
+          + li > input[type="radio"] {
+            margin: 0;
+          }
+          + li > input[type="checkbox"] {
+            margin: 0;
+          }
+        }
+      }
+      select {
+        margin: 5px　0 5px 0;
+        width: 96px;
+      }
+      textarea {
+        width: 310px;
+        height: 95px;
+        resize: vertical;
+      }
+      .mod-form-description {
+        margin: 5px 0 0 0;
+        color: $co-gray-3;
+        word-break: break-word;
+        font-size: 11px;
+      }
+    }
+  }
+  .mod-form-submit {
+    margin: 0 auto 0 auto;
+    width: 300px;
+    .mod-form-submit-button {
+      margin: 0 auto 10px auto;
+      width: 162px;
+      input {
+        width: 162px;
+        min-height: 30px;
+        letter-spacing: 0.04em;
+        @include block-style-mod-form-button-common;
+        &:hover {
+          cursor: pointer;
+        }
+        &:active {
+        }
+      }
+    }
+    .mod-form-confirm-button {
+      margin: 0 auto 0 auto;
+      width: 197px;
+      .mod-form-edit {
+        width: 86px;
+        min-height: 30px;
+        margin: 0 20px 0 0;
+        letter-spacing: 0.1em;
+        @include block-style-mod-form-button-common;
+        &:hover {
+          //cursor: pointer;
+        }
+      }
+      .mod-form-send {
+        width: 86px;
+        min-height: 30px;
+        letter-spacing: 0.1em;
+        @include block-style-mod-form-button-common;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .mod-form-submit-footer {
+      margin: 5px 0 0 0;
+      font-size: 11px;
+    }
+  }
+}
+//—————————module-style—————————
+//none
+//—————————deco-style—————————
+@mixin deco-style01A1-mod-form {
+  .mod-form-items {
+    border: 1px solid $bo-gray-5;
+    background-color: $bg-yellow-4;
+  }
+  .mod-form-item {
+    border: 1px solid $bo-gray-5;
+    background-color: transparent;
+    .mod-form-label {
+      border: 1px solid $bo-gray-5;
+      background-color: transparent;
+      background-image: none;
+      color: $co-black-1;
+    }
+    .mod-form-required {
+      background-color: $bg-pink-6;
+    }
+    .mod-form-part {
+      border: 1px solid $bo-gray-5;
+    }
+  }
+  .mod-form-submit {
+    .mod-form-submit-button {
+      input {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+    .mod-form-confirm-button {
+      .mod-form-edit {
+        @include block-style-mod-form-button-deco;
+      }
+      .mod-form-send {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+  }
+  .mod-form-description {
+    color: $co-gray-3;
+  }
+}
+@mixin deco-style01A2-mod-form {
+  .mod-form-items {
+    border: 1px solid $bo-gray-5;
+    background-color: $bg-yellow-4;
+  }
+  .mod-form-item {
+    border: 1px solid $bo-yellow-16;
+    background-color: $bg-white-1;
+    .mod-form-label {
+      border: 1px solid $bo-yellow-16;
+      background-color: $bg-yellow-27;
+      background-image: none;
+      color: $co-black-1;
+    }
+    .mod-form-required {
+      background-color: $bg-pink-6;
+    }
+    .mod-form-part {
+      border: 1px solid $bo-yellow-16;
+    }
+  }
+  .mod-form-submit {
+    .mod-form-submit-button {
+      input {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+    .mod-form-confirm-button {
+      .mod-form-edit {
+        @include block-style-mod-form-button-deco;
+      }
+      .mod-form-send {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+  }
+  .mod-form-description {
+    color: $co-gray-3;
+  }
+}
+@mixin deco-style01A3-mod-form {
+  .mod-form-items {
+    border: 1px solid $bo-gray-5;
+    background-color: $bg-yellow-4;
+  }
+  .mod-form-item {
+    border: 1px solid $bo-yellow-5;
+    background-color: $bg-white-1;
+    .mod-form-label {
+      border: 1px solid $bo-yellow-5;
+      background-color: $bg-orange-5;
+      background-image: none;
+      color: $co-gray-5;
+    }
+    .mod-form-required {
+      background-color: $bg-pink-6;
+      color: $co-white-1;
+    }
+    .mod-form-part {
+      border: 1px solid $bo-yellow-5;
+    }
+  }
+  .mod-form-submit {
+    .mod-form-submit-button {
+      input {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+    .mod-form-confirm-button {
+      .mod-form-edit {
+        @include block-style-mod-form-button-deco;
+      }
+      .mod-form-send {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+  }
+  .mod-form-description {
+    color: $co-gray-3;
+  }
+}
+@mixin deco-style01B1-mod-form {
+  .mod-form-items {
+    border: 1px solid $bo-gray-5;
+    background-color: $bg-yellow-4;
+  }
+  .mod-form-item {
+    border: 1px solid $bo-blue-15;
+    background-color: $bg-white-1;
+    .mod-form-label {
+      border: 1px solid $bo-blue-15;
+      background-color: transparent;
+      background-image: url(img/mod-form/bg04.png);
+      color: $co-white-1;
+    }
+    .mod-form-required {
+      background-color: $bg-pink-6;
+      color: $co-white-1;
+    }
+    .mod-form-part {
+      border: 1px solid $bo-blue-15;
+    }
+  }
+  .mod-form-submit {
+    .mod-form-submit-button {
+      input {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+    .mod-form-confirm-button {
+      .mod-form-edit {
+        @include block-style-mod-form-button-deco;
+      }
+      .mod-form-send {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+  }
+  .mod-form-description {
+    color: $co-gray-3;
+  }
+}
+@mixin deco-style01B2-mod-form {
+  .mod-form-items {
+    border: 1px solid $bo-gray-5;
+    background-color: $bg-yellow-4;
+  }
+  .mod-form-item {
+    border: 1px solid $bo-green-11;
+    background-color: $bg-white-1;
+    .mod-form-label {
+      border: 1px solid $bo-green-11;
+      background-color: transparent;
+      background-image: url(img/mod-form/bg04_2.png);
+      color: $co-white-1;
+    }
+    .mod-form-required {
+      background-color: $bg-pink-6;
+      color: $co-white-1;
+    }
+    .mod-form-part {
+      border: 1px solid $bo-green-11;
+    }
+  }
+  .mod-form-submit {
+    .mod-form-submit-button {
+      input {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+    .mod-form-confirm-button {
+      .mod-form-edit {
+        @include block-style-mod-form-button-deco;
+      }
+      .mod-form-send {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+  }
+  .mod-form-description {
+    color: $co-gray-3;
+  }
+}
+@mixin deco-style01B3-mod-form {
+  .mod-form-items {
+    border: 1px solid $bo-gray-5;
+    background-color: $bg-yellow-4;
+  }
+  .mod-form-item {
+    border: 1px solid $bo-blue-19;
+    background-color: $bg-white-1;
+    .mod-form-label {
+      border: 1px solid $bo-blue-19;
+      background-color: transparent;
+      background-image: url(img/mod-form/bg04_3.png);
+      color: $co-white-1;
+    }
+    .mod-form-required {
+      background-color: $bg-pink-6;
+      color: $co-white-1;
+    }
+    .mod-form-part {
+      border: 1px solid $bo-blue-19;
+    }
+  }
+  .mod-form-submit {
+    .mod-form-submit-button {
+      input {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+    .mod-form-confirm-button {
+      .mod-form-edit {
+        @include block-style-mod-form-button-deco;
+      }
+      .mod-form-send {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+  }
+  .mod-form-description {
+    color: $co-gray-3;
+  }
+}
+@mixin deco-style01C1-mod-form {
+  .mod-form-items {
+    border: 1px solid $bo-gray-5;
+    background-color: $bg-yellow-4;
+  }
+  .mod-form-item {
+    border: 1px solid $bo-gray-5;
+    background-color: $bg-white-1;
+    .mod-form-label {
+      border: 1px solid $bo-gray-5;
+      background-color: transparent;
+      background-image: url(img/mod-form/bg05.png);
+      color: $co-white-1;
+    }
+    .mod-form-required {
+      background-color: $bg-pink-6;
+      color: $co-white-1;
+    }
+    .mod-form-part {
+      border: 1px solid $bo-gray-5;
+    }
+  }
+  .mod-form-submit {
+    .mod-form-submit-button {
+      input {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+    .mod-form-confirm-button {
+      .mod-form-edit {
+        @include block-style-mod-form-button-deco;
+      }
+      .mod-form-send {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+  }
+  .mod-form-description {
+    color: $co-gray-3;
+  }
+}
+@mixin deco-style01C2-mod-form {
+  .mod-form-items {
+    border: 1px solid $bo-gray-5;
+    background-color: $bg-yellow-4;
+  }
+  .mod-form-item {
+    border: 1px solid $bo-gray-5;
+    background-color: $bg-green-3;
+    .mod-form-label {
+      border: 1px solid $bo-gray-5;
+      background-color: transparent;
+      background-image: url(img/mod-form/bg05_2.png);
+      color: $co-white-1;
+    }
+    .mod-form-required {
+      background-color: $bg-blue-35;
+      color: $co-white-1;
+    }
+    .mod-form-part {
+      border: 1px solid $bo-gray-5;
+    }
+  }
+  .mod-form-submit {
+    .mod-form-submit-button {
+      input {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+    .mod-form-confirm-button {
+      .mod-form-edit {
+        @include block-style-mod-form-button-deco;
+      }
+      .mod-form-send {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+  }
+  .mod-form-description {
+    color: $co-gray-3;
+  }
+}
+@mixin deco-style01C3-mod-form {
+  .mod-form-items {
+    border: 1px solid $bo-gray-5;
+    background-color: $bg-yellow-4;
+  }
+  .mod-form-item {
+    border: 1px solid $bo-gray-5;
+    background-color: $bg-yellow-11;
+    .mod-form-label {
+      border: 1px solid $bo-gray-5;
+      background-color: transparent;
+      background-image: url(img/mod-form/bg05_3.png);
+      color: $co-white-1;
+    }
+    .mod-form-required {
+      background-color: $bg-blue-25;
+      color: $co-white-1;
+    }
+    .mod-form-part {
+      border: 1px solid $bo-gray-5;
+    }
+  }
+  .mod-form-submit {
+    .mod-form-submit-button {
+      input {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+    .mod-form-confirm-button {
+      .mod-form-edit {
+        @include block-style-mod-form-button-deco;
+      }
+      .mod-form-send {
+        @include block-style-mod-form-button-deco;
+      }
+    }
+  }
+  .mod-form-description {
+    color: $co-gray-3;
+  }
+}

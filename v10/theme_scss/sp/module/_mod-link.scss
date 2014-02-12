@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@import "../sp-style/mod-link-style";
+
+//旧方式のコピーのため要改修
+
+//##################################################
+//  mod-link_ver2
+//##################################################
+.mod-link_ver2 {
+  @include common-style-mod-link;
+  @include module-style-mod-link;
+}
+
+.mod-link-1st {
+  @include common-style-mod-link;
+  @include module-style-mod-link;
+}
+
+.mod-link-2nd {
+  @include common-style-mod-link;
+  @include module-style-mod-link;
+}
+
+.mod-link-list {
+  @include common-style-mod-link;
+  @include module-style-mod-link;
+}
+
+.mod-link-hyo {
+  @include common-style-mod-link;
+  @include module-style-mod-link;
+}
+
+.mod-link-pic {
+  @include common-style-mod-link;
+  @include module-style-mod-link;
+}
+
+.mod-link-map {
+  @include common-style-mod-link;
+  @include module-style-mod-link;
+}
+//##################################################
+//  mod-link-1st-side
+//##################################################
+.mod-link-1st-side {
+  @include common-style-mod-link-side;
+  @include module-style-mod-link-1st-side;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style01A1-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style01A2-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style01A3-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01B1} a & {
+    @include deco-style01A1-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01B2} a & {
+    @include deco-style01A2-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01B3} a & {
+    @include deco-style01A3-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01C1} a & {
+    @include deco-style01A1-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01C2} a & {
+    @include deco-style01A2-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01C3} a & {
+    @include deco-style01A3-mod-link-1st-side;
+  }
+}
+//##################################################
+//  mod-link-2nd-side
+//##################################################
+.mod-link-2nd-side {
+  @include common-style-mod-link-side;
+  @include module-style-mod-link-2nd-side;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style01A1-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style01A2-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style01A3-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01B1} a & {
+    @include deco-style01A1-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01B2} a & {
+    @include deco-style01A2-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01B3} a & {
+    @include deco-style01A3-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01C1} a & {
+    @include deco-style01A1-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01C2} a & {
+    @include deco-style01A2-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01C3} a & {
+    @include deco-style01A3-mod-link-1st-side;
+  }
+}
+
+
+//##################################################
+//   mod-link-side,
+//   mod-link-list-side
+//   mod-link-pic-side
+//##################################################
+.mod-link-side,
+.mod-link-list-side,
+.mod-link-pic-side {
+  @include common-style-mod-link-side;
+  @include module-style-mod-link-side;
+  .ex-style_#{$baseEx_01A1} & {
+    @include deco-style01A1-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01A2} & {
+    @include deco-style01A2-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01A3} & {
+    @include deco-style01A3-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01B1} a & {
+    @include deco-style01A1-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01B2} a & {
+    @include deco-style01A2-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01B3} a & {
+    @include deco-style01A3-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01C1} a & {
+    @include deco-style01A1-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01C2} a & {
+    @include deco-style01A2-mod-link-1st-side;
+  }
+  .ex-style_#{$baseEx_01C3} a & {
+    @include deco-style01A3-mod-link-1st-side;
+  }
+}
+
+
+

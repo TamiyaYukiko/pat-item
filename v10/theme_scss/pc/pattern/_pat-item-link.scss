@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+// -------------------------------------
+//
+//　pat-item-link
+//
+// -------------------------------------
+
+@import "../ptn-style/_pat-item-link-style.scss";
+
+// -------------------------------------
+//  pat-item-link の個別設定
+// -------------------------------------
+
+// -------------------------------------
+// pat-item-link
+// -------------------------------------
+@mixin pat-item-link-a1 { //デフォ1a1
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link;
+  @include size-style-pat-item-link;
+  @include insize-style-pat-item-link-a;
+  @include deco-style-pat-item-link-a1;
+}
+
+@mixin pat-item-link-a2 { //デフォ1a2
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link;
+  @include size-style-pat-item-link;
+  @include insize-style-pat-item-link-a;
+  @include deco-style-pat-item-link-a2;
+}
+
+@mixin pat-item-link-a3 { //デフォ1a3
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link;
+  @include size-style-pat-item-link;
+  @include insize-style-pat-item-link-a;
+  @include deco-style-pat-item-link-a3;
+}
+
+// -------------------------------------
+// pat-item-link-1st
+// -------------------------------------
+@mixin pat-item-link-1st-a1 { //デフォ1a1
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link2;
+  @include size-style-pat-item-link;
+  @include insize-style-pat-item-link-a;
+  @include deco-style-pat-item-link-a1;
+}
+
+@mixin pat-item-link-1st-a2 { //デフォ1a2
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link2;
+  @include size-style-pat-item-link;
+  @include insize-style-pat-item-link-a;
+  @include deco-style-pat-item-link-a2;
+}
+
+@mixin pat-item-link-1st-a3 { //デフォ1a3
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link2;
+  @include size-style-pat-item-link;
+  @include insize-style-pat-item-link-a;
+  @include deco-style-pat-item-link-a3;
+}
+
+// -------------------------------------
+// pat-item-link-pic
+// -------------------------------------
+@mixin pat-item-link-pic-a1 { //デフォ1a1
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link3;
+  @include size-style-pat-item-link;
+  @include insize-style-pat-item-link-pic-a;
+  @include deco-style-pat-item-link-a1;
+}
+
+@mixin pat-item-link-pic-a2 { //デフォ1a2
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link3;
+  @include size-style-pat-item-link;
+  @include insize-style-pat-item-link-pic-a;
+  @include deco-style-pat-item-link-a2;
+}
+
+@mixin pat-item-link-pic-a3 { //デフォ1a3
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link3;
+  @include size-style-pat-item-link;
+  @include insize-style-pat-item-link-pic-a;
+  @include deco-style-pat-item-link-a3;
+}
+
+// -------------------------------------
+// pat-item-link-map
+// -------------------------------------
+@mixin pat-item-link-map-a1 { //デフォ1a1
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link4;
+  @include size-style-pat-item-link;
+  @include insize-style-pat-item-link-map-a;
+  @include deco-style-pat-item-link-a1;
+}
+
+@mixin pat-item-link-map-a2 { //デフォ1a2
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link4;
+  @include size-style-pat-item-link;
+  @include insize-style-pat-item-link-map-a;
+  @include deco-style-pat-item-link-a2;
+}
+
+@mixin pat-item-link-map-a3 { //デフォ1a3
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link4;
+  @include size-style-pat-item-link;
+  @include insize-style-pat-item-link-map-a;
+  @include deco-style-pat-item-link-a3;
+}
+
+
+// -------------------------------------
+// pat-item-link-back
+// -------------------------------------
+@mixin pat-item-link-back-b1 { //1a1
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link5;
+  @include size-style-pat-item-link-back;
+  @include insize-style-pat-item-link-back-b;
+  @include deco-style-pat-item-link-b1;
+}
+
+@mixin pat-item-link-back-b2 { //1a2
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link5;
+  @include size-style-pat-item-link-back;
+  @include insize-style-pat-item-link-back-b;
+  @include deco-style-pat-item-link-b2;
+}
+
+@mixin pat-item-link-back-b3 { //1a3
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link5;
+  @include size-style-pat-item-link-back;
+  @include insize-style-pat-item-link-back-b;
+  @include deco-style-pat-item-link-b3;
+}
+
+
+// -------------------------------------
+// pat-item-link-pic-for-2col
+// -------------------------------------
+@mixin pat-item-link-pic-for-2col-a1 { //デフォ1a1
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link3;
+  @include size-style-pat-item-link-pic-for-2col;
+  @include insize-style-pat-item-link-pic-for-2col-a;
+  @include deco-style-pat-item-link-a1;
+}
+
+@mixin pat-item-link-pic-for-2col-a2 { //デフォ1a2
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link3;
+  @include size-style-pat-item-link-pic-for-2col;
+  @include insize-style-pat-item-link-pic-for-2col-a;
+  @include deco-style-pat-item-link-a2;
+}
+
+@mixin pat-item-link-pic-for-2col-a3 { //デフォ1a3
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link3;
+  @include size-style-pat-item-link-pic-for-2col;
+  @include insize-style-pat-item-link-pic-for-2col-a;
+  @include deco-style-pat-item-link-a3;
+}
+
+// -------------------------------------
+// pat-item-link-side
+// -------------------------------------
+@mixin pat-item-link-side-a4 { //デフォ1a1
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link6;
+  @include size-style-pat-item-link-side;
+  @include insize-style-pat-item-link-side-a;
+  @include deco-style-pat-item-link-a4;
+}
+
+@mixin pat-item-link-side-a5 { //デフォ1a2
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link6;
+  @include size-style-pat-item-link-side;
+  @include insize-style-pat-item-link-side-a;
+  @include deco-style-pat-item-link-a5;
+}
+
+@mixin pat-item-link-side-a6 { //デフォ1a3
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link6;
+  @include size-style-pat-item-link-side;
+  @include insize-style-pat-item-link-side-a;
+  @include deco-style-pat-item-link-a6;
+}
+
+// -------------------------------------
+// pat-item-link-pic-side
+// -------------------------------------
+@mixin pat-item-link-pic-side-a4 { //デフォ1a1
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link3;
+  @include size-style-pat-item-link-side;
+  @include insize-style-pat-item-link-side-a;
+  @include deco-style-pat-item-link-a4;
+}
+
+@mixin pat-item-link-pic-side-a5 { //デフォ1a2
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link3;
+  @include size-style-pat-item-link-side;
+  @include insize-style-pat-item-link-side-a;
+  @include deco-style-pat-item-link-a5;
+}
+
+@mixin pat-item-link-pic-side-a6 { //デフォ1a3
+  @include common-style-pat-item-link;
+  @include module-style-pat-item-link3;
+  @include size-style-pat-item-link-side;
+  @include insize-style-pat-item-link-side-a;
+  @include deco-style-pat-item-link-a6;
+}
+

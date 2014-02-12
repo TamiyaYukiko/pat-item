@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+//  mod-form の mixin一式
+@mixin mod-bhform-common-style {
+  width: 100%;
+  margin-top: 15px;
+  .fm_cntn {
+    margin-bottom: 15px;
+  }
+  .fm_clmn {
+    .fm_label {
+      @extend %cf;
+      padding: 5px 10px;
+      display: block;
+      .hissu {
+        color: red;
+      }
+    }
+    .fm_field {
+      width: auto;
+      padding: 10px 10px 20px;
+      display: block;
+      input[type="text"], textarea {
+        font-size: 16px;
+        width: 100% !important;
+        padding: 5px;
+        @include box-sizing(border-box);
+      }
+      select {
+        font-size: 16px;
+        vertical-align: top;
+        min-width: 40%;
+      }
+    }
+  }
+  .fm_submit_clmn {
+    padding: 10px 10px 20px;
+  }
+  .submitb {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@mixin mod-bhform-style {
+  .fm_cntn {
+    border-top: 1px solid $bo-gray-6;
+    border-right: 1px solid $bo-gray-6;
+    border-left: 1px solid $bo-gray-6;
+    .fm_clmn {
+      border-bottom: 1px solid $bo-gray-6;
+      .fm_label {
+        background-color: #f2f2f2;
+        color: $co-black-1;
+        border-bottom: 1px solid $bo-gray-6;
+      }
+      .fm_field {
+        background-color: transparent;
+      }
+    }
+    .fm_submit_clmn {
+          border-bottom: 1px solid $bo-gray-6;
+    }
+  }
+}
+
+@mixin mod-bhform-style2 {
+  .fm_cntn {
+    border-top: 1px solid $bo-yellow-16;
+    border-right: 1px solid $bo-yellow-16;
+    border-left: 1px solid $bo-yellow-16;
+    .fm_clmn {
+      border-bottom: 1px solid $bo-yellow-16;
+      .fm_label {
+        background-color: $bg-yellow-27;
+        color: $co-black-1;
+        border-bottom: 1px solid $bo-yellow-16;
+      }
+      .fm_field {
+        background-color: transparent;
+      }
+    }
+    .fm_submit_clmn {
+          border-bottom: 1px solid $bo-yellow-16;
+    }
+  }
+}
+
+@mixin mod-bhform-style3 {
+  .fm_cntn {
+    border-top: 1px double $bo-yellow-5;
+    border-right: 1px double $bo-yellow-5;
+    border-left: 1px double $bo-yellow-5;
+    .fm_clmn {
+      border-bottom: 1px double $bo-yellow-5;
+      .fm_label {
+        background-color: $bg-orange-5;
+        color: $co-gray-5;
+        border-bottom: 1px solid #ffdd9d;
+      }
+      .fm_field {
+        background-color: transparent;
+      }
+    }
+    .fm_submit_clmn {
+          border-bottom: 1px solid $bo-yellow-5;
+    }
+  }
+}
+
+@mixin mod-bhform-style4 {
+  .fm_cntn {
+    border-top: 1px double $bo-blue-15;
+    border-right: 1px double $bo-blue-15;
+    border-left: 1px double $bo-blue-15;
+    .fm_clmn {
+      border-bottom: 1px double $bo-blue-15;
+      .fm_label {
+        background-image: url("img/mod-form/bg04.png");
+        background-color: #f2f2f2;
+        color: $co-white-1;
+        border-bottom: 0 none transparent;
+      }
+      .fm_field {
+        background-color: $bg-white-1;
+      }
+    }
+    .fm_submit_clmn {
+          border-bottom: 1px solid $bo-blue-15;
+    }
+  }
+}
+
+@mixin mod-bhform-style5 {
+  .fm_cntn {
+    border-top: 1px solid $bo-green-11;
+    border-right: 1px solid $bo-green-11;
+    border-left: 1px solid $bo-green-11;
+    .fm_clmn {
+      border-bottom:  1px solid $bo-green-11;
+      .fm_label {
+        background-color: #f2f2f2;
+        background-image: url("img/mod-form/bg04_2.png");
+        color: $co-white-1;
+        border-bottom:  1px solid $bo-green-11;
+        }
+      .fm_field {
+        background-color: $bg-white-1;
+      }
+    }
+    .fm_submit_clmn {
+          border-bottom: 1px solid $bo-green-11;
+    }
+  }
+}
+
+@mixin mod-bhform-style6 {
+  .fm_cntn {
+    border-top: 1px solid $bo-blue-19;
+    border-right: 1px solid $bo-blue-19;
+    border-left: 1px solid $bo-blue-19;
+    .fm_clmn {
+      border-bottom:  1px solid $bo-blue-19;
+      .fm_label {
+        background-color: #f2f2f2;
+        background-image: url("img/mod-form/bg04_3.png");
+        color: $co-white-1;
+        border-bottom: 1px solid $bo-blue-19;
+      }
+      .fm_field {
+        background-color: transparent;
+      }
+    }
+    .fm_submit_clmn {
+          border-bottom: 1px solid $bo-blue-19;
+    }
+  }
+}
+
+@mixin mod-bhform-style7 {
+  .fm_cntn {
+    border-top: 1px solid $bo-gray-6;
+    border-right: 1px solid $bo-gray-6;
+    border-left: 1px solid $bo-gray-6;
+    .fm_clmn {
+      border-bottom: 1px solid $bo-gray-6;
+      .fm_label {
+        background-color: #f2f2f2;
+        background-image: url("img/mod-form/bg05.png");
+        color: $co-white-1;
+        border-bottom: 1px solid $bo-gray-6;
+      }
+      .fm_field {
+        background-color: transparent;
+      }
+    }
+    .fm_submit_clmn {
+          border-bottom: 1px solid $bo-gray-6;
+    }
+  }
+}
+
+@mixin mod-bhform-style8 {
+  .fm_cntn {
+    border-top: 1px solid #e3f6f8;
+    border-right: 1px solid #e3f6f8;
+    border-left: 1px solid #e3f6f8;
+    .fm_clmn {
+      border-bottom: 1px solid #e3f6f8;
+      .fm_label {
+        background-color: #f2f2f2;
+        background-image: url("img/mod-form/bg05_2.png");
+        color: $co-white-1;
+        border-bottom: 1px solid #e3f6f8;
+      }
+      .fm_field {
+        background-color: $bg-green-3;
+      }
+    }
+    .fm_submit_clmn {
+          border-bottom: 1px solid #e3f6f8;
+    }
+  }
+}
+
+@mixin mod-bhform-style9 {
+  .fm_cntn {
+    border-top: 1px solid $bo-gray-6;
+    border-right: 1px solid $bo-gray-6;
+    border-left: 1px solid $bo-gray-6;
+    .fm_clmn {
+      border-bottom: 1px solid $bo-gray-6;
+      .fm_label {
+        background-color: #f2f2f2;
+         background-image: url("img/mod-form/bg05_3.png");
+       color: $co-white-1;
+        border-bottom: 1px solid $bo-gray-6;
+      }
+      .fm_field {
+        background-color: $bg-yellow-11;
+      }
+    }
+    .fm_submit_clmn {
+          border-bottom: 1px solid $bo-gray-6;
+    }
+  }
+}
+

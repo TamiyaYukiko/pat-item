@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-item-rte-in2
+// : mod-rte-in2 を前提としたデザインパターン
+//
+//    ・dotted  :  上下ドット線
+//    ・double  :  上下二重線
+//
+// --------------------------------------------------------------------------
+
+@import "../ptn-style/_pat-item-rte-in2-style.scss";
+
+// -------------------------------------
+//  pat-item-rte-in2 の個別設定
+// -------------------------------------
+
+// ドット
+@mixin pat-item-rte-in2-dotted-1 {
+  @include common-style-pat-item-rte-in2;
+  @include deco-style-pat-item-rte-in2-1;
+  border-top: 2px dotted $bo-blue-21;
+  border-bottom: 2px dotted $bo-blue-21;
+  color: $co-gray-6;
+}
+@mixin pat-item-rte-in2-dotted-2 {
+  @include common-style-pat-item-rte-in2;
+  @include deco-style-pat-item-rte-in2-1;
+  border-top: 2px dotted $bo-yellow-14;
+  border-bottom: 2px dotted $bo-yellow-14;
+  color: $co-gray-6;
+}
+@mixin pat-item-rte-in2-dotted-3 {
+  @include common-style-pat-item-rte-in2;
+  @include deco-style-pat-item-rte-in2-1;
+  border-top: 2px dotted $bo-orange-7;
+  border-bottom: 2px dotted $bo-orange-7;
+  color: $co-gray-6;
+}
+
+// 二重
+@mixin pat-item-rte-in2-double-1 {
+  @include common-style-pat-item-rte-in2;
+  @include deco-style-pat-item-rte-in2-2;
+  border-top: 3px double $bo-blue-37;
+  border-bottom: 3px double $bo-blue-37;
+  color: $co-black-1;
+}
+@mixin pat-item-rte-in2-double-2 {
+  @include common-style-pat-item-rte-in2;
+  @include deco-style-pat-item-rte-in2-2;
+  border-top: 3px double $bo-blue-37;
+  border-bottom: 3px double $bo-blue-37;
+  color: $co-black-1;
+}
+@mixin pat-item-rte-in2-double-3 {
+  @include common-style-pat-item-rte-in2;
+  @include deco-style-pat-item-rte-in2-2;
+  border-top: 3px double $bo-blue-37;
+  border-bottom: 3px double $bo-blue-37;
+  color: $co-black-1;
+}
+@mixin pat-item-rte-in2-double-4 {
+  @include common-style-pat-item-rte-in2;
+  @include deco-style-pat-item-rte-in2-2;
+  border-top: 3px double $bo-brown-8;
+  border-bottom: 3px double $bo-brown-8;
+  color: $co-black-1;
+}
+@mixin pat-item-rte-in2-double-5 {
+  @include common-style-pat-item-rte-in2;
+  @include deco-style-pat-item-rte-in2-2;
+  border-top: 3px double $bo-yellow-15;
+  border-bottom: 3px double $bo-yellow-15;
+  color: $co-black-1;
+}
+@mixin pat-item-rte-in2-double-6 {
+  @include common-style-pat-item-rte-in2;
+  @include deco-style-pat-item-rte-in2-2;
+  border-top: 3px double $bo-brown-8;
+  border-bottom: 3px double $bo-brown-8;
+  color: $co-black-1;
+}

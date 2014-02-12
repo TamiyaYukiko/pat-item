@@ -1,0 +1,2286 @@
+@charset "UTF-8";
+
+// @import "dependency/common-variable";
+
+// --------------------------------------------
+// テーマ１　A1-1a1-L25
+// --------------------------------------------
+
+// --------------------------------------------
+// ヘッダー最上部要素　mod-top-sitename
+// --------------------------------------------
+@mixin common-style-mod-top-sitename {
+  min-height: 20px;
+  width: 100%;
+  .mod-top-text-sitename {
+    margin: 0 auto;
+    width: $baseWidth;
+    font-size: $fontSizeS -2;
+  }
+}
+
+@mixin module-style-mod-top-sitename {
+  .mod-top-text-sitename {
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01A1-mod-top-sitename {
+  background-color: $bg-blue-28;
+}
+
+@mixin deco-style01A2-mod-top-sitename {
+  background-color: $bg-green-12;
+}
+
+@mixin deco-style01A3-mod-top-sitename {
+  background-color: $bg-orange-15;
+}
+
+// --------------------------------------------
+// ヘッダー部品の枠　mod-parts-sitename
+// --------------------------------------------
+
+@mixin common-style-mod-parts-sitename {}
+
+@mixin module-style-mod-parts-sitename {}
+
+@mixin deco-style01A1-mod-parts-sitename {
+  background-color: $bg-white-1;
+}
+
+@mixin deco-style01B1-mod-parts-sitename {
+  background-image: url(img/mod-sitename/bg_b_1.png);
+  background-repeat: repeat-x;
+  background-color: $bg-blue-40;
+}
+
+@mixin deco-style01B2-mod-parts-sitename {
+  background-image: url(img/mod-sitename/bg_b_2.png);
+  background-repeat: repeat-x;
+  background-color: #3fadba;
+}
+
+@mixin deco-style01B3-mod-parts-sitename {
+  background-image: url(img/mod-sitename/bg_b_3.png);
+  background-repeat: repeat-x;
+  background-color: $bg-yellow-16;
+}
+
+// --------------------------------------------
+// 2列　mod-2col-sitename
+// --------------------------------------------
+@mixin common-style-mod-2col-sitename {
+  display: table;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 25px 0;
+  max-height: 460px;
+  width: 980px;
+  background-repeat: repeat-x;
+  > .mod-2col-inner {
+    display: table-cell;
+    padding-right: 10px;
+    vertical-align: top;
+    word-break: break-all;
+  }
+  > .mod-2col-inner2 {
+    display: table-cell;
+    vertical-align: bottom;
+    word-break: break-all;
+  }
+}
+
+@mixin module-style-mod-2col-sitename-1 {
+  > .mod-2col-inner2 {
+    width: 390px;
+    // ここの横幅を指定せず、内容物にwidthを決めてもらったほうがいいかもしれない
+
+  }
+}
+
+@mixin module-style-mod-2col-sitename-2 {
+  > .mod-2col-inner2 {
+    width: 408px;
+  }
+}
+
+// --------------------------------------------
+// 3列　mod-3col-sitename
+// --------------------------------------------
+
+@mixin common-style-mod-3col-sitename {
+  display: table;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 25px 0;
+  max-height: 460px;
+  width: 980px;
+  background-repeat: repeat-x;
+  > .mod-3col-inner {
+    display: table-cell;
+    padding-right: 10px;
+    vertical-align: top;
+    word-break: break-all;
+  }
+  > .mod-3col-inner2 {
+    display: table-cell;
+    vertical-align: bottom;
+    word-break: break-all;
+  }
+  > .mod-3col-inner3 {
+    display: table-cell;
+    vertical-align: bottom;
+    word-break: break-all;
+  }
+}
+
+@mixin module-style-mod-3col-sitename-1 {
+  > .mod-3col-inner2 {
+    width: 237px;
+    padding-right: 10px;
+  }
+  > .mod-3col-inner3 {
+    width: 150px;
+  }
+}
+
+@mixin module-style-mod-3col-sitename-2 {
+  > .mod-3col-inner2 {
+    width: 270px;
+    padding-right: 10px;
+  }
+  > .mod-3col-inner3 {
+    width: 150px;
+  }
+}
+
+@mixin module-style-mod-3col-sitename-3 {
+  > .mod-3col-inner2 {
+    width: 197px;
+    padding-right: 10px;
+  }
+  > .mod-3col-inner3 {
+    width: 228px;
+  }
+}
+
+@mixin module-style-mod-3col-sitename-4 {
+  > .mod-3col-inner2 {
+    width: 240px;
+    padding-right: 10px;
+  }
+  > .mod-3col-inner3 {
+    width: 250px;
+  }
+}
+
+@mixin module-style-mod-3col-sitename-5 {
+  > .mod-3col-inner2 {
+    width: 266px;
+    padding-right: 10px;
+  }
+  > .mod-3col-inner3 {
+    width: 260px;
+  }
+}
+
+// --------------------------------------------
+// サイト名、サイト名上補足　mod-title-sitename
+// --------------------------------------------
+
+@mixin common-style-mod-title-sitename {
+  display: table;
+  .mod-title-inner {
+    display: table-cell;
+    margin: 0;
+    width: 45px;
+    vertical-align: top;
+  }
+  .mod-title-inner2 {
+    display: table-cell;
+    margin: 0;
+    vertical-align: middle;
+  }
+  .mod-title-logo {
+    margin-right: 5px;
+    width: 40px;
+  }
+  .mod-title-hosoku-sitename {
+    font-size: $fontSizeS + 1;
+  }
+  .mod-title-text-sitename {
+    font-weight: bold;
+    font-size: $fontSizeL + 7;
+    line-height: 1;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .mod-title-text-sitename.ex-first-child {
+    margin: 0;
+    font-size: $fontSizeL + 10;
+    line-height: 1.5;
+  }
+}
+
+@mixin module-style-mod-title-sitename {}
+
+@mixin deco-style01A1-mod-title-sitename {
+  .mod-title-hosoku-sitename {
+    color: $co-black-1;
+  }
+  .mod-title-text-sitename {
+    color: $co-brown-3;
+    a {
+      color: $co-brown-3;
+    }
+  }
+}
+
+@mixin deco-style01A2-mod-title-sitename {
+  .mod-title-hosoku-sitename {
+    color: $co-black-1;
+  }
+  .mod-title-text-sitename {
+    color: $co-blue-5;
+    a {
+      color: $co-blue-5;
+    }
+  }
+}
+
+@mixin deco-style01A3-mod-title-sitename {
+  .mod-title-hosoku-sitename {
+    color: $co-black-1;
+  }
+  .mod-title-text-sitename {
+    color: $co-brown-6;
+    a {
+      color: $co-brown-6;
+    }
+  }
+}
+
+@mixin deco-style01B1-mod-title-sitename {
+  .mod-title-hosoku-sitename {
+    color: $co-white-1;
+  }
+  .mod-title-text-sitename {
+    color: $co-white-1;
+    a {
+      color: $co-white-1;
+    }
+  }
+}
+
+@mixin deco-style01B2-mod-title-sitename {
+  .mod-title-hosoku-sitename {
+    color: $co-white-1;
+  }
+  .mod-title-text-sitename {
+    color: $co-white-1;
+    a {
+      color: $co-white-1;
+    }
+  }
+}
+
+@mixin deco-style01B3-mod-title-sitename {
+  .mod-title-hosoku-sitename {
+    color: $co-brown-6;
+  }
+  .mod-title-text-sitename {
+    color: $co-brown-6;
+    a {
+      color: $co-brown-6;
+    }
+  }
+}
+
+@mixin deco-style01C1-mod-title-sitename {
+  .mod-title-hosoku-sitename {
+    color: $co-black-1;
+  }
+  .mod-title-text-sitename {
+    color: $co-blue-10;
+    a {
+      color: $co-blue-10;
+    }
+  }
+}
+
+@mixin deco-style01C2-mod-title-sitename {
+  .mod-title-hosoku-sitename {
+    color: $co-black-1;
+  }
+  .mod-title-text-sitename {
+    color: $co-green-6;
+    a {
+      color: $co-green-6;
+    }
+  }
+}
+
+@mixin deco-style01C3-mod-title-sitename {
+  .mod-title-hosoku-sitename {
+    color: $co-black-1;
+  }
+  .mod-title-text-sitename {
+    color: $co-brown-6;
+    a {
+      color: $co-brown-6;
+    }
+  }
+}
+
+// --------------------------------------------
+// サイト名下補足　mod-address-sitename
+// --------------------------------------------
+@mixin common-style-mod-address-sitename {
+  margin-top: 5px;
+  font-size: $fontSizeS + 1;
+  line-height: 1.1;
+}
+
+@mixin module-style-mod-address-sitename {}
+
+@mixin deco-style01A1-mod-address-sitename {
+  color: $co-gray-3;
+}
+
+@mixin deco-style01B1-mod-address-sitename {
+  color: #cccccc;
+}
+
+@mixin deco-style01B2-mod-address-sitename {
+  color: #efefef;
+}
+
+@mixin deco-style01B3-mod-address-sitename {
+  color: $co-brown-1;
+}
+
+// --------------------------------------------
+// 電話番号　mod-tel-sitename
+// --------------------------------------------
+@mixin module-style-mod-tel-sitename-1 {
+  display: table;
+  vertical-align: bottom;
+  margin: 0 auto;
+  i {
+    display: table-cell;
+    width: 31px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+  }
+  .mod-icon_ftel {
+    background-image: url("img/mod-sitename/bg_10.png");
+  }
+  .mod-tel-inner {
+    display: table-cell;
+    padding-left: 3px;
+    .mod-telnum-sitename {
+      padding: 0;
+      background-image: none;
+    }
+  }
+  .mod-tel-inner.ex-first-child {
+    > p.mod-telnum-sitename {
+      font-size: $fontSizeL + 10;
+    }
+  }
+  .mod-tel-golo-sitename {
+    text-align: right;
+    font-size: $fontSizeS;
+    line-height: 1;
+    margin-top: 7px;
+  }
+  p.mod-telnum-sitename {
+    margin-top: 3px;
+    word-break: break-all;
+    font-size: $fontSizeL + 7;
+    line-height: 1;
+  }
+}
+
+@mixin deco-style01A1-mod-tel-sitename {
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_1.png");
+  }
+  .mod-telnum-sitename {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01A2-mod-tel-sitename {
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_2.png");
+  }
+  .mod-telnum-sitename {
+    color: $co-blue-5;
+  }
+}
+
+@mixin deco-style01A3-mod-tel-sitename {
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_3.png");
+  }
+  .mod-telnum-sitename {
+    color: $co-brown-6;
+  }
+}
+
+@mixin deco-style01B1-mod-tel-sitename {
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_4.png");
+  }
+  .mod-tel-golo-sitename {
+    color: $co-white-1;
+  }
+  .mod-telnum-sitename {
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01B2-mod-tel-sitename {
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_4.png");
+  }
+  .mod-tel-golo-sitename {
+    color: $co-white-1;
+  }
+  .mod-telnum-sitename {
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01B3-mod-tel-sitename {
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_1.png");
+  }
+  .mod-telnum-sitename {
+    color: $co-brown-6;
+  }
+}
+
+@mixin deco-style01C1-mod-tel-sitename {
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_1.png");
+  }
+  .mod-telnum-sitename {
+    color: $co-blue-10;
+  }
+}
+
+@mixin deco-style01C2-mod-tel-sitename {
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_5.png");
+  }
+  .mod-telnum-sitename {
+    color: $co-orange-3;
+  }
+}
+
+@mixin deco-style01C3-mod-tel-sitename {
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_6.png");
+  }
+  .mod-telnum-sitename {
+    color: $co-brown-6;
+  }
+}
+
+@mixin module-style-mod-tel-sitename-2 {
+  .mod-tel-inner.ex-first-child {
+    > p.mod-telnum-sitename {
+      font-size: $fontSizeL + 14;
+    }
+  }
+  .mod-tel-golo-sitename {
+    text-align: right;
+    font-size: $fontSizeS + 1;
+    line-height: 1;
+  }
+  p.mod-telnum-sitename {
+    margin-top: 3px;
+    word-break: break-all;
+    font-size: $fontSizeL + 12;
+    line-height: 1;
+  }
+}
+
+// --------------------------------------------
+// ラベル付き文章（一行分のみ背景色がひかれる）　mod-info
+// --------------------------------------------
+
+@mixin common-style-mod-info3-sitename {
+  margin-top: 8px;
+  width: 100%;
+  th {
+    width: 48px;
+    vertical-align: middle;
+    font-weight: normal;
+    > p {
+      @include border-radius(3px);
+      float: left;
+      padding: 0 3px;
+      width: 48px;
+      text-align: center;
+      font-size: $fontSizeS - 1;
+    }
+  }
+  td {
+    float: left;
+    padding: 0 0 1px 3px;
+    vertical-align: middle;
+    text-align: left;
+    font-size: $fontSizeS;
+    > p {
+      padding-left: 4px;
+    }
+  }
+}
+
+@mixin deco-style01A1-mod-info3-sitename {
+  th {
+    > p {
+      background-color: $bg-orange-10;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01A2-mod-info3-sitename {
+  th {
+    > p {
+      background-color: $bg-green-28;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01A3-mod-info3-sitename {
+  th {
+    > p {
+      background-color: $bg-blue-25;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01B1-mod-info3-sitename {
+  th {
+    > p {
+      background-color: #2b3f5b;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01B2-mod-info3-sitename {
+  th {
+    > p {
+      background-color: $bg-green-31;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01B3-mod-info3-sitename {
+  th {
+    > p {
+      background-color: $bg-brown-5;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-brown-6;
+  }
+}
+
+@mixin deco-style01C1-mod-info3-sitename {
+  th {
+    > p {
+      background-color: #3f88f7;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01C2-mod-info3-sitename {
+  th {
+    > p {
+      background-color: $bg-green-28;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01C3-mod-info3-sitename {
+  th {
+    > p {
+      background-color: $bg-yellow-7;
+      color: $co-brown-6;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin common-style-mod-info3-sitename-2 {
+  margin: 6px 0 0 5px;
+  width: 100%;
+  th {
+    width: auto;
+    vertical-align: bottom;
+    font-weight: bold;
+    > p {
+      @include border-radius(3px);
+      float: left;
+      padding: 2px 3px 0;
+      width: auto;
+      min-width: 10px;
+      text-align: center;
+      font-size: $fontSizeS - 2;
+    }
+  }
+  td {
+    float: left;
+    padding: 0;
+    vertical-align: bottom;
+    text-align: left;
+    font-size: $fontSizeL + 2;
+    line-height: 1.0;
+  }
+}
+
+@mixin deco-style01A1-mod-info3-sitename-2 {
+  th {
+    > p {
+      background-color: $bg-orange-10;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01A2-mod-info3-sitename-2 {
+  th {
+    > p {
+      background-color: #365a8a;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-blue-5;
+  }
+}
+
+@mixin deco-style01A3-mod-info3-sitename-2 {
+  th {
+    > p {
+      background-color: #45320b;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-brown-6;
+  }
+}
+
+@mixin deco-style01B1-mod-info3-sitename-2 {
+  th {
+    > p {
+      background-color: $bg-yellow-28;
+      color: #2e4a72;
+    }
+  }
+  td {
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01B2-mod-info3-sitename-2 {
+  th {
+    > p {
+      background-color: $bg-yellow-28;
+      color: #178893;
+    }
+  }
+  td {
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01B3-mod-info3-sitename-2 {
+  th {
+    > p {
+      background-color: $bg-orange-21;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-brown-6;
+  }
+}
+
+@mixin deco-style01C1-mod-info3-sitename-2 {
+  th {
+    > p {
+      background-color: $bg-orange-10;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-blue-10;
+  }
+}
+
+@mixin deco-style01C2-mod-info3-sitename-2 {
+  th {
+    > p {
+      background-color: $bg-green-28;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-orange-3;
+  }
+}
+
+@mixin deco-style01C3-mod-info3-sitename-2 {
+  th {
+    > p {
+      background-color: $bg-blue-25;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-brown-6;
+  }
+}
+
+@mixin mod-info-sitename {
+  th {
+    @include border-radius(3px);
+    display: table;
+    padding: 0 3px;
+    width: 48px;
+    height: 36px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: normal;
+    font-size: $fontSizeS - 1;
+    > p {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  td {
+    padding: 0 0 0 7px;
+    max-width: 135px;
+    vertical-align: top;
+    font-size: $fontSizeS;
+  }
+}
+
+@mixin mod-info2-sitename {
+  margin-top: 5px;
+  &.ex-first-child {
+    margin-top: 0 !important;
+  }
+  th {
+    @include border-radius(3px);
+    display: table;
+    padding: 0 3px;
+    width: 48px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: normal;
+    font-size: $fontSizeS - 1;
+    > p {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  td {
+    padding: 0 0 0 7px;
+    max-width: 135px;
+    vertical-align: top;
+    font-size: $fontSizeS;
+  }
+}
+
+@mixin mod-info3-sitename {
+  margin-top: 8px;
+  width: 100%;
+  th {
+    width: 48px;
+    vertical-align: middle;
+    font-weight: normal;
+    > p {
+      @include border-radius(3px);
+      float: left;
+      padding: 0 3px;
+      width: 48px;
+      text-align: center;
+      font-size: $fontSizeS - 1;
+    }
+  }
+  td {
+    float: left;
+    padding: 0 0 1px 3px;
+    vertical-align: middle;
+    text-align: left;
+    font-size: $fontSizeS;
+    > p {
+      padding-left: 4px;
+    }
+  }
+}
+
+@mixin mod-info4-sitename {
+  margin: 0 auto;
+  width: auto;
+  th {
+    width: auto;
+    vertical-align: middle;
+    font-weight: normal;
+    > p {
+      float: left;
+      width: auto;
+      text-align: center;
+      font-size: $fontSizeM - 2;
+    }
+  }
+  td {
+    float: left;
+    padding: 0 0 1px 3px;
+    width: auto;
+    vertical-align: middle;
+    text-align: left;
+    font-size: $fontSizeM - 2;
+    > p {
+      padding-left: 4px;
+    }
+  }
+}
+
+@mixin deco-style01A1-mod-info-sitename {
+  th {
+    background-color: $bg-orange-10;
+    color: $co-white-1;
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01A2-mod-info-sitename {
+  th {
+    background-color: $bg-green-28;
+    color: $co-white-1;
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01A3-mod-info-sitename {
+  th {
+    background-color: $bg-blue-25;
+    color: $co-white-1;
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01B1-mod-info-sitename {
+  th {
+    background-color: #2b3f5b;
+    color: $co-white-1;
+  }
+  td {
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01B2-mod-info-sitename {
+  th {
+    background-color: $bg-green-31;
+    color: $co-white-1;
+  }
+  td {
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01B3-mod-info-sitename {
+  th {
+    background-color: $bg-brown-5;
+    color: $co-white-1;
+  }
+  td {
+    color: $co-brown-6;
+  }
+}
+
+@mixin deco-style01C1-mod-info-sitename {
+  th {
+    background-color: #3f88f7;
+    color: $co-white-1;
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01C2-mod-info-sitename {
+  th {
+    background-color: $bg-green-28;
+    color: $co-white-1;
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01C3-mod-info-sitename {
+  th {
+    background-color: $bg-yellow-7;
+    color: $co-brown-6;
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01A1-mod-info3-sitename {
+  th {
+    > p {
+      background-color: $bg-orange-10;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01A2-mod-info3-sitename {
+  th {
+    > p {
+      background-color: $bg-green-28;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01A3-mod-info3-sitename {
+  th {
+    > p {
+      background-color: $bg-blue-25;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01B1-mod-info3-sitename {
+  th {
+    > p {
+      background-color: #2b3f5b;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01B2-mod-info3-sitename {
+  th {
+    > p {
+      background-color: $bg-green-31;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01B3-mod-info3-sitename {
+  th {
+    > p {
+      background-color: $bg-brown-5;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-brown-6;
+  }
+}
+
+@mixin deco-style01C1-mod-info3-sitename {
+  th {
+    > p {
+      background-color: #3f88f7;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01C2-mod-info3-sitename {
+  th {
+    > p {
+      background-color: $bg-green-28;
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01C3-mod-info3-sitename {
+  th {
+    > p {
+      background-color: $bg-yellow-7;
+      color: $co-brown-6;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style02A1-mod-info4-sitename {
+  th {
+    > p {
+      color: $co-black-1;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style02B1-mod-info4-sitename {
+  th {
+    > p {
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style02C3-mod-info4-sitename {
+  th {
+    > p {
+      color: $co-brown-6;
+    }
+  }
+  td {
+    color: $co-brown-6;
+  }
+}
+
+// --------------------------------------------
+// バナー1　mod-bnr-sitename
+// --------------------------------------------
+@mixin common-style-mod-bnr-sitename {
+  @include border-radius;
+  margin-top: 5px;
+  width: 150px;
+  background-position: left top;
+  font-size: $fontSizeS + 1;
+  &:hover {
+    opacity: 0.8;
+    -ms-filter: "alpha(opacity=80)";
+  }
+  a:hover, a:hover p {
+    text-decoration: none;
+  }
+  .mod-bnr-inner {
+    @include border-radius;
+    padding: 6px 5px 5px 29px;
+    max-height: 49px;
+    border: 1px solid white;
+    background-position: 9px 10px;
+    background-repeat: no-repeat;
+    line-height: 1.4;
+  }
+}
+
+@mixin deco-style01A1-mod-bnr-sitename {
+  border: 1px solid $bo-orange-10;
+  background-color: #f7941e;
+  background-image: url("img/mod-sitename/bg_bnr_1.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    background-image: url("img/mod-sitename/bg_bnr_arr_1.png");
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01A2-mod-bnr-sitename {
+  border: 1px solid $bo-green-10;
+  background-color: #48adbb;
+  background-image: url("img/mod-sitename/bg_bnr_2.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    background-image: url("img/mod-sitename/bg_bnr_arr_2.png");
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01A3-mod-bnr-sitename {
+  border: 1px solid #cfb502;
+  background-color: #fee862;
+  background-image: url("img/mod-sitename/bg_bnr_3.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    background-image: url("img/mod-sitename/bg_bnr_arr_3.png");
+    color: $co-brown-6;
+  }
+}
+
+@mixin deco-style01B1-mod-bnr-sitename {
+  border: 1px solid $bo-blue-26;
+  background-color: $bg-blue-28;
+  background-image: url("img/mod-sitename/bg_bnr_4.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    border: 1px solid $bo-blue-36;
+    background-image: url("img/mod-sitename/bg_bnr_arr_4.png");
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01B2-mod-bnr-sitename {
+  border: 1px solid $bo-green-10;
+  background-color: #4fb5c1;
+  background-image: url("img/mod-sitename/bg_bnr_5.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    border: 1px solid $bo-green-19;
+    background-image: url("img/mod-sitename/bg_bnr_arr_5.png");
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01B3-mod-bnr-sitename {
+  border: 1px solid #fef48b;
+  background-color: #fef48b;
+  background-image: url("img/mod-sitename/bg_bnr_6.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    border: 1px solid #fbcb28;
+    background-image: url("img/mod-sitename/bg_bnr_arr_6.png");
+    color: $co-brown-6;
+  }
+}
+
+@mixin deco-style01C1-mod-bnr-sitename {
+  border: 1px solid $bo-pink-5;
+  background-image: url("img/mod-sitename/bg_bnr_7.png");
+  .mod-bnr-inner {
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01C2-mod-bnr-sitename {
+  border: 1px solid #f8de5b;
+  background-image: url("img/mod-sitename/bg_bnr_8.png");
+  .mod-bnr-inner {
+    color: $co-blue-5;
+  }
+}
+
+@mixin deco-style01C3-mod-bnr-sitename {
+  border: 1px solid $bo-orange-8;
+  background-image: url("img/mod-sitename/bg_bnr_9.png");
+  .mod-bnr-inner {
+    color: $co-white-1;
+  }
+}
+
+// --------------------------------------------
+// バナー2　mod-bnr2-sitename
+// --------------------------------------------
+@mixin common-style-mod-bnr2-sitename {
+  @include border-radius;
+  margin-top: 5px;
+  width: 150px;
+  background-position: left top;
+  font-size: $fontSizeS;
+  &:hover {
+    opacity: 0.8;
+    -ms-filter: "alpha(opacity=80)";
+  }
+  a:hover, a:hover p {
+    text-decoration: none;
+  }
+  .mod-bnr-inner {
+    @include border-radius;
+    padding: 8px 5px 7px 29px;
+    max-height: 49px;
+    border: 1px solid white;
+    background-position: 9px 10px;
+    background-repeat: no-repeat;
+    line-height: 1.4;
+  }
+}
+
+@mixin deco-style01A1-mod-bnr-sitename-2 {
+  border: 1px solid $bo-blue-26;
+  background-color: #4689f1;
+  background-image: url("img/mod-sitename/bg_bnr_10.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    background-image: url("img/mod-sitename/bg_bnr_arr_10.png");
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01A2-mod-bnr-sitename-2 {
+  border: 1px solid $bo-yellow-12;
+  background-color: #eac23a;
+  background-image: url("img/mod-sitename/bg_bnr_11.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    background-image: url("img/mod-sitename/bg_bnr_arr_11.png");
+    color: $co-blue-5;
+  }
+}
+
+@mixin deco-style01A3-mod-bnr-sitename-2 {
+  border: 1px solid $bo-pink-5;
+  background-color: #fc7c78;
+  background-image: url("img/mod-sitename/bg_bnr_12.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    background-image: url("img/mod-sitename/bg_bnr_arr_12.png");
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01B1-mod-bnr-sitename-2 {
+  border: 1px solid $bo-yellow-12;
+  background-color: #e9ca39;
+  background-image: url("img/mod-sitename/bg_bnr_13.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    border: 1px solid $bo-yellow-18;
+    background-image: url("img/mod-sitename/bg_bnr_arr_13.png");
+    color: $co-white-1;
+  }
+}
+
+// =deco-style01B2-mod-bnr-sitename-2
+@mixin deco-style01B3-mod-bnr-sitename-2 {
+  border: 1px solid $bo-orange-11;
+  background-color: #f7b27c;
+  background-image: url("img/mod-sitename/bg_bnr_15.png");
+  background-repeat: repeat-x;
+  .mod-bnr-inner {
+    border: 1px solid $bo-orange-18;
+    background-image: url("img/mod-sitename/bg_bnr_arr_15.png");
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01C1-mod-bnr-sitename-2 {
+  border: 1px solid $bo-blue-26;
+  background-image: url("img/mod-sitename/bg_bnr_16.png");
+  .mod-bnr-inner {
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01C2-mod-bnr-sitename-2 {
+  border: 1px solid $bo-green-19;
+  background-image: url("img/mod-sitename/bg_bnr_17.png");
+  .mod-bnr-inner {
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01C3-mod-bnr-sitename-2 {
+  border: 1px solid $bo-blue-33;
+  background-image: url("img/mod-sitename/bg_bnr_18.png");
+  .mod-bnr-inner {
+    color: $co-white-1;
+  }
+}
+
+// --------------------------------------------
+// バナー3　mod-bnr3-sitename
+// --------------------------------------------
+@mixin common-style-mod-bnr-sitename-3 {
+  @include border-radius(3px);
+  clear: both;
+  margin-top: 5px;
+  width: 100%;
+  &:hover {
+    opacity: 0.8;
+    -ms-filter: "alpha(opacity=80)";
+  }
+  a:hover, a:hover p {
+    text-decoration: none;
+  }
+  .mod-bnr-inner {
+    @include border-radius(3px);
+    padding: 3px 5px 2px 24px;
+    max-height: 40px;
+    background-position: 9px 5px;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    font-size: $fontSizeS + 1;
+    line-height: 1.2;
+  }
+}
+
+@mixin deco-style01A1-mod-bnr-sitename-3 {
+  border: 1px solid $bo-blue-11;
+  .mod-bnr-inner {
+    border: 1px solid white;
+    background-color: $bg-blue-11;
+    background-image: url("img/mod-sitename/bg_bnr_arr_19.png");
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01A1-mod-bnr-sitename-3-2 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: $bg-orange-10;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01A2-mod-bnr-sitename-3 {
+  border: 1px solid $bo-green-10;
+  .mod-bnr-inner {
+    border: 1px solid white;
+    background-color: $bg-green-7;
+    background-image: url("img/mod-sitename/bg_bnr_arr_20.png");
+    color: $co-blue-16;
+  }
+}
+
+@mixin deco-style01A2-mod-bnr-sitename-3-2 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: $bg-green-28;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01A3-mod-bnr-sitename-3 {
+  border: 1px solid $bo-pink-4;
+  .mod-bnr-inner {
+    border: 1px solid white;
+    background-color: $bg-pink-3;
+    background-image: url("img/mod-sitename/bg_bnr_arr_21.png");
+    color: $co-brown-8;
+  }
+}
+
+@mixin deco-style01A3-mod-bnr-sitename-3-2 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: $bg-blue-25;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01B1-mod-bnr-sitename-3 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: #2b3f5b;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01B1-mod-bnr-sitename-3-2 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: $bg-blue-26;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01B2-mod-bnr-sitename-3 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: $bg-green-12;
+    background-image: url("img/mod-sitename/bg_bnr_arr_23.png");
+    color: $co-green-7;
+  }
+}
+
+@mixin deco-style01B3-mod-bnr-sitename-3 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: $bg-yellow-32;
+    background-image: url("img/mod-sitename/bg_bnr_arr_24.png");
+    color: $co-brown-6;
+  }
+}
+
+@mixin deco-style01C1-mod-bnr-sitename-3 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: $bg-blue-13;
+    background-image: url("img/mod-sitename/bg_bnr_arr_25.png");
+    color: $co-blue-10;
+  }
+}
+
+@mixin deco-style01C1-mod-bnr-sitename-3-2 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: #3f88f7;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01C2-mod-bnr-sitename-3 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: $bg-yellow-7;
+    background-image: url("img/mod-sitename/bg_bnr_arr_26.png");
+    color: $co-blue-10;
+  }
+}
+
+@mixin deco-style01C2-mod-bnr-sitename-3-2 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: $bg-green-28;
+    background-image: url("img/mod-sitename/bg_bnr_arr_22.png");
+    color: $co-white-1;
+  }
+}
+
+@mixin deco-style01C3-mod-bnr-sitename-3 {
+  border: none;
+  .mod-bnr-inner {
+    border: none;
+    background-color: $bg-yellow-7;
+    background-image: url("img/mod-sitename/bg_bnr_arr_27.png");
+    color: $co-brown-6;
+  }
+}
+
+// --------------------------------------------
+// お気軽にお問合せください　mod-hosoku2-sitename
+// --------------------------------------------
+@mixin common-style-mod-hosoku2-sitename {
+  margin-top: 10px;
+  padding: 0;
+  font-size: $fontSizeM;
+  text-align: center;
+}
+
+@mixin deco-style01A1-mod-hosoku2-sitename {
+  color: $co-black-1;
+}
+
+@mixin deco-style01B1-mod-hosoku2-sitename {
+  color: $co-white-1;
+}
+
+@mixin deco-style01B3-mod-hosoku2-sitename {
+  color: $co-brown-6;
+}
+
+@mixin common-style02-mod-hosoku2-sitename {
+  padding: 0;
+  text-align: center;
+  font-size: $fontSizeM;
+  line-height: 1.4;
+}
+
+@mixin deco-style02C3-mod-hosoku2-sitename {
+  color: $co-brown-6;
+}
+
+// --------------------------------------------
+// 無料相談実施中ボックス　mod-set-toiawase2
+// --------------------------------------------
+@mixin common-style-mod-set-toiawase2-sitename {
+  @include border-radius;
+  display: table;
+  min-width: 220px;
+  width: auto;
+  text-align: center;
+  margin: 0 auto;
+  .mod-box-inner {
+    @include border-radius(4px 4px 0 0);
+    padding: 2px 5px 0;
+    font-size: $fontSizeL;
+  }
+  .mod-box-inner2 {
+    @include border-radius(0 0 4px 4px);
+    padding: 4px 5px 2px;
+    font-size: $fontSizeM;
+  }
+}
+
+@mixin deco-style01A1-mod-set-toiawase2-sitename {
+  border: 1px solid $bo-blue-26;
+  .mod-box-inner {
+    border-bottom: 1px solid $bo-blue-26;
+    background-color: $bg-blue-24;
+    color: $co-white-1;
+  }
+  .mod-box-inner2 {
+    background-color: transparent;
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01A2-mod-set-toiawase2-sitename {
+  border: 1px solid $bo-green-20;
+  .mod-box-inner {
+    border-bottom: 1px solid $bo-green-20;
+    background-color: $bg-green-28;
+    color: $co-white-1;
+  }
+  .mod-box-inner2 {
+    background-color: transparent;
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01A3-mod-set-toiawase2-sitename {
+  border: 1px solid $bo-orange-8;
+  .mod-box-inner {
+    border-bottom: 1px solid $bo-orange-8;
+    background-color: $bg-orange-21;
+    color: $co-white-1;
+  }
+  .mod-box-inner2 {
+    background-color: $bg-yellow-12;
+    color: $co-brown-6;
+  }
+}
+
+@mixin deco-style01B1-mod-set-toiawase2-sitename {
+  border: 1px solid $bo-blue-39;
+  .mod-box-inner {
+    border-bottom: 1px solid $bo-blue-39;
+    background-color: $bg-blue-29;
+    color: $co-white-1;
+  }
+  .mod-box-inner2 {
+    background-color: $bg-white-1;
+    color: $co-blue-19;
+  }
+}
+
+@mixin deco-style01B2-mod-set-toiawase2-sitename {
+  border: 1px solid $bo-green-14;
+  .mod-box-inner {
+    border-bottom: 1px solid $bo-green-14;
+    background-color: $bg-green-31;
+    color: $co-white-1;
+  }
+  .mod-box-inner2 {
+    background-color: $bg-white-1;
+    color: $co-blue-19;
+  }
+}
+
+@mixin deco-style01B3-mod-set-toiawase2-sitename {
+  border: 1px solid $bo-black-1;
+  .mod-box-inner {
+    border-bottom: 1px solid $bo-black-1;
+    background-color: $bg-brown-5;
+    color: $co-white-1;
+  }
+  .mod-box-inner2 {
+    background-color: $bg-white-1;
+    color: $co-blue-19;
+  }
+}
+
+@mixin deco-style01C1-mod-set-toiawase2-sitename {
+  border: 1px solid $bo-orange-20;
+  .mod-box-inner {
+    border-bottom: 1px solid $bo-orange-20;
+    background-color: $bg-orange-21;
+    color: $co-white-1;
+  }
+  .mod-box-inner2 {
+    background-color: $bg-white-1;
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01C2-mod-set-toiawase2-sitename {
+  border: 1px solid $bo-green-19;
+  .mod-box-inner {
+    border-bottom: 1px solid $bo-green-19;
+    background-color: $bg-green-26;
+    color: $co-white-1;
+  }
+  .mod-box-inner2 {
+    background-color: transparent;
+    color: $co-black-1;
+  }
+}
+
+@mixin deco-style01C3-mod-set-toiawase2-sitename {
+  border: 1px solid $bo-orange-20;
+  .mod-box-inner {
+    border-bottom: 1px solid $bo-orange-20;
+    background-color: $bg-orange-21;
+    color: $co-white-1;
+  }
+  .mod-box-inner2 {
+    background-color: transparent;
+    color: $co-brown-6;
+  }
+}
+
+// --------------------------------------------
+// 無料相談実施中ボックス　pat-item-toiawase-sitename
+// --------------------------------------------
+@mixin common-style-pat-item-toiawase-sitename {
+  @include border-radius;
+  margin: auto 0 auto auto;
+  // width: 255px
+  display: table;
+  vertical-align: bottom;
+  i {
+    display: table-cell;
+    width: 31px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+  }
+  > div {
+    @include border-radius;
+    padding: 1px 5px;
+    background-repeat: repeat-x;
+  }
+  .mod-telnum-sitename {
+    margin: 0 auto;
+    padding: 0 0 1px;
+    width: auto;
+    color: $co-white-1;
+    text-align: center;
+    word-break: break-all;
+    letter-spacing: 1px;
+    font-size: 25px;
+    line-height: 0.9;
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_7.png");
+  }
+  .mod-icon_ftel {
+    background-image: url("img/mod-sitename/bg_10.png");
+  }
+  .mod-tel-inner {
+    display: table-cell;
+    padding-left: 3px;
+    .mod-tel-sitename {
+      padding: 0;
+      background-image: none;
+    }
+  }
+  .mod-tel-inner.ex-first-child {
+    > p.mod-telnum-sitename {
+      font-size: $fontSizeL + 10;
+    }
+  }
+  .mod-tel-golo-sitename {
+    text-align: right;
+    font-size: $fontSizeS;
+    line-height: 1;
+    color: $co-white-1;
+  }
+  p.mod-telnum-sitename {
+    margin-top: 3px;
+    word-break: break-all;
+    font-size: $fontSizeL + 7;
+    line-height: 1;
+  }
+}
+
+@mixin deco-style01A1-mod-tel-sitename {
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_1.png");
+  }
+}
+
+@mixin module-style-pat-item-toiawase-sitename {
+  p.mod-hosoku4-sitename {
+    @include common-style02-mod-hosoku4-sitename;
+    [class*=ex-style_02] & {
+      margin-top: 3px;
+    }
+  }
+}
+
+@mixin deco-style01A1-pat-item-toiawase-sitename {
+  border: 1px solid $bo-orange-10;
+  > div {
+    border: 1px solid white;
+    background-color: $bg-orange-8;
+    background-image: url("img/mod-sitename/bg_set_1-1.png");
+  }
+  p.mod-hosoku4-sitename {
+    @include deco-style01A1-mod-hosoku2-sitename;
+    color: $co-white-1;
+  }
+  .mod-telnum-sitename {
+    padding: 0 0 2px;
+  }
+}
+
+@mixin deco-style01A2-pat-item-toiawase-sitename {
+  border: 1px solid $bo-green-10;
+  > div {
+    border: 1px solid #bce2e7;
+    background-color: #6ec7d1;
+    background-image: url("img/mod-sitename/bg_set_2-1.png");
+  }
+}
+
+@mixin deco-style01A3-pat-item-toiawase-sitename {
+  border: 1px solid $bo-blue-20;
+  > div {
+    border: 1px solid white;
+    background-color: #519ccd;
+    background-image: url("img/mod-sitename/bg_set_3-1.png");
+  }
+}
+
+@mixin deco-style01B1-pat-item-toiawase-sitename {
+  border: 1px solid $bo-blue-26;
+  > div {
+    border: 1px solid $bo-blue-36;
+    background-color: #2e7be1;
+    background-image: url("img/mod-sitename/bg_set_4-1.png");
+  }
+}
+
+@mixin deco-style01B2-pat-item-toiawase-sitename {
+  border: 1px solid $bo-green-10;
+  > div {
+    border: 1px solid $bo-green-19;
+    background-color: #48b4c0;
+    background-image: url("img/mod-sitename/bg_set_5-1.png");
+  }
+}
+
+@mixin deco-style01B3-pat-item-toiawase-sitename {
+  border: 1px solid $bo-orange-11;
+  > div {
+    border: 1px solid $bo-orange-18;
+    background-color: #f9b57d;
+    background-image: url("img/mod-sitename/bg_set_6-1.png");
+  }
+}
+
+@mixin deco-style01C1-pat-item-toiawase-sitename {
+  border: 1px solid $bo-pink-5;
+  > div {
+    border: 1px solid $bo-pink-1;
+    background-color: #ff9e99;
+    background-image: url("img/mod-sitename/bg_set_7-1.png");
+  }
+}
+
+@mixin deco-style01C2-pat-item-toiawase-sitename {
+  border: 1px solid $bo-green-19;
+  > div {
+    border: 1px solid #c5f3f8;
+    background-color: #0abfd1;
+    background-image: url("img/mod-sitename/bg_set_8-1.png");
+  }
+}
+
+@mixin deco-style01C3-pat-item-toiawase-sitename {
+  border: 1px solid $bo-orange-8;
+  > div {
+    border: 1px solid $bo-orange-3;
+    background-color: #ffaf65;
+    background-image: url("img/mod-sitename/bg_set_9-1.png");
+  }
+}
+
+// --------------------------------------------
+// ↓　中途半端ゾーン！ここから pat-item-waku
+// --------------------------------------------
+
+@mixin common-style-mod-set-toiawase3 {
+  display: table;
+  width: auto;
+  border: none;
+  background-color: transparent;
+  float: right;
+  > .mod-set-inner {
+    display: table-cell;
+    width: 240px;
+    vertical-align: bottom;
+  }
+  > .mod-set-inner2 {
+    display: table-cell;
+    width: 150px;
+    vertical-align: middle;
+    padding-left: 10px;
+    i {
+      display: table-cell;
+      width: 31px;
+      background-position: left 18px;
+      background-repeat: no-repeat;
+    }
+    .mod-icon_ftel {
+      background-image: url("img/mod-sitename/bg_10.png");
+    }
+  }
+}
+
+@mixin common-style-pat-item-waku-sitename {
+  @include border-radius;
+  padding: 5px 10px 3px;
+  .mod-telnum-sitename {
+    font-size: $fontSizeL + 8;
+    line-height: 1.1;
+    text-align: center;
+    margin: 0 auto;
+    i {
+      width: 25px;
+    }
+  }
+  .mod-tel-sitename.ex-first-child {
+    > p {
+      font-size: $fontSizeL + 10;
+    }
+  }
+  .mod-hosoku2-sitename {
+    text-align: center;
+    padding: 0;
+    font-size: $fontSizeM;
+  }
+  .mod-info4-sitename {
+    margin: 0 auto;
+    width: auto;
+    text-align: center;
+    word-break: break-all;
+    th {
+      width: auto;
+      vertical-align: middle;
+      font-weight: normal;
+      > p {
+        width: auto;
+        text-align: center;
+        font-size: $fontSizeM - 3;
+      }
+    }
+    td {
+      float: left;
+      padding: 0 0 1px 3px;
+      width: auto;
+      vertical-align: middle;
+      text-align: left;
+      font-size: $fontSizeM - 3;
+      > p {
+        padding-left: 4px;
+      }
+    }
+  }
+}
+
+@mixin deco-style02A1-pat-item-waku-sitename {
+  border: 1px solid $bo-gray-12;
+  background-color: $bg-yellow-10;
+  .mod-hosoku2-sitename {
+    color: $co-black-1;
+  }
+  .mod-telnum-sitename {
+    color: $co-orange-2;
+  }
+  .mod-tel-golo-sitename {
+    color: $co-orange-2;
+  }
+  th {
+    > p {
+      color: $co-black-1;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_1.png");
+  }
+}
+
+@mixin deco-style02A2-pat-item-waku-sitename {
+  border: 1px solid $bo-gray-12;
+  background-color: $bg-gray-1;
+  .mod-hosoku2-sitename {
+    color: $co-black-1;
+  }
+  .mod-telnum-sitename {
+    color: $co-blue-5;
+  }
+  .mod-tel-golo-sitename {
+    color: $co-blue-5;
+  }
+  th {
+    > p {
+      color: $co-black-1;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_2.png");
+  }
+}
+
+@mixin deco-style02A3-pat-item-waku-sitename {
+  border: 1px solid $bo-gray-12;
+  background-color: $bg-gray-1;
+  .mod-hosoku2-sitename {
+    color: $co-black-1;
+  }
+  .mod-telnum-sitename {
+    color: $co-brown-6;
+  }
+  .mod-tel-golo-sitename {
+    color: $co-brown-6;
+  }
+  th {
+    > p {
+      color: $co-black-1;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_3.png");
+  }
+}
+
+@mixin deco-style02B1-pat-item-waku-sitename {
+  border: 1px solid $bo-blue-36;
+  background-color: #2b3f5b;
+  .mod-hosoku2-sitename {
+    color: $co-white-1;
+  }
+  .mod-telnum-sitename {
+    color: $co-yellow-1;
+  }
+  .mod-tel-golo-sitename {
+    color: $co-yellow-1;
+  }
+  th {
+    > p {
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-white-1;
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_4.png");
+  }
+}
+
+@mixin deco-style02B2-pat-item-waku-sitename {
+  border: 1px solid $bo-green-19;
+  background-color: $bg-green-31;
+  .mod-hosoku2-sitename {
+    color: $co-white-1;
+  }
+  .mod-telnum-sitename {
+    color: $co-yellow-1;
+  }
+  .mod-tel-golo-sitename {
+    color: $co-yellow-1;
+  }
+  th {
+    > p {
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-white-1;
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_4.png");
+  }
+}
+
+@mixin deco-style02B3-pat-item-waku-sitename {
+  border: 1px solid #77590e;
+  background-color: $bg-brown-5;
+  .mod-hosoku2-sitename {
+    color: $co-white-1;
+  }
+  .mod-telnum-sitename {
+    color: $co-white-1;
+  }
+  .mod-tel-golo-sitename {
+    color: $co-white-1;
+  }
+  th {
+    > p {
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-white-1;
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_7.png");
+  }
+}
+
+@mixin deco-style02C1-pat-item-waku-sitename {
+  border: 1px solid #335a93;
+  background-color: #edf4fe;
+  .mod-hosoku2-sitename {
+    color: $co-black-1;
+  }
+  .mod-telnum-sitename {
+    color: $co-blue-10;
+  }
+  .mod-tel-golo-sitename {
+    color: $co-blue-10;
+  }
+  th {
+    > p {
+      color: $co-black-1;
+    }
+  }
+  td {
+    color: $co-black-1;
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_2.png");
+  }
+}
+
+@mixin deco-style02C2-pat-item-waku-sitename {
+  border: 1px solid $bo-green-10;
+  background-color: $bg-green-28;
+  .mod-hosoku2-sitename {
+    color: $co-white-1;
+  }
+  .mod-telnum-sitename {
+    color: $co-white-1;
+  }
+  .mod-tel-golo-sitename {
+    color: $co-white-1;
+  }
+  th {
+    > p {
+      color: $co-white-1;
+    }
+  }
+  td {
+    color: $co-white-1;
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_7.png");
+  }
+}
+
+@mixin deco-style02C3-pat-item-waku-sitename {
+  border: 1px solid $bo-brown-7;
+  background-color: #fef9c4;
+  .mod-hosoku2-sitename {
+    color: $co-brown-6;
+  }
+  .mod-telnum-sitename {
+    color: $co-brown-6;
+  }
+  .mod-tel-golo-sitename {
+    color: $co-brown-6;
+  }
+  th {
+    > p {
+      color: $co-brown-6;
+    }
+  }
+  td {
+    color: $co-brown-6;
+  }
+  .mod-icon_tel {
+    background-image: url("img/mod-sitename/bg_3.png");
+  }
+}
+
+@mixin common-style02-mod-tel-sitename {
+  padding: 0;
+  text-align: center;
+  font-size: $fontSizeL + 11;
+  line-height: 1;
+}
+
+@mixin common-style02-mod-hosoku3-sitename {
+  text-align: right;
+  font-size: $fontSizeS;
+}
+
+@mixin common-style02-mod-hosoku4-sitename {
+  color: $co-white-1;
+  text-align: center;
+  font-size: $fontSizeS;
+  line-height: 1.3;
+  margin-top: 3px;
+  &.ex-first-child {
+    font-size: $fontSizeM;
+  }
+}
+
+// --------------------------------------------
+// ↑　中途半端ゾーン！ここまで
+// --------------------------------------------
+
+@mixin deco-style01A1-mod-set-toiawase-sitename {
+  border: 1px solid $bo-orange-10;
+  > .mod-box-inner {
+    border: 1px solid white;
+    background-color: $bg-orange-8;
+    background-image: url("img/mod-sitename/bg_set_1-1.png");
+  }
+}
+
+@mixin deco-style01A2-mod-set-toiawase-sitename {
+  border: 1px solid $bo-green-10;
+  > .mod-box-inner {
+    border: 1px solid #bce2e7;
+    background-color: #6ec7d1;
+    background-image: url("img/mod-sitename/bg_set_2-1.png");
+  }
+}
+
+@mixin deco-style01A3-mod-set-toiawase-sitename {
+  border: 1px solid $bo-blue-20;
+  > .mod-box-inner {
+    border: 1px solid white;
+    background-color: #519ccd;
+    background-image: url("img/mod-sitename/bg_set_3-1.png");
+  }
+}
+
+@mixin deco-style01B1-mod-set-toiawase-sitename {
+  border: 1px solid $bo-blue-26;
+  > .mod-box-inner {
+    border: 1px solid $bo-blue-36;
+    background-color: #2e7be1;
+    background-image: url("img/mod-sitename/bg_set_4-1.png");
+  }
+}
+
+@mixin deco-style01B2-mod-set-toiawase-sitename {
+  border: 1px solid $bo-green-10;
+  > .mod-box-inner {
+    border: 1px solid $bo-green-19;
+    background-color: #48b4c0;
+    background-image: url("img/mod-sitename/bg_set_5-1.png");
+  }
+}
+
+@mixin deco-style01B3-mod-set-toiawase-sitename {
+  border: 1px solid $bo-orange-11;
+  > .mod-box-inner {
+    border: 1px solid $bo-orange-18;
+    background-color: #f9b57d;
+    background-image: url("img/mod-sitename/bg_set_6-1.png");
+  }
+}
+
+@mixin deco-style01C1-mod-set-toiawase-sitename {
+  border: 1px solid $bo-pink-5;
+  > .mod-box-inner {
+    border: 1px solid $bo-pink-1;
+    background-color: #ff9e99;
+    background-image: url("img/mod-sitename/bg_set_7-1.png");
+  }
+}
+
+@mixin deco-style01C2-mod-set-toiawase-sitename {
+  border: 1px solid $bo-green-19;
+  > .mod-box-inner {
+    border: 1px solid #c5f3f8;
+    background-color: #0abfd1;
+    background-image: url("img/mod-sitename/bg_set_8-1.png");
+  }
+}
+
+@mixin deco-style01C3-mod-set-toiawase-sitename {
+  border: 1px solid $bo-orange-8;
+  > .mod-box-inner {
+    border: 1px solid $bo-orange-3;
+    background-color: #ffaf65;
+    background-image: url("img/mod-sitename/bg_set_9-1.png");
+  }
+}

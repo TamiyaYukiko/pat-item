@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+
+// ----------------------------
+// mod-2col
+// ----------------------------
+%common-style-mod-link-for-2col {
+  .ex-style_01A1 & {
+    .mod-link-pic {
+      @include pat-item-link-pic-for-2col-a1;
+    }
+  }
+  .ex-style_01A2 & {
+    .mod-link-pic {
+      @include pat-item-link-pic-for-2col-a2;
+    }
+  }
+  .ex-style_01A3 & {
+    .mod-link-pic {
+      @include pat-item-link-pic-for-2col-a3;
+    }
+  }
+  .ex-style_01B1 & {
+    .mod-link-pic {
+      @include pat-item-link-pic-for-2col-a1;
+    }
+  }
+  .ex-style_01B2 & {
+    .mod-link-pic {
+      @include pat-item-link-pic-for-2col-a2;
+    }
+  }
+  .ex-style_01B3 & {
+    .mod-link-pic {
+      @include pat-item-link-pic-for-2col-a3;
+    }
+  }
+  .ex-style_01C1 & {
+    .mod-link-pic {
+      @include pat-item-link-pic-for-2col-a1;
+    }
+  }
+  .ex-style_01C2 & {
+    .mod-link-pic {
+      @include pat-item-link-pic-for-2col-a2;
+    }
+  }
+  .ex-style_01C3 & {
+    .mod-link-pic {
+      @include pat-item-link-pic-for-2col-a3;
+    }
+  }
+  //　↓　aがdivの外についた時の対応
+  .ex-style_01A1 a & {
+    .mod-link-pic {
+      @include deco-style01A1-mod-link-a;
+    }
+  }
+  .ex-style_01A2 a & {
+    .mod-link-pic {
+      @include deco-style01A2-mod-link-a;
+    }
+  }
+  .ex-style_01A3 a & {
+    .mod-link-pic {
+      @include deco-style01A3-mod-link-a;
+    }
+  }
+  .ex-style_01B1 a & {
+    .mod-link-pic {
+      @include deco-style01A1-mod-link-a;
+    }
+  }
+  .ex-style_01B2 a & {
+    .mod-link-pic {
+      @include deco-style01A2-mod-link-a;
+    }
+  }
+  .ex-style_01B3 a & {
+    .mod-link-pic {
+      @include deco-style01A3-mod-link-a;
+    }
+  }
+  .ex-style_01C1 a & {
+    .mod-link-pic {
+      @include deco-style01A1-mod-link-a;
+    }
+  }
+  .ex-style_01C2 a & {
+    .mod-link-pic {
+      @include deco-style01A2-mod-link-a;
+    }
+  }
+  .ex-style_01C3 a & {
+    .mod-link-pic {
+      @include deco-style01A3-mod-link-a;
+    }
+  }
+}
+
+
+// ----------------------------
+// mod-3col
+// ----------------------------
+//なし
+

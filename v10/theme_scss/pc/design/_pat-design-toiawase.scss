@@ -1,0 +1,513 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-design-toiawase の定義
+//
+//   ・デザインパターン
+//   ・mod-set-toiawase 内にincludeされる使い方を想定
+//   ・このモジュール単独では使われない（部品にクラスとして記述されない）
+//
+// --------------------------------------------------------------------------
+
+
+// --------------------------------------------------------------------------
+// pat-design-toiawase-1 の共通スタイル
+// --------------------------------------------------------------------------
+%common-style-toiawase-1 {
+  @include border-radius(5px);
+  .mod-box-in2 {
+    @include border-radius(5px);
+    padding: 15px 20px 15px 20px;
+    width: auto;
+    .mod-2col-inner {
+      .mod-text {
+        font-size: $fontSizeS + 1;
+      }
+    }
+    .mod-2col-inner2 {
+      .mod-text {
+        font-size: $fontSizeM;
+        font-weight: bold;
+      }
+      .mod-text-second {
+        font-size: $fontSizeM;
+      }
+      .mod-bnr {
+        max-width: 260px;
+        width: 260px;
+      }
+    }
+  }
+}
+
+
+// --------------------------------------------------------------------------
+// pat-ovr-toiawase-1 の共通スタイル
+// --------------------------------------------------------------------------
+%block-style-toiawase-1 {
+  @extend %common-style-toiawase-1;
+  .mod-box-in2 {
+    margin: 0;
+  }
+}
+%block-style-toiawase-2 {
+  @extend %common-style-toiawase-1;
+  .mod-box-in2 {
+    margin: 5px;
+  }
+}
+%block-style-toiawase-3 {
+  @extend %common-style-toiawase-2;
+}
+
+// -----------------------------------
+// pat-ovr-toiawase-1 の装飾
+// -----------------------------------
+%pat-ovr-toiawase-1 {
+  @extend %block-style-toiawase-1;
+  .mod-box-in2 {
+    .mod-2col-inner2 {
+      .mod-text {
+        color: $co-brown-6;
+      }
+    }
+  }
+}
+%pat-ovr-toiawase-2 {
+  @extend %block-style-toiawase-1;
+  .mod-box-in2 {
+    .mod-2col-inner2 {
+      .mod-text {
+        color: $co-blue-16;
+      }
+    }
+  }
+}
+%pat-ovr-toiawase-3 {
+  @extend %block-style-toiawase-1;
+  .mod-box-in2 {
+    .mod-2col-inner2 {
+      .mod-text {
+        color: $co-black-1;
+      }
+    }
+  }
+}
+%pat-ovr-toiawase-4 {
+  @extend %block-style-toiawase-2;
+  .mod-box-in2 {
+    .mod-2col-inner2 {
+      .mod-text {
+        color: $co-black-1;
+      }
+    }
+  }
+}
+%pat-ovr-toiawase-5 {
+  @extend %block-style-toiawase-2;
+  .mod-box-in2 {
+    .mod-2col-inner2 {
+      .mod-text {
+        color: $co-black-1;
+      }
+    }
+  }
+}
+%pat-ovr-toiawase-6 {
+  @extend %block-style-toiawase-2;
+  .mod-box-in2 {
+    .mod-2col-inner2 {
+      .mod-text {
+        color: $co-black-1;
+      }
+    }
+  }
+}
+%pat-ovr-toiawase-7 {
+  @extend %block-style-toiawase-2;
+  .mod-box-in2 {
+    background-color: $bg-white-1;
+    .mod-2col-inner2 {
+      .mod-text {
+        color: $co-blue-4;
+      }
+    }
+  }
+}
+%pat-ovr-toiawase-8 {
+  @extend %block-style-toiawase-2;
+  .mod-box-in2 {
+    background-color: $bg-white-1;
+    .mod-2col-inner2 {
+      .mod-text {
+        color: $co-brown-6;
+      }
+    }
+  }
+}
+%pat-ovr-toiawase-9 {
+  @extend %block-style-toiawase-2;
+  .mod-box-in2 {
+    background-color: $bg-yellow-11;
+    .mod-2col-inner2 {
+      .mod-text {
+        color: $co-black-1;
+      }
+    }
+  }
+}
+
+
+// -----------------------------------
+// pat-design-toiawase-1 の個別設定
+// -----------------------------------
+
+@mixin pat-design-toiawase-1 {
+  @extend %pat-ovr-toiawase-1;
+  @extend %pat-item-waku-kadomaru-simple-blue-3;
+  .mod-h4-title-in2 {@extend %pat-item-midashi-border-6;}
+  .mod-box-in2 {
+    .mod-2col-inner2 {
+      .mod-tel {@extend %pat-item-tel-L-1;}
+      .mod-bnr {@extend %pat-item-bnr-simple-1;}
+    }
+  }
+}
+@mixin pat-design-toiawase-2 {
+  @extend %pat-ovr-toiawase-2;
+  @extend %pat-item-waku-kadomaru-simple-green;
+  .mod-h4-title-in2 {@extend %pat-item-midashi-border-7;}
+  .mod-box-in2 {
+    .mod-2col-inner2 {
+      .mod-tel {@extend %pat-item-tel-L-2;}
+      .mod-bnr {@extend %pat-item-bnr-simple-2;}
+    }
+  }
+}
+@mixin pat-design-toiawase-3 {
+  @extend %pat-ovr-toiawase-3;
+  @extend %pat-item-waku-kadomaru-simple-orange;
+  .mod-h4-title-in2 {@extend %pat-item-midashi-border-8;}
+  .mod-box-in2 {
+    .mod-2col-inner2 {
+      .mod-tel {@extend %pat-item-tel-L-3;}
+      .mod-bnr {@extend %pat-item-bnr-simple-3;}
+    }
+  }
+}
+@mixin pat-design-toiawase-4 {
+  @extend %pat-ovr-toiawase-4;
+  @extend %pat-item-waku-kadomaru-simple-4;
+  .mod-h4-title-in2 {@extend %pat-item-midashi-border-9;}
+  .mod-box-in2 {
+    @extend %pat-item-waku-kadomaru-b4;
+    .mod-2col-inner2 {
+      .mod-tel {@extend %pat-item-tel-L-4;}
+      .mod-bnr {@extend %pat-item-bnr-grade-1;}
+    }
+  }
+}
+@mixin pat-design-toiawase-5 {
+  @extend %pat-ovr-toiawase-5;
+  @extend %pat-item-waku-kadomaru-simple-5;
+  .mod-h4-title-in2 {@extend %pat-item-midashi-border-10;}
+  .mod-box-in2 {
+    @extend %pat-item-waku-kadomaru-b5;
+    .mod-2col-inner2 {
+      .mod-tel {@extend %pat-item-tel-L-5;}
+      .mod-bnr {@extend %pat-item-bnr-grade-2;}
+    }
+  }
+}
+@mixin pat-design-toiawase-6 {
+  @extend %pat-ovr-toiawase-6;
+  @extend %pat-item-waku-kadomaru-simple-6;
+  .mod-h4-title-in2 {@extend %pat-item-midashi-border-11;}
+  .mod-box-in2 {
+    @extend %pat-item-waku-kadomaru-b6;
+    .mod-2col-inner2 {
+      .mod-tel {@extend %pat-item-tel-L-6;}
+      .mod-bnr {@extend %pat-item-bnr-grade-3;}
+    }
+  }
+}
+@mixin pat-design-toiawase-7 {
+  @extend %pat-ovr-toiawase-7;
+  @extend %pat-item-waku-kadomaru-repeat-1;
+  .mod-h4-title-in2 {@extend %pat-item-midashi-border-12;}
+  .mod-box-in2 {
+    .mod-2col-inner2 {
+      .mod-tel {@extend %pat-item-tel-L-7;}
+      .mod-bnr {@extend %pat-item-bnr-image-1;}
+    }
+  }
+}
+@mixin pat-design-toiawase-8 {
+  @extend %pat-ovr-toiawase-8;
+  @extend %pat-item-waku-kadomaru-repeat-2;
+  .mod-h4-title-in2 {@extend %pat-item-midashi-border-13;}
+  .mod-box-in2 {
+    .mod-2col-inner2 {
+      .mod-tel {@extend %pat-item-tel-L-8;}
+      .mod-bnr {@extend %pat-item-bnr-image-2;}
+    }
+  }
+}
+@mixin pat-design-toiawase-9 {
+  @extend %pat-ovr-toiawase-9;
+  @extend %pat-item-waku-kadomaru-repeat-3;
+  .mod-h4-title-in2 {@extend %pat-item-midashi-border-14;}
+  .mod-box-in2 {
+    .mod-2col-inner2 {
+      .mod-tel {@extend %pat-item-tel-L-9;}
+      .mod-bnr {@extend %pat-item-bnr-image-3;}
+    }
+  }
+}
+
+
+
+
+// --------------------------------------------------------------------------
+// pat-design-toiawase-2 の共通スタイル
+// --------------------------------------------------------------------------
+%common-style-toiawase-2 {
+  @include border-radius(5px);
+  .mod-box-in1 {
+    @include border-radius(5px);
+    padding: 15px 20px 15px 20px;
+    width: auto;
+    .mod-2col-inner {
+      .mod-text {
+        font-size: $fontSizeS + 1;
+      }
+    }
+    .mod-2col-inner2 {
+      .mod-text {
+        font-size: $fontSizeM;
+        font-weight: bold;
+      }
+      .mod-text-second {
+        font-size: $fontSizeM;
+      }
+    }
+    .mod-bnr {
+      margin: 15px auto 0 auto;
+      max-width: 260px;
+      width: 260px;
+    }
+  }
+}
+
+
+// --------------------------------------------------------------------------
+// pat-ovr-toiawase-2 の共通スタイル
+// --------------------------------------------------------------------------
+%block-style-toiawase2-1 {
+  @extend %common-style-toiawase-2;
+}
+
+// -----------------------------------
+// pat-ovr-toiawase-2 の装飾
+// -----------------------------------
+%pat-ovr-toiawase2-1 {
+  @extend %block-style-toiawase2-1;
+  .mod-box-in2 {
+    .mod-2col-inner2 {
+      .mod-text {
+        color: $co-brown-6;
+      }
+    }
+  }
+}
+%pat-ovr-toiawase2-2 {
+  @extend %block-style-toiawase2-1;
+  .mod-box-in2 {
+    .mod-2col-inner2 {
+      .mod-text {
+        color: $co-blue-16;
+      }
+    }
+  }
+}
+%pat-ovr-toiawase2-3 {
+  @extend %block-style-toiawase2-1;
+  .mod-box-in2 {
+    .mod-2col-inner2 {
+      .mod-text {
+        color: $co-black-1;
+      }
+    }
+  }
+}
+%pat-ovr-toiawase2-4 {
+  @extend %block-style-toiawase2-1;
+  .mod-box-in2 {
+    .mod-2col-inner2 {
+      .mod-text {
+        color: $co-black-1;
+      }
+    }
+  }
+}
+%pat-ovr-toiawase2-5 {
+  @extend %block-style-toiawase2-1;
+  .mod-box-in2 {
+    .mod-2col-inner2 {
+      .mod-text {
+        color: $co-black-1;
+      }
+    }
+  }
+}
+%pat-ovr-toiawase2-6 {
+  @extend %block-style-toiawase2-1;
+  .mod-box-in2 {
+    .mod-2col-inner2 {
+      .mod-text {
+        color: $co-black-1;
+      }
+    }
+  }
+}
+%pat-ovr-toiawase2-7 {
+  @extend %block-style-toiawase2-1;
+  .mod-box-in2 {
+    background-color: $bg-white-1;
+    .mod-2col-inner2 {
+      .mod-text {
+        color: $co-blue-4;
+      }
+    }
+  }
+}
+%pat-ovr-toiawase2-8 {
+  @extend %block-style-toiawase2-1;
+  .mod-box-in2 {
+    background-color: $bg-white-1;
+    .mod-2col-inner2 {
+      .mod-text {
+        color: $co-brown-6;
+      }
+    }
+  }
+}
+%pat-ovr-toiawase2-9 {
+  @extend %block-style-toiawase2-1;
+  .mod-box-in2 {
+    background-color: $bg-yellow-11;
+    .mod-2col-inner2 {
+      .mod-text {
+        color: $co-black-1;
+      }
+    }
+  }
+}
+
+// -----------------------------------
+// pat-design-toiawase-2 の個別設定
+// -----------------------------------
+@mixin pat-design-toiawase2-1 {
+  @extend %pat-ovr-toiawase2-1;
+  @extend %pat-item-waku-kadomaru-simple-1;
+  .mod-h4-title-in2 {@extend %pat-item-midashi-border-6;}
+  .mod-box-in1 {
+    .mod-2col-inner2 {
+      .mod-tel {@extend %pat-item-tel-L-1;}
+    }
+    .mod-bnr {@extend %pat-item-bnr-simple-1;}
+  }
+}
+@mixin pat-design-toiawase2-2 {
+  @extend %pat-ovr-toiawase2-2;
+  @extend %pat-item-waku-kadomaru-simple-2;
+  .mod-h4-title-in2 {@extend %pat-item-midashi-border-7;}
+  .mod-box-in1 {
+    .mod-2col-inner2 {
+      .mod-tel {@extend %pat-item-tel-L-2;}
+    }
+    .mod-bnr {@extend %pat-item-bnr-simple-2;}
+  }
+}
+@mixin pat-design-toiawase2-3 {
+  @extend %pat-ovr-toiawase2-3;
+  @extend %pat-item-waku-kadomaru-simple-3;
+  .mod-h4-title-in2 {@extend %pat-item-midashi-border-8;}
+  .mod-box-in1 {
+    .mod-2col-inner2 {
+      .mod-tel {@extend %pat-item-tel-L-3;}
+    }
+    .mod-bnr {@extend %pat-item-bnr-simple-3;}
+  }
+}
+@mixin pat-design-toiawase2-4 {
+  @extend %pat-ovr-toiawase2-4;
+  @extend %pat-item-waku-kadomaru-simple-4;
+  .mod-h4-title-in2 {@extend %pat-item-midashi-border-9;}
+  .mod-box-in1 {
+    @extend %pat-item-waku-kadomaru-b4;
+    .mod-2col-inner2 {
+      .mod-tel {@extend %pat-item-tel-L-4;}
+    }
+    .mod-bnr {@extend %pat-item-bnr-grade-1;}
+  }
+}
+@mixin pat-design-toiawase2-5 {
+  @extend %pat-ovr-toiawase2-5;
+  @extend %pat-item-waku-kadomaru-simple-5;
+  .mod-h4-title-in2 {@extend %pat-item-midashi-border-10;}
+  .mod-box-in1 {
+    @extend %pat-item-waku-kadomaru-b5;
+    .mod-2col-inner2 {
+      .mod-tel {@extend %pat-item-tel-L-5;}
+    }
+    .mod-bnr {@extend %pat-item-bnr-grade-2;}
+  }
+}
+@mixin pat-design-toiawase2-6 {
+  @extend %pat-ovr-toiawase2-6;
+  @extend %pat-item-waku-kadomaru-simple-6;
+  .mod-h4-title-in2 {@extend %pat-item-midashi-border-11;}
+  .mod-box-in1 {
+    @extend %pat-item-waku-kadomaru-b6;
+    .mod-2col-inner2 {
+      .mod-tel {@extend %pat-item-tel-L-6;}
+    }
+    .mod-bnr {@extend %pat-item-bnr-grade-3;}
+  }
+}
+@mixin pat-design-toiawase2-7 {
+  @extend %pat-ovr-toiawase2-7;
+  @extend %pat-item-waku-kadomaru-repeat-1;
+  .mod-h4-title-in2 {@extend %pat-item-midashi-border-12;}
+  .mod-box-in1 {
+    .mod-2col-inner2 {
+      .mod-tel {@extend %pat-item-tel-L-7;}
+    }
+    .mod-bnr {@extend %pat-item-bnr-image-1;}
+  }
+}
+@mixin pat-design-toiawase2-8 {
+  @extend %pat-ovr-toiawase2-8;
+  @extend %pat-item-waku-kadomaru-repeat-2;
+  .mod-h4-title-in2 {@extend %pat-item-midashi-border-13;}
+  .mod-box-in1 {
+    .mod-2col-inner2 {
+      .mod-tel {@extend %pat-item-tel-L-8;}
+    }
+    .mod-bnr {@extend %pat-item-bnr-image-2;}
+  }
+}
+@mixin pat-design-toiawase2-9 {
+  @extend %pat-ovr-toiawase2-9;
+  @extend %pat-item-waku-kadomaru-repeat-3;
+  .mod-h4-title-in2 {@extend %pat-item-midashi-border-14;}
+  .mod-box-in1 {
+    .mod-2col-inner2 {
+      .mod-tel {@extend %pat-item-tel-L-9;}
+    }
+    .mod-bnr {@extend %pat-item-bnr-image-3;}
+  }
+}
+

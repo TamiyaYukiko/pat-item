@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+// --------------------------------------------------------------------------
+//
+// pat-item-navi-header（通常デザイン）
+//
+// --------------------------------------------------------------------------
+
+// -------------------------------------
+// pat-item-navi-header の共通スタイル
+// -------------------------------------
+
+@mixin common-style-pat-item-navi-header {
+
+}
+
+
+
+// -------------------------------------
+// pat-item-navi-header の共通デザイン
+// -------------------------------------
+
+@mixin module-style-pat-item-navi-header-kado-image {
+  max-height: 150px;
+  background-repeat: repeat-x;
+  background-position: left center;
+}
+
+
+// -------------------------------------
+// pat-item-navi-header の装飾スタイル
+// -------------------------------------
+
+@mixin deco-style-pat-item-navi-header-kado-image-yellow {
+  background-image: url("img/mod-gnav/new/bg.png");
+  background-color: $bg-yellow-21;
+  border-bottom: 2px solid $bo-gray-2;
+  border-top: 1px solid $bo-gray-4;
+}
+
+@mixin deco-style-pat-item-navi-header-kado-image-blue {
+  background-image: url("img/mod-gnav/new/bg_2.png");
+  background-color: $bg-yellow-21;
+  border-bottom: 2px solid $bo-gray-2;
+  border-top: 1px solid $bo-gray-4;
+}
+
+@mixin deco-style-pat-item-navi-header-kado-image-yellow-2 {
+  background-image: url("img/mod-gnav/new/bg_3.png");
+  background-color: $bg-yellow-21;
+  border-bottom: 2px solid $bo-gray-2;
+  border-top: 1px solid $bo-gray-4;
+}
+
+@mixin deco-style-pat-item-navi-header-kado-image-gray {
+  background-image: url("img/mod-gnav/new/bg07.png");
+  background-color: $bg-gray-3;
+}
+
+@mixin deco-style-pat-item-navi-header-kado-image-blue-2 {
+  background-image: url("img/mod-gnav/new/bg12.png");
+  background-color: $bg-yellow-21;
+  border-bottom: 1px solid $bo-blue-29;
+  border-top: 1px solid $bo-green-1;
+}
+
+@mixin deco-style-pat-item-navi-header-kado-image-blue-3 {
+  background-image: url("img/mod-gnav/new/bg12_2.png");
+  background-color: $bg-yellow-21;
+  border-bottom: 1px solid $bo-green-18;
+  border-top: 1px solid $bo-green-1;
+}
+
+@mixin deco-style-pat-item-navi-header-kado-image-orange {
+  background-image: url("img/mod-gnav/new/bg12_3.png");
+  background-color: $bg-yellow-21;
+  border-bottom: 1px solid $bo-orange-16;
+  border-top: 1px solid $bo-orange-15;
+}
+

@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+
+//  mod-label2 の mixin一式
+@mixin mod-label2-common-style {
+  max-height: 120px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  padding: 5px 10px;
+  .mod-h {
+    color: $co-white-1;
+    font-weight: bold;
+    font-size: $sideFontSizeL + 2;
+    @include text-shadow(1px 1px 2px #222222);
+  }
+}
+
+@mixin mod-label2-style {
+  background-image: url("img/mod-label/bg.png");
+}
+
+@mixin mod-label2-style2 {
+  background-image: url("img/mod-label/bg_2.png");
+}
+
+@mixin mod-label2-style3 {
+  background-image: url("img/mod-label/bg_3.png");
+}
+
+
+//  mod-label3 の mixin一式
+@mixin mod-label3-common-style {
+  min-width: 220px;
+  display: table;
+  @include border-radius();
+  text-align: center;
+  .mod-label-inner {
+    @include border-radius(4px 4px 0 0);
+    padding: 2px 5px 0;
+    font-size: $fontSizeL;
+  }
+  .mod-label-inner2 {
+    @include border-radius(0 0 4px 4px);
+    padding: 4px 5px 2px;
+    font-size: $fontSizeM;
+  }
+}
+
+@mixin mod-label3-style {
+  border: 1px solid $bo-blue-26;
+  .mod-label-inner {
+    color: $co-white-1;
+    background-color: $bg-blue-24;
+    border-bottom: 1px solid $bo-blue-26;
+  }
+  .mod-label-inner2 {
+    color: $co-black-1;
+    background-color: transparent;
+  }
+}
+
+@mixin mod-label3-style2 {
+  border: 1px solid $bo-green-20;
+  .mod-label-inner {
+    color: $co-white-1;
+    background-color: $bg-green-28;
+    border-bottom: 1px solid $bo-green-20;
+  }
+  .mod-label-inner2 {
+    color: $co-black-1;
+    background-color: transparent;
+  }
+}
+
+@mixin mod-label3-style3 {
+  border: 1px solid $bo-orange-8;
+  .mod-label-inner {
+    color: $co-white-1;
+    background-color: $bg-orange-21;
+    border-bottom: 1px solid $bo-orange-8;
+  }
+  .mod-label-inner2 {
+    color: $co-brown-6;
+    background-color: $bg-yellow-12;
+  }
+}
+
+@mixin mod-label3-style4 {
+  border: 1px solid $bo-blue-39;
+  .mod-label-inner {
+    color: $co-white-1;
+    background-color: $bg-blue-29;
+    border-bottom: 1px solid $bo-blue-39;
+  }
+  .mod-label-inner2 {
+    color: $co-blue-19;
+    background-color: $bg-white-1;
+  }
+}
+
+@mixin mod-label3-style5 {
+  border: 1px solid $bo-green-14;
+  .mod-label-inner {
+    color: $co-white-1;
+    background-color: $bg-green-31;
+    border-bottom: 1px solid $bo-green-14;
+  }
+  .mod-label-inner2 {
+    color: $co-blue-19;
+    background-color: $bg-white-1;
+  }
+}
+
+@mixin mod-label3-style6 {
+  border: 1px solid $bo-black-1;
+  .mod-label-inner {
+    color: $co-white-1;
+    background-color: $bg-brown-5;
+    border-bottom: 1px solid $bo-black-1;
+  }
+  .mod-label-inner2 {
+    color: $co-blue-19;
+    background-color: $bg-white-1;
+  }
+}
+
+@mixin mod-label3-style7 {
+  border: 1px solid $bo-orange-20;
+  .mod-label-inner {
+    color: $co-white-1;
+    background-color: $bg-orange-21;
+    border-bottom: 1px solid $bo-orange-20;
+  }
+  .mod-label-inner2 {
+    color: $co-black-1;
+    background-color: $bg-white-1;
+  }
+}
+
+@mixin mod-label3-style8 {
+  border: 1px solid $bo-green-19;
+  .mod-label-inner {
+    color: $co-white-1;
+    background-color: $bg-green-26;
+    border-bottom: 1px solid $bo-green-19;
+  }
+  .mod-label-inner2 {
+    color: $co-black-1;
+    background-color: transparent;
+  }
+}
+
+@mixin mod-label3-style9 {
+  border: 1px solid $bo-orange-20;
+  .mod-label-inner {
+    color: $co-white-1;
+    background-color: $bg-orange-21;
+    border-bottom: 1px solid $bo-orange-20;
+  }
+  .mod-label-inner2 {
+    color: $co-brown-6;
+    background-color: transparent;
+  }
+}

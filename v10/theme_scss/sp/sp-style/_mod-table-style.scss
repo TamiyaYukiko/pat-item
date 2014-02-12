@@ -1,0 +1,895 @@
+@charset "UTF-8";
+
+////////////////////////////////////////
+// MODULE STYLE (mod-table)
+
+// COMMON-STYLE
+@mixin common-style-mod-table {}
+
+// MODULE-STYLE
+@mixin module-style-mod-table {}
+
+// DECO-STYLE
+// @mixin deco-style01A1-mod-table {
+//   border: 1px solid $bo-blue-5;
+//   color: $co-black-1;
+//   table {
+//     border: 1px solid $bo-blue-5;
+//     thead tr:first-child th {
+//       border-bottom: 1px solid $bo-white-1;
+//     }
+//     tr:first-child th {
+//       border-top: 1px solid $bo-blue-5;
+//       &:last-child {
+//         border-right: 1px solid $bo-blue-5;
+//       }
+//     }
+//     th {
+//       border-top: 1px solid $bo-white-1;
+//       border-right: 1px solid $bo-white-1;
+//       background-color: $bg-blue-15;
+//       background-image: none;
+//       background-repeat: repeat;
+//     }
+//     td {
+//       border: 1px solid $bo-blue-5;
+//     }
+//   }
+// }
+// @mixin deco-style01A2-mod-table {
+//   border: 1px solid $bo-green-3;
+//   color: $co-black-1;
+//   table {
+//     border: 1px solid $bo-green-3;
+//     thead tr:first-child th {
+//       border-bottom: 1px solid $bo-white-1;
+//     }
+//     tr:first-child th {
+//       border-top: 1px solid $bo-green-3;
+//       &:last-child {
+//         border-right: 1px solid $bo-green-3;
+//       }
+//     }
+//     th {
+//       border-top: 1px solid $bo-white-1;
+//       border-right: 1px solid $bo-white-1;
+//       background-color: $bg-green-7;
+//       background-image: none;
+//       background-repeat: repeat;
+//     }
+//     td {
+//       border: 1px solid $bo-green-3;
+//     }
+//   }
+// }
+// @mixin deco-style01A3-mod-table {
+//   border: 1px solid $bo-orange-6;
+//   color: $co-gray-5;
+//   table {
+//     border: 1px solid $bo-orange-6;
+//     thead tr:first-child th {
+//       border-bottom: 1px solid $bo-white-1;
+//     }
+//     tr:first-child th {
+//       border-top: 1px solid $bo-orange-6;
+//       &:last-child {
+//         border-right: 1px solid $bo-orange-6;
+//       }
+//     }
+//     th {
+//       border-top: 1px solid $bo-white-1;
+//       border-right: 1px solid $bo-white-1;
+//       background-color: $bg-orange-6;
+//       background-image: none;
+//       background-repeat: repeat;
+//     }
+//     td {
+//       border: 1px solid $bo-orange-6;
+//     }
+//   }
+// }
+// @mixin deco-style01B1-mod-table {
+//   border: 1px solid $bo-blue-14;
+//   color: $co-black-1;
+//   table {
+//     border: 1px solid $bo-blue-14;
+//     thead tr:first-child th {
+//       border-bottom: 1px solid $bo-white-1;
+//     }
+//     tr:first-child th {
+//       border-top: 1px solid $bo-blue-14;
+//       &:last-child {
+//         border-right: 1px solid $bo-blue-14;
+//       }
+//     }
+//     th {
+//       border-top: 1px solid $bo-white-1;
+//       border-right: 1px solid $bo-white-1;
+//       background-color: $bg-blue-17;
+//       background-image: url("img/mod-table/bg02.png");
+//       background-repeat: repeat-x;
+//     }
+//     td {
+//       border: 1px solid $bo-blue-14;
+//     }
+//   }
+// }
+// @mixin deco-style01B2-mod-table {
+//   border: 1px solid $bo-green-7;
+//   color: $co-green-6;
+//   table {
+//     border: 1px solid $bo-green-7;
+//     thead tr:first-child th {
+//       border-bottom: 1px solid $bo-white-1;
+//     }
+//     tr:first-child th {
+//       border-top: 1px solid $bo-green-7;
+//       &:last-child {
+//         border-right: 1px solid $bo-green-7;
+//       }
+//     }
+//     th {
+//       border-top: 1px solid $bo-white-1;
+//       border-right: 1px solid $bo-white-1;
+//       background-color: $bg-green-11;
+//       background-image: url("img/mod-table/bg02_2.png");
+//       background-repeat: repeat-x;
+//     }
+//     td {
+//       border: 1px solid $bo-green-7;
+//     }
+//   }
+// }
+// @mixin deco-style01B3-mod-table {
+//   border: 1px solid $bo-yellow-10;
+//   color: $co-brown-6;
+//   table {
+//     border: 1px solid $bo-yellow-10;
+//     thead tr:first-child th {
+//       border-bottom: 1px solid $bo-white-1;
+//     }
+//     tr:first-child {
+//       th {
+//         border-top: 1px solid $bo-yellow-10;
+//         &:last-child {
+//           border-right: 1px solid $bo-yellow-10;
+//         }
+//       }
+//     }
+//     th {
+//       border-top: 1px solid $bo-white-1;
+//       border-right: 1px solid $bo-white-1;
+//       background-color: $bg-yellow-25;
+//       background-image: url("img/mod-table/bg02_3.png");
+//       background-repeat: repeat-x;
+//     }
+//     td {
+//       border: 1px solid $bo-yellow-10;
+//     }
+//   }
+// }
+// @mixin deco-style01C1-mod-table {
+//   border: 1px solid $bo-blue-14;
+//   color: $co-black-1;
+//   table {
+//     border: 1px solid $bo-blue-14;
+//     thead tr:first-child th {
+//       border-bottom: 1px solid $bo-blue-14;
+//     }
+//     tr:first-child {
+//       th {
+//         border-top: 1px solid $bo-blue-14;
+//         &:last-child {
+//           border-right: 1px solid $bo-blue-14;
+//         }
+//       }
+//     }
+//     th {
+//       border-top: 1px solid $bo-blue-14;
+//       border-right: 1px solid $bo-blue-14;
+//       background-color: $bg-blue-15;
+//       background-image: url("img/mod-table/bg04.png");
+//       background-repeat: repeat-x;
+//     }
+//     td {
+//       border: 1px solid $bo-blue-14;
+//     }
+//   }
+// }
+// @mixin deco-style01C2-mod-table {
+//   border: 1px solid $bo-green-10;
+//   color: $co-black-1;
+//   table {
+//     border: 1px solid $bo-green-10;
+//     thead tr:first-child th {
+//       border-bottom: 1px solid $bo-green-10;
+//     }
+//     tr:first-child {
+//       th {
+//         border-top: 1px solid $bo-green-10;
+//         &:last-child {
+//           border-right: 1px solid $bo-green-10;
+//         }
+//       }
+//     }
+//     th {
+//       border-top: 1px solid $bo-green-10;
+//       border-right: 1px solid $bo-green-10;
+//       background-color: $bg-green-7;
+//       background-image: url("img/mod-table/bg04_2.png");
+//       background-repeat: repeat-x;
+//     }
+//     td {
+//       border: 1px solid $bo-green-10;
+//     }
+//   }
+// }
+// @mixin deco-style01C3-mod-table {
+//   border: 1px solid $bo-orange-12;
+//   color: $co-brown-6;
+//   table {
+//     border: 1px solid $bo-orange-12;
+//     thead tr:first-child th {
+//       border-bottom: 1px solid $bo-orange-12;
+//     }
+//     tr:first-child {
+//       th {
+//         border-top: 1px solid $bo-orange-12;
+//         &:last-child {
+//           border-right: 1px solid $bo-orange-12;
+//         }
+//       }
+//     }
+//     th {
+//       border-top: 1px solid $bo-orange-12;
+//       border-right: 1px solid $bo-orange-12;
+//       background-color: $bg-yellow-11;
+//       background-image: url("img/mod-table/bg04_3.png");
+//       background-repeat: repeat-x;
+//     }
+//     td {
+//       border: 1px solid $bo-orange-12;
+//     }
+//   }
+// }
+
+
+
+////////////////////////////////////////
+// MODULE STYLE (mod-table-side)
+
+// COMMON-STYLE
+@mixin common-style-mod-table-side {}
+
+// MODULE-STYLE
+@mixin module-style-mod-table-side {}
+
+// DECO-STYLE
+// @mixin deco-style01A1-mod-table-side {
+//   border: 1px solid $bo-blue-5;
+//   table {
+//     border: 1px solid $bo-blue-5;
+//     tr:first-child {
+//       th {
+//         border-top: 1px solid $bo-blue-5;
+//       }
+//       th:last-child {
+//         border-right: 1px solid $bo-blue-5;
+//       }
+//     }
+//     th {
+//       background-color: $bg-blue-15;
+//     }
+//     td {
+//       border: 1px solid $bo-blue-5;
+//     }
+//   }
+// }
+// @mixin deco-style01A2-mod-table-side {
+//   border: 1px solid $bo-yellow-2;
+//   table {
+//     border: 1px solid $bo-yellow-2;
+//     tr:first-child {
+//       th {
+//         border-top: 1px solid $bo-yellow-2;
+//       }
+//       th:last-child {
+//         border-right: 1px solid $bo-yellow-2;
+//       }
+//     }
+//     th {
+//       background-color: $bg-yellow-8;
+//     }
+//     td {
+//       border: 1px solid $bo-yellow-2;
+//     }
+//   }
+// }
+// @mixin deco-style01A3-mod-table-side {
+//   border: 1px solid $bo-pink-2;
+//   table {
+//     border: 1px solid $bo-pink-2;
+//     tr:first-child {
+//       th {
+//         border-top: 1px solid $bo-pink-2;
+//       }
+//       th:last-child {
+//         border-right: 1px solid $bo-pink-2;
+//       }
+//     }
+//     th {
+//       background-color: $bg-pink-3;
+//     }
+//     td {
+//       border: 1px solid $bo-pink-2;
+//     }
+//   }
+// }
+
+
+
+
+////////////////////////////////////////
+// PATTERN STYLE
+
+@mixin common-style-pat-item-table {
+}
+@mixin module-style-pat-item-table {}
+
+
+// PATTERN ITEM STYLE
+@mixin deco-style-pat-item-table-1 {
+  border: 1px solid $bo-blue-5;
+  color: $co-black-1;
+  table {
+    border: 1px solid $bo-blue-5;
+    thead tr:first-child th {
+      border-bottom: 1px solid $bo-white-1;
+    }
+    tr:first-child th {
+      border-top: 1px solid $bo-blue-5;
+      &:last-child {
+        border-right: 1px solid $bo-blue-5;
+      }
+    }
+    th {
+      border-top: 1px solid $bo-white-1;
+      border-right: 1px solid $bo-white-1;
+      background-color: $bg-blue-15;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    td {
+      border: 1px solid $bo-blue-5;
+    }
+  }
+}
+@mixin deco-style-pat-item-table-2 {
+  border: 1px solid $bo-green-3;
+  color: $co-black-1;
+  table {
+    border: 1px solid $bo-green-3;
+    thead tr:first-child th {
+      border-bottom: 1px solid $bo-white-1;
+    }
+    tr:first-child th {
+      border-top: 1px solid $bo-green-3;
+      &:last-child {
+        border-right: 1px solid $bo-green-3;
+      }
+    }
+    th {
+      border-top: 1px solid $bo-white-1;
+      border-right: 1px solid $bo-white-1;
+      background-color: $bg-green-7;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    td {
+      border: 1px solid $bo-green-3;
+    }
+  }
+}
+@mixin deco-style-pat-item-table-3 {
+  border: 1px solid $bo-orange-6;
+  color: $co-gray-5;
+  table {
+    border: 1px solid $bo-orange-6;
+    thead tr:first-child th {
+      border-bottom: 1px solid $bo-white-1;
+    }
+    tr:first-child th {
+      border-top: 1px solid $bo-orange-6;
+      &:last-child {
+        border-right: 1px solid $bo-orange-6;
+      }
+    }
+    th {
+      border-top: 1px solid $bo-white-1;
+      border-right: 1px solid $bo-white-1;
+      background-color: $bg-orange-6;
+      background-image: none;
+      background-repeat: repeat;
+    }
+    td {
+      border: 1px solid $bo-orange-6;
+    }
+  }
+}
+@mixin deco-style-pat-item-table-4 {
+  border: 1px solid $bo-blue-14;
+  color: $co-black-1;
+  table {
+    border: 1px solid $bo-blue-14;
+    thead tr:first-child th {
+      border-bottom: 1px solid $bo-white-1;
+    }
+    tr:first-child th {
+      border-top: 1px solid $bo-blue-14;
+      &:last-child {
+        border-right: 1px solid $bo-blue-14;
+      }
+    }
+    th {
+      border-top: 1px solid $bo-white-1;
+      border-right: 1px solid $bo-white-1;
+      background-color: $bg-blue-17;
+      background-image: url("img/mod-table/bg02.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid $bo-blue-14;
+    }
+  }
+}
+@mixin deco-style-pat-item-table-5 {
+  border: 1px solid $bo-green-7;
+  color: $co-green-6;
+  table {
+    border: 1px solid $bo-green-7;
+    thead tr:first-child th {
+      border-bottom: 1px solid $bo-white-1;
+    }
+    tr:first-child th {
+      border-top: 1px solid $bo-green-7;
+      &:last-child {
+        border-right: 1px solid $bo-green-7;
+      }
+    }
+    th {
+      border-top: 1px solid $bo-white-1;
+      border-right: 1px solid $bo-white-1;
+      background-color: $bg-green-11;
+      background-image: url("img/mod-table/bg02_2.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid $bo-green-7;
+    }
+  }
+}
+@mixin deco-style-pat-item-table-6 {
+  border: 1px solid $bo-yellow-10;
+  color: $co-brown-6;
+  table {
+    border: 1px solid $bo-yellow-10;
+    thead tr:first-child th {
+      border-bottom: 1px solid $bo-white-1;
+    }
+    tr:first-child {
+      th {
+        border-top: 1px solid $bo-yellow-10;
+        &:last-child {
+          border-right: 1px solid $bo-yellow-10;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid $bo-white-1;
+      border-right: 1px solid $bo-white-1;
+      background-color: $bg-yellow-25;
+      background-image: url("img/mod-table/bg02_3.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid $bo-yellow-10;
+    }
+  }
+}
+@mixin deco-style-pat-item-table-7 {
+  border: 1px solid $bo-blue-14;
+  color: $co-black-1;
+  table {
+    border: 1px solid $bo-blue-14;
+    thead tr:first-child th {
+      border-bottom: 1px solid $bo-blue-14;
+    }
+    tr:first-child {
+      th {
+        border-top: 1px solid $bo-blue-14;
+        &:last-child {
+          border-right: 1px solid $bo-blue-14;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid $bo-blue-14;
+      border-right: 1px solid $bo-blue-14;
+      background-color: $bg-blue-15;
+      background-image: url("img/mod-table/bg04.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid $bo-blue-14;
+    }
+  }
+}
+@mixin deco-style-pat-item-table-8 {
+  border: 1px solid $bo-green-10;
+  color: $co-black-1;
+  table {
+    border: 1px solid $bo-green-10;
+    thead tr:first-child th {
+      border-bottom: 1px solid $bo-green-10;
+    }
+    tr:first-child {
+      th {
+        border-top: 1px solid $bo-green-10;
+        &:last-child {
+          border-right: 1px solid $bo-green-10;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid $bo-green-10;
+      border-right: 1px solid $bo-green-10;
+      background-color: $bg-green-7;
+      background-image: url("img/mod-table/bg04_2.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid $bo-green-10;
+    }
+  }
+}
+@mixin deco-style-pat-item-table-9 {
+  border: 1px solid $bo-orange-12;
+  color: $co-brown-6;
+  table {
+    border: 1px solid $bo-orange-12;
+    thead tr:first-child th {
+      border-bottom: 1px solid $bo-orange-12;
+    }
+    tr:first-child {
+      th {
+        border-top: 1px solid $bo-orange-12;
+        &:last-child {
+          border-right: 1px solid $bo-orange-12;
+        }
+      }
+    }
+    th {
+      border-top: 1px solid $bo-orange-12;
+      border-right: 1px solid $bo-orange-12;
+      background-color: $bg-yellow-11;
+      background-image: url("img/mod-table/bg04_3.png");
+      background-repeat: repeat-x;
+    }
+    td {
+      border: 1px solid $bo-orange-12;
+    }
+  }
+}
+@mixin deco-style-pat-item-table-10 {
+  table {
+    background-image: none;
+    color: $co-black-1;
+    tr:first-child th {
+      border-top: 1px solid $bo-brown-2;
+      border-bottom: 1px solid $bo-brown-2;
+      border-left: 1px solid $bo-brown-2;
+      background-color: $bg-blue-30;
+      background-image: none;
+      background-repeat: repeat;
+      color: $co-white-1;
+      &:last-child {
+        border-right: 1px solid $bo-brown-2;
+      }
+    }
+    th {
+      border-top: 1px solid $bo-brown-2;
+      border-right: 1px solid $bo-brown-2;
+      background-color: $bg-blue-30;
+      color: $co-white-1;
+    }
+    td {
+      border: 1px solid $bo-brown-2;
+      background-color: $bg-white-1;
+    }
+  }
+}
+@mixin deco-style-pat-item-table-11 {
+  table {
+    background-image: none;
+    color: $co-black-1;
+    tr:first-child th {
+      border-top: 1px solid $bo-yellow-14;
+      border-bottom: 1px solid $bo-yellow-14;
+      border-left: 1px solid $bo-yellow-14;
+      background-color: $bg-yellow-19;
+      background-image: none;
+      background-repeat: repeat;
+      color: $co-black-1;
+      &:last-child {
+        border-right: 1px solid $bo-yellow-14;
+      }
+    }
+    th {
+      border-top: 1px solid $bo-yellow-14;
+      border-right: 1px solid $bo-yellow-14;
+      background-color: $bg-yellow-19;
+      color: $co-black-1;
+    }
+    td {
+      border: 1px solid $bo-yellow-14;
+      background-color: $bg-white-1;
+    }
+  }
+}
+@mixin deco-style-pat-item-table-12 {
+  table {
+    background-image: none;
+    color: $co-gray-5;
+    tr:first-child th {
+      border-top: 1px solid $bo-blue-17;
+      border-bottom: 1px solid $bo-blue-17;
+      border-left: 1px solid $bo-blue-17;
+      background-color: $bg-blue-25;
+      background-image: none;
+      background-repeat: repeat;
+      color: $co-white-1;
+      &:last-child {
+        border-right: 1px solid $bo-blue-17;
+      }
+    }
+    th {
+      border-top: 1px solid $bo-blue-17;
+      border-right: 1px solid $bo-white-1;
+      background-color: $bg-blue-25;
+      color: $co-white-1;
+    }
+    td {
+      border: 1px solid $bo-blue-17;
+      background-color: $bg-white-1;
+    }
+  }
+}
+@mixin deco-style-pat-item-table-13 {
+  table {
+    background-image: none;
+    color: $co-black-1;
+    tr:first-child th {
+      border-top: 1px solid $bo-blue-14;
+      border-bottom: 1px solid $bo-blue-14;
+      border-left: 1px solid $bo-blue-14;
+      background-color: $bg-blue-17;
+      background-image: url("img/mod-table/bg02.png");
+      background-repeat: repeat-x;
+      color: $co-black-1;
+      &:last-child {
+        border-right: 1px solid $bo-blue-14;
+      }
+    }
+    th {
+      border-top: 1px solid $bo-blue-14;
+      border-right: 1px solid $bo-blue-14;
+      background-color: $bg-blue-17;
+      color: $co-white-1;
+    }
+    td {
+      border: 1px solid $bo-blue-14;
+      background-color: $bg-white-1;
+    }
+  }
+}
+@mixin deco-style-pat-item-table-14 {
+  table {
+    background-image: none;
+    color: $co-green-6;
+    tr:first-child th {
+      border-top: 1px solid $bo-green-7;
+      border-bottom: 1px solid $bo-green-7;
+      border-left: 1px solid $bo-green-7;
+      background-color: $bg-green-11;
+      background-image: url("img/mod-table/bg02_2.png");
+      background-repeat: repeat-x;
+      color: $co-green-6;
+      &:last-child {
+        border-right: 1px solid $bo-green-7;
+      }
+    }
+    th {
+      border-top: 1px solid $bo-green-7;
+      border-right: 1px solid $bo-green-7;
+      background-color: $bg-green-11;
+      color: $co-white-1;
+    }
+    td {
+      border: 1px solid $bo-green-7;
+      background-color: $bg-white-1;
+    }
+  }
+}
+@mixin deco-style-pat-item-table-15 {
+  table {
+    background-image: none;
+    color: $co-brown-6;
+    tr:first-child th {
+      border-top: 1px solid $bo-yellow-10;
+      border-bottom: 1px solid $bo-yellow-10;
+      border-left: 1px solid $bo-yellow-10;
+      background-color: $bg-yellow-25;
+      background-image: url("img/mod-table/bg02_3.png");
+      background-repeat: repeat-x;
+      color: $co-brown-6;
+      &:last-child {
+        border-right: 1px solid $bo-yellow-10;
+      }
+    }
+    th {
+      border-top: 1px solid $bo-yellow-10;
+      border-right: 1px solid $bo-yellow-10;
+      background-color: $bg-yellow-25;
+      color: $co-white-1;
+    }
+    td {
+      border: 1px solid $bo-yellow-10;
+      background-color: $bg-white-1;
+    }
+  }
+}
+@mixin deco-style-pat-item-table-16 {
+  table {
+    background-image: url("img/mod-table/bg03.png");
+    color: $co-black-1;
+    tr:first-child th {
+      border-top: 1px solid $bo-brown-2;
+      border-bottom: 1px solid $bo-brown-2;
+      border-left: 1px solid $bo-brown-2;
+      background-color: transparent;
+      background-image: none;
+      background-repeat: repeat;
+      color: $co-white-1;
+      &:last-child {
+        border-right: 1px solid $bo-brown-2;
+      }
+    }
+    th {
+      border-top: 1px solid $bo-brown-2;
+      border-right: 1px solid $bo-brown-2;
+      background-color: transparent;
+      color: $co-white-1;
+    }
+    td {
+      border: 1px solid $bo-brown-2;
+      background-color: $bg-white-1;
+    }
+  }
+}
+@mixin deco-style-pat-item-table-17 {
+  table {
+    background-image: url("img/mod-table/bg03_2.png");
+    color: $co-black-1;
+    tr:first-child th {
+      border-top: 1px solid $bo-brown-2;
+      border-bottom: 1px solid $bo-brown-2;
+      border-left: 1px solid $bo-brown-2;
+      background-color: transparent;
+      background-image: none;
+      background-repeat: repeat;
+      color: $co-brown-6;
+      th:last-child {
+        border-right: 1px solid $bo-brown-2;
+      }
+    }
+    th {
+      border-top: 1px solid $bo-brown-2;
+      border-right: 1px solid $bo-brown-2;
+      background-color: transparent;
+      color: $co-brown-6;
+    }
+    td {
+      border: 1px solid $bo-brown-2;
+      background-color: $bg-white-1;
+    }
+  }
+}
+@mixin deco-style-pat-item-table-18 {
+  table {
+    background-image: url("img/mod-table/bg03_3.png");
+    color: $co-brown-6;
+    tr:first-child th {
+      border-top: 1px solid $bo-brown-2;
+      border-bottom: 1px solid $bo-brown-2;
+      border-left: 1px solid $bo-brown-2;
+      background-color: transparent;
+      background-image: none;
+      background-repeat: repeat;
+      color: $co-white-1;
+      &:last-child {
+        border-right: 1px solid $bo-brown-2;
+      }
+    }
+    th {
+      border-top: 1px solid $bo-brown-2;
+      border-right: 1px solid $bo-brown-2;
+      background-color: transparent;
+      color: $co-white-1;
+    }
+    td {
+      border: 1px solid $bo-brown-2;
+      background-color: $bg-white-1;
+    }
+  }
+}
+
+@mixin deco-style-pat-item-table-side-1 {
+  border: 1px solid $bo-blue-5;
+  table {
+    border: 1px solid $bo-blue-5;
+    tr:first-child {
+      th {
+        border-top: 1px solid $bo-blue-5;
+      }
+      th:last-child {
+        border-right: 1px solid $bo-blue-5;
+      }
+    }
+    th {
+      background-color: $bg-blue-15;
+    }
+    td {
+      border: 1px solid $bo-blue-5;
+    }
+  }
+}
+@mixin deco-style-pat-item-table-side-2 {
+  border: 1px solid $bo-yellow-2;
+  table {
+    border: 1px solid $bo-yellow-2;
+    tr:first-child {
+      th {
+        border-top: 1px solid $bo-yellow-2;
+      }
+      th:last-child {
+        border-right: 1px solid $bo-yellow-2;
+      }
+    }
+    th {
+      background-color: $bg-yellow-8;
+    }
+    td {
+      border: 1px solid $bo-yellow-2;
+    }
+  }
+}
+@mixin deco-style-pat-item-table-side-3 {
+  border: 1px solid $bo-pink-2;
+  table {
+    border: 1px solid $bo-pink-2;
+    tr:first-child {
+      th {
+        border-top: 1px solid $bo-pink-2;
+      }
+      th:last-child {
+        border-right: 1px solid $bo-pink-2;
+      }
+    }
+    th {
+      background-color: $bg-pink-3;
+    }
+    td {
+      border: 1px solid $bo-pink-2;
+    }
+  }
+}
