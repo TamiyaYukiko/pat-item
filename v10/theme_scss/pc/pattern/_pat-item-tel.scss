@@ -127,21 +127,18 @@
   @include common-style-pat-item-tel-ig;
   @include module-style-pat-item-tel-ig-side;
   @include size-style-pat-item-tel-g-side;
-  @include deco-style-pat-item-tel-g-side-1;
   @include deco-style-pat-item-tel-ig-side-1;
 }
 @mixin pat-item-tel-ig-side-2 {
   @include common-style-pat-item-tel-ig;
   @include module-style-pat-item-tel-ig-side;
   @include size-style-pat-item-tel-g-side;
-  @include deco-style-pat-item-tel-g-side-2;
   @include deco-style-pat-item-tel-ig-side-2;
 }
 @mixin pat-item-tel-ig-side-3 {
   @include common-style-pat-item-tel-ig;
   @include module-style-pat-item-tel-ig-side;
   @include size-style-pat-item-tel-g-side;
-  @include deco-style-pat-item-tel-g-side-3;
   @include deco-style-pat-item-tel-ig-side-3;
 }
 
