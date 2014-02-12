@@ -1,8 +1,0 @@
-@charset "UTF-8";
-@import "../../pc-style/mod-html-style";
-
-.mod-html {
-  @include mod-html-common-style;
-  @include mod-html-style;
-}
-
