@@ -1,0 +1,368 @@
+// --------------------------------------------------------------------------
+//
+// pat-item-tel
+// mod-tel-iiX を前提としたデザインパターン
+//
+//    ・tel-iig（問い合わせボックスの中のデザイン）
+//    ・tel-ii-footer（フッター用のデザイン）
+//
+// --------------------------------------------------------------------------
+
+@import "../ptn-style/_pat-item-fax-style.scss";
+
+// -------------------------------------
+//  pat-item-fax の個別設定
+// -------------------------------------
+@mixin pat-item-fax-1 {
+  @include common-style-pat-item-fax;
+  @include module-style-pat-item-fax;
+  @include deco-style-pat-item-fax-1;
+}
+@mixin pat-item-fax-2 {
+  @include common-style-pat-item-fax;
+  @include module-style-pat-item-fax;
+  @include deco-style-pat-item-fax-1;
+}
+@mixin pat-item-fax-3 {
+  @include common-style-pat-item-fax;
+  @include module-style-pat-item-fax;
+  @include deco-style-pat-item-fax-1;
+}
+
+// -------------------------------------
+//  pat-item-fax-side の個別設定
+// -------------------------------------
+@mixin pat-item-fax-side-1 {
+  @include common-style-pat-item-fax;
+  @include module-style-pat-item-fax-side;
+  @include deco-style-pat-item-fax-1;
+}
+@mixin pat-item-fax-side-2 {
+  @include common-style-pat-item-fax;
+  @include module-style-pat-item-fax-side;
+  @include deco-style-pat-item-fax-2;
+}
+@mixin pat-item-fax-side-3 {
+  @include common-style-pat-item-fax;
+  @include module-style-pat-item-fax-side;
+  @include deco-style-pat-item-fax-3;
+}
+
+// -------------------------------------
+//  pat-item-fax-i の個別設定
+// -------------------------------------
+@mixin pat-item-fax-i-1 {
+  @include common-style-pat-item-fax-i;
+  @include module-style-pat-item-fax-i;
+  @include deco-style-pat-item-fax-1;
+  @include icon-style-pat-item-fax-i-1;
+}
+@mixin pat-item-fax-i-2 {
+  @include common-style-pat-item-fax-i;
+  @include module-style-pat-item-fax-i;
+  @include deco-style-pat-item-fax-1;
+  @include icon-style-pat-item-fax-i-2;
+}
+@mixin pat-item-fax-i-3 {
+  @include common-style-pat-item-fax-i;
+  @include module-style-pat-item-fax-i;
+  @include deco-style-pat-item-fax-1;
+  @include icon-style-pat-item-fax-i-3;
+}
+
+// -------------------------------------
+//  pat-item-fax-i-side の個別設定
+// -------------------------------------
+@mixin pat-item-fax-i-side-1 {
+  @include common-style-pat-item-fax-i;
+  @include module-style-pat-item-fax-i-side;
+  @include deco-style-pat-item-fax-1;
+  @include icon-style-pat-item-fax-i-side-1;
+}
+@mixin pat-item-fax-i-side-2 {
+  @include common-style-pat-item-fax-i;
+  @include module-style-pat-item-fax-i-side;
+  @include deco-style-pat-item-fax-1;
+  @include icon-style-pat-item-fax-i-side-2;
+}
+@mixin pat-item-fax-i-side-3 {
+  @include common-style-pat-item-fax-i;
+  @include module-style-pat-item-fax-i-side;
+  @include deco-style-pat-item-fax-1;
+  @include icon-style-pat-item-fax-i-side-3;
+}
+
+// -------------------------------------
+//  pat-item-cell の個別設定
+// -------------------------------------
+@mixin pat-item-cell-1 {
+  @include common-style-pat-item-fax;
+  @include module-style-pat-item-cell;
+  @include deco-style-pat-item-fax-1;
+}
+@mixin pat-item-cell-2 {
+  @include common-style-pat-item-fax;
+  @include module-style-pat-item-cell;
+  @include deco-style-pat-item-fax-1;
+}
+@mixin pat-item-cell-3 {
+  @include common-style-pat-item-fax;
+  @include module-style-pat-item-cell;
+  @include deco-style-pat-item-fax-1;
+}
+
+// -------------------------------------
+//  pat-item-cell-side の個別設定
+// -------------------------------------
+@mixin pat-item-cell-side-1 {
+  @include common-style-pat-item-fax;
+  @include module-style-pat-item-cell-side;
+  @include deco-style-pat-item-fax-1;
+}
+@mixin pat-item-cell-side-2 {
+  @include common-style-pat-item-fax;
+  @include module-style-pat-item-cell-side;
+  @include deco-style-pat-item-fax-2;
+}
+@mixin pat-item-cell-side-3 {
+  @include common-style-pat-item-fax;
+  @include module-style-pat-item-cell-side;
+  @include deco-style-pat-item-fax-3;
+}
+
+// -------------------------------------
+//  pat-item-cell-i の個別設定
+// -------------------------------------
+@mixin pat-item-cell-i-1 {
+  @include common-style-pat-item-fax-i;
+  @include module-style-pat-item-cell-i;
+  @include deco-style-pat-item-fax-1;
+  @include icon-style-pat-item-cell-i-1;
+}
+@mixin pat-item-cell-i-2 {
+  @include common-style-pat-item-fax-i;
+  @include module-style-pat-item-cell-i;
+  @include deco-style-pat-item-fax-1;
+  @include icon-style-pat-item-cell-i-2;
+}
+@mixin pat-item-cell-i-3 {
+  @include common-style-pat-item-fax-i;
+  @include module-style-pat-item-cell-i;
+  @include deco-style-pat-item-fax-1;
+  @include icon-style-pat-item-cell-i-3;
+}
+
+// -------------------------------------
+//  pat-item-cell-i-side の個別設定
+// -------------------------------------
+@mixin pat-item-cell-i-side-1 {
+  @include common-style-pat-item-fax-i;
+  @include module-style-pat-item-cell-i-side;
+  @include deco-style-pat-item-fax-1;
+  @include icon-style-pat-item-cell-i-side-1;
+}
+@mixin pat-item-cell-i-side-2 {
+  @include common-style-pat-item-fax-i;
+  @include module-style-pat-item-cell-i-side;
+  @include deco-style-pat-item-fax-2;
+  @include icon-style-pat-item-cell-i-side-2;
+}
+@mixin pat-item-cell-i-side-3 {
+  @include common-style-pat-item-fax-i;
+  @include module-style-pat-item-cell-i-side;
+  @include deco-style-pat-item-fax-3;
+  @include icon-style-pat-item-cell-i-side-3;
+}
+
+
+
+// -------------------------------------
+//  pat-item-email の個別設定
+// -------------------------------------
+@mixin pat-item-email-1 {
+  @include common-style-pat-item-fax;
+  @include module-style-pat-item-email;
+  @include deco-style-pat-item-fax-1;
+}
+@mixin pat-item-email-2 {
+  @include common-style-pat-item-fax;
+  @include module-style-pat-item-email;
+  @include deco-style-pat-item-fax-1;
+}
+@mixin pat-item-email-3 {
+  @include common-style-pat-item-fax;
+  @include module-style-pat-item-email;
+  @include deco-style-pat-item-fax-1;
+}
+
+// -------------------------------------
+//  pat-item-email-side の個別設定
+// -------------------------------------
+@mixin pat-item-email-side-1 {
+  @include common-style-pat-item-fax;
+  @include module-style-pat-item-email-side;
+  @include deco-style-pat-item-fax-1;
+}
+@mixin pat-item-email-side-2 {
+  @include common-style-pat-item-fax;
+  @include module-style-pat-item-email-side;
+  @include deco-style-pat-item-fax-2;
+}
+@mixin pat-item-email-side-3 {
+  @include common-style-pat-item-fax;
+  @include module-style-pat-item-email-side;
+  @include deco-style-pat-item-fax-3;
+}
+
+// -------------------------------------
+//  pat-item-email-i の個別設定
+// -------------------------------------
+@mixin pat-item-email-i-1 {
+  @include common-style-pat-item-fax-i;
+  @include module-style-pat-item-email-i;
+  @include deco-style-pat-item-fax-1;
+  @include icon-style-pat-item-email-i-1;
+}
+@mixin pat-item-email-i-2 {
+  @include common-style-pat-item-fax-i;
+  @include module-style-pat-item-email-i;
+  @include deco-style-pat-item-fax-1;
+  @include icon-style-pat-item-email-i-2;
+}
+@mixin pat-item-email-i-3 {
+  @include common-style-pat-item-fax-i;
+  @include module-style-pat-item-email-i;
+  @include deco-style-pat-item-fax-1;
+  @include icon-style-pat-item-email-i-3;
+}
+
+// -------------------------------------
+//  pat-item-email-i-side の個別設定
+// -------------------------------------
+@mixin pat-item-email-i-side-1 {
+  @include common-style-pat-item-fax-i;
+  @include module-style-pat-item-email-i-side;
+  @include deco-style-pat-item-fax-1;
+  @include icon-style-pat-item-email-i-side-1;
+}
+@mixin pat-item-email-i-side-2 {
+  @include common-style-pat-item-fax-i;
+  @include module-style-pat-item-email-i-side;
+  @include deco-style-pat-item-fax-2;
+  @include icon-style-pat-item-email-i-side-2;
+}
+@mixin pat-item-email-i-side-3 {
+  @include common-style-pat-item-fax-i;
+  @include module-style-pat-item-email-i-side;
+  @include deco-style-pat-item-fax-3;
+  @include icon-style-pat-item-email-i-side-3;
+}
+
+
+// -------------------------------------
+//  pat-item-tel のクラス名へのinclude
+// -------------------------------------
+.mod-fax-side {
+  .ex-style_01A1 &,
+  .ex-style_01B1 &,
+  .ex-style_01C1 & {
+    @include pat-item-fax-side-1;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01B2 &,
+  .ex-style_01C2 & {
+    @include pat-item-fax-side-2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01B3 &,
+  .ex-style_01C3 & {
+    @include pat-item-fax-side-3;
+  }
+}
+.mod-fax-i-side {
+  .ex-style_01A1 &,
+  .ex-style_01B1 &,
+  .ex-style_01C1 & {
+    @include pat-item-fax-i-side-1;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01B2 &,
+  .ex-style_01C2 & {
+    @include pat-item-fax-i-side-2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01B3 &,
+  .ex-style_01C3 & {
+    @include pat-item-fax-i-side-3;
+  }
+}
+
+.mod-cell-side {
+  .ex-style_01A1 &,
+  .ex-style_01B1 &,
+  .ex-style_01C1 & {
+    @include pat-item-cell-side-1;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01B2 &,
+  .ex-style_01C2 & {
+    @include pat-item-cell-side-2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01B3 &,
+  .ex-style_01C3 & {
+    @include pat-item-cell-side-3;
+  }
+}
+.mod-cell-i-side {
+  .ex-style_01A1 &,
+  .ex-style_01B1 &,
+  .ex-style_01C1 & {
+    @include pat-item-cell-i-side-1;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01B2 &,
+  .ex-style_01C2 & {
+    @include pat-item-cell-i-side-2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01B3 &,
+  .ex-style_01C3 & {
+    @include pat-item-cell-i-side-3;
+  }
+}
+
+.mod-email-side {
+  .ex-style_01A1 &,
+  .ex-style_01B1 &,
+  .ex-style_01C1 & {
+    @include pat-item-email-side-1;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01B2 &,
+  .ex-style_01C2 & {
+    @include pat-item-email-side-2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01B3 &,
+  .ex-style_01C3 & {
+    @include pat-item-email-side-3;
+  }
+}
+.mod-email-i-side {
+  .ex-style_01A1 &,
+  .ex-style_01B1 &,
+  .ex-style_01C1 & {
+    @include pat-item-email-i-side-1;
+  }
+  .ex-style_01A2 &,
+  .ex-style_01B2 &,
+  .ex-style_01C2 & {
+    @include pat-item-email-i-side-2;
+  }
+  .ex-style_01A3 &,
+  .ex-style_01B3 &,
+  .ex-style_01C3 & {
+    @include pat-item-email-i-side-3;
+  }
+}

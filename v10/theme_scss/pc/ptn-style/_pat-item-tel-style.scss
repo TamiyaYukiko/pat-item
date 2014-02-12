@@ -308,6 +308,19 @@
     }
   }
 }
+@mixin size-style-pat-item-tel-g-side {
+  .mod-ftel-inner {
+    font-size: $sideFontSizeS;
+  }
+  .mod-ftel-inner2 {
+    margin: 0;
+    @if $layoutCode == "L25" {
+      font-size: $sideFontSizeL + 2;
+    } @else if $layoutCode == "L30" {
+      font-size: $sideFontSizeL + 8;
+    }
+  }
+}
 
 // -------------------------------------
 //  pat-item-tel-ig module
@@ -321,10 +334,10 @@
   }
 }
 @mixin module-style-pat-item-ftel-ig-side { //mod-tel17
-  .mod-tel-inner {
+  .mod-ftel-inner {
     padding: 0 0 0 30px;
   }
-  .mod-tel-inner2 {
+  .mod-ftel-inner2 {
     padding: 6px 0 0 30px;
     background-image: url("img/_pat-item/tel/ico-ftel-c.png");
   }
@@ -334,28 +347,28 @@
 // pat-item-tel-ig deco
 // -------------------------------------
 @mixin deco-style-pat-item-tel-ig-side-1 {
-  .mod-ftel-inner {
+  .mod-tel-inner {
     color: $co-black-1;
   }
-  .mod-ftel-inner2 {
+  .mod-tel-inner2 {
     color: $co-orange-3;
     background-image: url("img/_pat-item/tel/ico-tel-c.png");
   }
 }
 @mixin deco-style-pat-item-tel-ig-side-2 {
-  .mod-ftel-inner {
+  .mod-tel-inner {
     color: $co-black-1;
   }
-  .mod-ftel-inner2 {
+  .mod-tel-inner2 {
     color: $co-blue-4;
     background-image: url("img/_pat-item/tel/ico-tel-c2.png");
   }
 }
 @mixin deco-style-pat-item-tel-ig-side-3 {
-  .mod-ftel-inner {
+  .mod-tel-inner {
     color: $co-brown-6;
   }
-  .mod-ftel-inner2 {
+  .mod-tel-inner2 {
     color: $co-orange-8;
     background-image: url("img/_pat-item/tel/ico-tel-c3.png");
   }
@@ -397,30 +410,54 @@
 //  pat-item-tel-g の個別設定
 // -------------------------------------
 @mixin deco-style-pat-item-tel-g-side-1 {
-  .mod-ftel-inner {
+  .mod-tel-inner {
     color: $co-black-1;
   }
-  .mod-ftel-inner2 {
+  .mod-tel-inner2 {
     color: $co-orange-3;
   }
 }
 @mixin deco-style-pat-item-tel-g-side-2 {
-  .mod-ftel-inner {
+  .mod-tel-inner {
     color: $co-black-1;
   }
-  .mod-ftel-inner2 {
+  .mod-tel-inner2 {
     color: $co-blue-4;
   }
 }
 @mixin deco-style-pat-item-tel-g-side-3 {
-  .mod-ftel-inner {
+  .mod-tel-inner {
     color: $co-brown-6;
   }
-  .mod-ftel-inner2 {
+  .mod-tel-inner2 {
     color: $co-orange-8;
   }
 }
 
+@mixin deco-style-pat-item-ftel-g-side-1 {
+  .mod-tel-inner {
+    color: $co-black-1;
+  }
+  .mod-tel-inner2 {
+    color: $co-orange-3;
+  }
+}
+@mixin deco-style-pat-item-ftel-g-side-2 {
+  .mod-tel-inner {
+    color: $co-black-1;
+  }
+  .mod-tel-inner2 {
+    color: $co-blue-4;
+  }
+}
+@mixin deco-style-pat-item-ftel-g-side-3 {
+  .mod-tel-inner {
+    color: $co-brown-6;
+  }
+  .mod-tel-inner2 {
+    color: $co-orange-8;
+  }
+}
 
 
 
@@ -492,7 +529,7 @@
   }
 }
 
-@mixin size-style-mod-tel-sitename-L {
+@mixin size-style-pat-item-tel-sitename-L {
   .mod-tel-inner.ex-first-child {
     > p.mod-telnum-sitename {
       font-size: $fontSizeL + 14;

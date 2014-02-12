@@ -1,0 +1,155 @@
+@charset "UTF-8";
+// --------------------------------------------------------------------------
+
+// pat-item-fax, cell, email
+// ・faxを親とする
+
+// --------------------------------------------------------------------------
+
+// -------------------------------------
+// pat-item-fax(アイコンなし)
+// -------------------------------------
+//—————————common-style—————————
+@mixin common-style-pat-item-fax {
+  margin-top: 10px !important;
+  word-break: break-all;
+  font-weight: normal;
+  line-height: 1.0;
+}
+//—————————module-style—————————
+@mixin module-style-pat-item-fax {
+  font-size: $fontSizeL + 7;
+}
+@mixin module-style-pat-item-cell {
+  font-size: $fontSizeL + 7;
+}
+@mixin module-style-pat-item-email {
+  font-size: $fontSizeL + 2;
+}
+@mixin module-style-pat-item-fax-side {}
+@mixin module-style-pat-item-cell-side {}
+@mixin module-style-pat-item-email-side {}
+//—————————deco-style—————————
+@mixin deco-style-pat-item-fax-1 {
+  color: $co-black-1;
+}
+@mixin deco-style-pat-item-fax-2 {
+  color: $co-black-1;
+}
+@mixin deco-style-pat-item-fax-3 {
+  color: $co-brown-6;
+}
+
+// -------------------------------------
+// pat-item-fax-i(アイコンあり)
+// -------------------------------------
+//—————————common-style—————————
+@mixin common-style-pat-item-fax-i {
+  margin-top: 10px !important;
+  word-break: break-all;
+  font-weight: normal;
+  line-height: 1.0;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+//—————————module-style—————————
+@mixin module-style-pat-item-fax-i {
+  padding: 5px 0 0 40px;
+  font-size: $fontSizeL + 7;
+}
+@mixin module-style-pat-item-cell-i {
+  padding: 5px 0 0 40px;
+  font-size: $fontSizeL + 7;
+}
+@mixin module-style-pat-item-email-i {
+  padding: 1px 0 2px 40px;
+  font-size: $fontSizeL + 2;
+}
+@mixin module-style-pat-item-fax-i-side {
+  padding: 3px 0 0 30px;
+  @if $layoutCode == "L25" {
+    font-size: $sideFontSizeL;
+  } @else if $layoutCode == "L30" {
+    font-size: $sideFontSizeL + 4;
+  }
+}
+@mixin module-style-pat-item-cell-i-side {
+  padding: 5px 0 0 30px;
+  min-height: 18px;
+  @if $layoutCode == "L25" {
+    font-size: $sideFontSizeL;
+  } @else if $layoutCode == "L30" {
+    font-size: $sideFontSizeL + 4;
+  }
+}
+@mixin module-style-pat-item-email-i-side {
+  padding: 0 0 0 30px;
+  @if $layoutCode == "L25" {
+    font-size: $sideFontSizeL;
+  } @else if $layoutCode == "L30" {
+    font-size: $sideFontSizeL + 4;
+  }
+}
+//—————————deco-style—————————
+//pat-item-fax-i
+@mixin icon-style-pat-item-fax-i-1 {
+  background-image: url(img/_pat-item/fax/ico-fax.png);
+}
+@mixin icon-style-pat-item-fax-i-2 {
+  background-image: url(img/_pat-item/fax/ico-fax-2.png);
+}
+@mixin icon-style-pat-item-fax-i-3 {
+  background-image: url(img/_pat-item/fax/ico-fax-3.png);
+}
+//pat-item-fax-i-side
+@mixin icon-style-pat-item-fax-i-side-1 {
+  background-image: url(img/_pat-item/fax/ico-fax-b.png);
+}
+@mixin icon-style-pat-item-fax-i-side-2 {
+  background-image: url(img/_pat-item/fax/ico-fax-b2.png);
+}
+@mixin icon-style-pat-item-fax-i-side-3 {
+  background-image: url(img/_pat-item/fax/ico-fax-b3.png);
+}
+//pat-item-cell-i
+@mixin icon-style-pat-item-cell-i-1 {
+  background-image: url(img/_pat-item/cell/ico-cell.png);
+}
+@mixin icon-style-pat-item-cell-i-2 {
+  background-image: url(img/_pat-item/cell/ico-cell-2.png);
+}
+@mixin icon-style-pat-item-cell-i-3 {
+  background-image: url(img/_pat-item/cell/ico-cell-3.png);
+}
+//pat-item-cell-i-side
+@mixin icon-style-pat-item-cell-i-side-1 {
+  background-image: url(img/_pat-item/cell/ico-cell-b.png);
+}
+@mixin icon-style-pat-item-cell-i-side-2 {
+  background-image: url(img/_pat-item/cell/ico-cell-b2.png);
+}
+@mixin icon-style-pat-item-cell-i-side-3 {
+  background-image: url(img/_pat-item/cell/ico-cell-b3.png);
+}
+//pat-item-email-i
+@mixin icon-style-pat-item-email-i-1 {
+  background-image: url(img/_pat-item/email/ico-email.png);
+}
+@mixin icon-style-pat-item-email-i-2 {
+  background-image: url(img/_pat-item/email/ico-email-2.png);
+}
+@mixin icon-style-pat-item-email-i-3 {
+  background-image: url(img/_pat-item/email/ico-email-3.png);
+}
+//pat-item-email-i-side
+@mixin icon-style-pat-item-email-i-side-1 {
+  background-image: url(img/_pat-item/email/ico-email-b.png);
+}
+@mixin icon-style-pat-item-email-i-side-2 {
+  background-image: url(img/_pat-item/email/ico-email-b2.png);
+}
+@mixin icon-style-pat-item-email-i-side-3 {
+  background-image: url(img/_pat-item/email/ico-email-b3.png);
+}
+
+
