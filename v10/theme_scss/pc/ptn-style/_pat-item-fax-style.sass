@@ -1,0 +1,165 @@
+@charset "UTF-8"
+
+// --------------------------------------------------------------------------
+
+// pat-item-contact
+// pat-item-fax, cell, email
+// ・faxを親とする
+
+// --------------------------------------------------------------------------
+
+// -------------------------------------
+// pat-item-fax(アイコンなし)
+// -------------------------------------
+
+=comm-style-pat-item-fax
+  +common-set-font($fsTelS, normal, nil, 1.0)
+  margin-top: 10px !important
+  padding: 0
+  word-break: break-all
+
+=modu-style-pat-item-fax
+
+=modu-style-pat-item-cell
+
+=modu-style-pat-item-email
+  font-size: $fsTelSS
+
+=modu-style-pat-item-fax-side
+  @if $layoutCode == "L25"
+    font-size: $fsTelSideS
+  @else if $layoutCode == "L30"
+    font-size: $fsTelSideS + 4
+
+=modu-style-pat-item-cell-side
+  @if $layoutCode == "L25"
+    font-size: $fsTelSideS
+  @else if $layoutCode == "L30"
+    font-size: $fsTelSideS + 4
+
+=modu-style-pat-item-email-side
+  @if $layoutCode == "L25"
+    font-size: $fsTelSideS
+  @else if $layoutCode == "L30"
+    font-size: $fsTelSideS + 4
+
+// —————————comm-style—————————
+// —————————modu-style—————————
+
+// —————————deco-style—————————
+=deco-style-pat-item-fax-1
+  color: $co-black-1
+
+=deco-style-pat-item-fax-2
+  color: $co-black-1
+
+=deco-style-pat-item-fax-3
+  color: $co-brown-6
+
+// -------------------------------------
+// pat-item-fax-i(アイコンあり)
+// -------------------------------------
+//—————————comm-style—————————
+=comm-style-pat-item-fax-i
+  margin-top: 10px !important
+  word-break: break-all
+  font-weight: normal
+  line-height: 1.0
+  background-position: left center
+  background-repeat: no-repeat
+
+//—————————modu-style—————————
+=modu-style-pat-item-fax-i
+  padding: 5px 0 0 40px
+  font-size: $fsTelS
+
+=modu-style-pat-item-cell-i
+  padding: 5px 0 0 40px
+  font-size: $fsTelS
+
+=modu-style-pat-item-email-i
+  padding: 1px 0 2px 40px
+  font-size: $fsTelSS
+
+=modu-style-pat-item-fax-i-side
+  padding: 3px 0 0 30px
+  @if $layoutCode == "L25"
+    font-size: $fsTelSideS
+  @else if $layoutCode == "L30"
+    font-size: $fsTelSideS + 4
+
+=modu-style-pat-item-cell-i-side
+  padding: 5px 0 0 30px
+  min-height: 18px
+  @if $layoutCode == "L25"
+    font-size: $fsTelSideS
+  @else if $layoutCode == "L30"
+    font-size: $fsTelSideS + 4
+
+=modu-style-pat-item-email-i-side
+  padding: 0 0 0 30px
+  @if $layoutCode == "L25"
+    font-size: $fsTelSideS
+  @else if $layoutCode == "L30"
+    font-size: $fsTelSideS + 4
+
+// —————————deco-style—————————
+// pat-item-fax-i
+=icon-style-pat-item-fax-i-1
+  background-image: url(img/_pat-item/fax/ico-fax.png)
+
+=icon-style-pat-item-fax-i-2
+  background-image: url(img/_pat-item/fax/ico-fax-2.png)
+
+=icon-style-pat-item-fax-i-3
+  background-image: url(img/_pat-item/fax/ico-fax-3.png)
+
+//pat-item-fax-i-side
+=icon-style-pat-item-fax-i-side-1
+  background-image: url(img/_pat-item/fax/ico-fax-b.png)
+
+=icon-style-pat-item-fax-i-side-2
+  background-image: url(img/_pat-item/fax/ico-fax-b2.png)
+
+=icon-style-pat-item-fax-i-side-3
+  background-image: url(img/_pat-item/fax/ico-fax-b3.png)
+
+//pat-item-cell-i
+=icon-style-pat-item-cell-i-1
+  background-image: url(img/_pat-item/cell/ico-cell.png)
+
+=icon-style-pat-item-cell-i-2
+  background-image: url(img/_pat-item/cell/ico-cell-2.png)
+
+=icon-style-pat-item-cell-i-3
+  background-image: url(img/_pat-item/cell/ico-cell-3.png)
+
+//pat-item-cell-i-side
+=icon-style-pat-item-cell-i-side-1
+  background-image: url(img/_pat-item/cell/ico-cell-b.png)
+
+=icon-style-pat-item-cell-i-side-2
+  background-image: url(img/_pat-item/cell/ico-cell-b2.png)
+
+=icon-style-pat-item-cell-i-side-3
+  background-image: url(img/_pat-item/cell/ico-cell-b3.png)
+
+//pat-item-email-i
+=icon-style-pat-item-email-i-1
+  background-image: url(img/_pat-item/email/ico-email.png)
+
+=icon-style-pat-item-email-i-2
+  background-image: url(img/_pat-item/email/ico-email-2.png)
+
+=icon-style-pat-item-email-i-3
+  background-image: url(img/_pat-item/email/ico-email-3.png)
+
+//pat-item-email-i-side
+=icon-style-pat-item-email-i-side-1
+  background-image: url(img/_pat-item/email/ico-email-b.png)
+
+=icon-style-pat-item-email-i-side-2
+  background-image: url(img/_pat-item/email/ico-email-b2.png)
+
+=icon-style-pat-item-email-i-side-3
+  background-image: url(img/_pat-item/email/ico-email-b3.png)

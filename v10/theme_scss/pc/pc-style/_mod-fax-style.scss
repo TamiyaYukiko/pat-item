@@ -2,7 +2,7 @@
 //＊＊＊＊＊＊＊＊＊＊＊＊
 // common-side-style-mod-fax(グループ共通common)
 //＊＊＊＊＊＊＊＊＊＊＊＊
-@mixin common-side-style-mod-fax {  // mod-faxの共通サイド用common
+@mixin size-style-pat-item-fax {  // mod-faxの共通サイド用common
   @if $layoutCode == "L25" {
     font-size: $sideFontSizeL;
   } @else if $layoutCode == "L30" {

@@ -1711,53 +1711,53 @@
   // width: 255px
   display: table;
   vertical-align: bottom;
-  i {
-    display: table-cell;
-    width: 31px;
-    background-position: left bottom;
-    background-repeat: no-repeat;
-  }
+  // i {
+  //   display: table-cell;
+  //   width: 31px;
+  //   background-position: left bottom;
+  //   background-repeat: no-repeat;
+  // }
   > div {
     @include border-radius;
     padding: 1px 5px;
     background-repeat: repeat-x;
   }
-  .mod-telnum-sitename {
-    margin: 0 auto;
-    padding: 0 0 1px;
-    width: auto;
-    color: $co-white-1;
-    text-align: center;
-    word-break: break-all;
-    letter-spacing: 1px;
-    font-size: 25px;
-    line-height: 0.9;
-  }
-  .mod-icon_tel {
-    background-image: url("img/mod-sitename/bg_7.png");
-  }
-  .mod-icon_ftel {
-    background-image: url("img/mod-sitename/bg_10.png");
-  }
-  .mod-tel-inner {
-    display: table-cell;
-    padding-left: 3px;
-    .mod-tel-sitename {
-      padding: 0;
-      background-image: none;
-    }
-  }
-  .mod-tel-inner.ex-first-child {
-    > p.mod-telnum-sitename {
-      font-size: $fontSizeL + 10;
-    }
-  }
-  .mod-tel-golo-sitename {
-    text-align: right;
-    font-size: $fontSizeS;
-    line-height: 1;
-    color: $co-white-1;
-  }
+  // .mod-telnum-sitename {
+  //   margin: 0 auto;
+  //   padding: 0 0 1px;
+  //   width: auto;
+  //   color: $co-white-1;
+  //   text-align: center;
+  //   word-break: break-all;
+  //   letter-spacing: 1px;
+  //   font-size: 25px;
+  //   line-height: 0.9;
+  // }
+  // .mod-icon_tel {
+  //   background-image: url("img/mod-sitename/bg_7.png");
+  // }
+  // .mod-icon_ftel {
+  //   background-image: url("img/mod-sitename/bg_10.png");
+  // }
+  // .mod-tel-inner {
+  //   display: table-cell;
+  //   padding-left: 3px;
+  //   .mod-tel-sitename {
+  //     padding: 0;
+  //     background-image: none;
+  //   }
+  // }
+  // .mod-tel-inner.ex-first-child {
+  //   > p.mod-telnum-sitename {
+  //     font-size: $fontSizeL + 10;
+  //   }
+  // }
+  // .mod-tel-golo-sitename {
+  //   text-align: right;
+  //   font-size: $fontSizeS;
+  //   line-height: 1;
+  //   color: $co-white-1;
+  // }
   p.mod-telnum-sitename {
     margin-top: 3px;
     word-break: break-all;

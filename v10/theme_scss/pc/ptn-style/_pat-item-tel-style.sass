@@ -1,0 +1,511 @@
+@charset "UTF-8"
+
+// --------------------------------------------------------------------------
+
+// pat-item-tel
+
+// ・tel-iig
+// ・tel-ii
+// ・tel-ig
+// ・tel-g
+// ・tel-sitename
+
+// --------------------------------------------------------------------------
+
+// --------------------------------------------------------------------------
+
+// pat-item-tel-iig
+
+// --------------------------------------------------------------------------
+
+// -------------------------------------
+// pat-item-tel-iig  comm-style
+// -------------------------------------
+=comm-style-pat-item-tel-iig
+  margin: $mtTelM 0 0 0
+  padding: 0
+  display: table
+  .mod-icon_ftel,
+  .mod-icon_tel
+    display: table-cell
+    background-position: left bottom
+    background-repeat: no-repeat
+  .mod-tel-inner
+    display: table-cell
+
+// -------------------------------------
+// pat-item-tel-iig modu-style
+// -------------------------------------
+// Mサイズ
+=modu-style-pat-item-tel-iig
+  .mod-icon_ftel
+    margin: 0
+    padding: 0 0 0 5px
+    width: 34px
+    background-image: url("img/_pat-item/tel/ico-ftel.png")
+  .mod-icon_tel
+    margin: 0
+    padding: 0 0 0 5px
+    width: 25px
+  .mod-tel-inner-2
+    margin: 0
+    padding: 0
+    +common-set-font($fsTextHeaderM, nil, right, 1.0)
+  .mod-tel-inner-3
+    +common-set-font($fsTelL, bold, nil, 1.0)
+    margin: 3px 0 0 0
+    word-break: break-all
+
+// -------------------------------------
+//  pat-item-tel-iig deco-style
+// -------------------------------------
+=deco-style-pat-item-tel-iig-1
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel.png")
+  .mod-tel-inner
+    .mod-tel-inner-3
+      color: $co-orange-4
+
+=deco-style-pat-item-tel-iig-2
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-2.png")
+  .mod-tel-inner
+    .mod-tel-inner-3
+      color: $co-blue-11
+
+=deco-style-pat-item-tel-iig-3
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-3.png")
+  .mod-tel-inner
+    .mod-tel-inner-3
+      color: $co-brown-8
+
+=deco-style-pat-item-tel-iig-4
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-4.png")
+  .mod-tel-inner
+    .mod-tel-inner-3
+      color: $co-blue-19
+
+=deco-style-pat-item-tel-iig-5
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-5.png")
+  .mod-tel-inner
+    .mod-tel-inner-3
+      color: $co-orange-6
+
+=deco-style-pat-item-tel-iig-6
+  //1b3,1c1が同じ
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-6.png")
+  .mod-tel-inner
+    .mod-tel-inner-3
+      color: $co-orange-6
+
+=deco-style-pat-item-tel-iig-7
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-8.png")
+  .mod-tel-inner
+    .mod-tel-inner-3
+      color: $co-orange-6
+
+=deco-style-pat-item-tel-iig-8
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-9.png")
+  .mod-tel-inner
+    .mod-tel-inner-3
+      color: $co-orange-8
+
+// --------------------------------------------------------------------------
+
+// pat-item-tel-ii
+
+// --------------------------------------------------------------------------
+// -------------------------------------
+// pat-item-tel-ii の共通スタイル
+// -------------------------------------
+=comm-style-pat-item-tel-ii
+  margin: 0 auto
+  padding: 0
+  display: table
+  .mod-icon_ftel,
+  .mod-icon_tel
+    width: 31px
+    margin: 0
+    padding: 0
+    display: table-cell
+    background-position: left bottom
+    background-repeat: no-repeat
+  .mod-tel-inner
+    +common-set-font($fsTelM, nil, nil, 1.0)
+    margin: 0
+    padding: 0 0 0 5px
+    display: table-cell
+    word-break: break-all
+
+=modu-style-pat-item-tel-ii-footer
+  .mod-icon_ftel
+    background-image: url("img/_pat-item/tel/ico-ftel-b.png")
+
+//ii-footer
+=deco-style-pat-item-tel-ii-footer-1
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-b.png")
+  .mod-tel-inner
+    color: $co-black-1
+
+=deco-style-pat-item-tel-ii-footer-2
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-b2.png")
+  .mod-tel-inner
+    color: $co-black-1
+
+=deco-style-pat-item-tel-ii-footer-3
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-b3.png")
+  .mod-tel-inner
+    color: $co-blue-19
+
+=deco-style-pat-item-tel-ii-footer-4
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-b4.png")
+  .mod-tel-inner
+    color: $co-white-1
+
+=deco-style-pat-item-tel-ii-footer-5
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-b5.png")
+  .mod-tel-inner
+    color: $co-brown-6
+
+=deco-style-pat-item-tel-ii-footer-6
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-b6.png")
+  .mod-tel-inner
+    color: #28446b
+
+=deco-style-pat-item-tel-ii-footer-7
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-b7.png")
+  .mod-tel-inner
+    color: #45494c
+
+=deco-style-pat-item-tel-ii-footer-8
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-b8.png")
+  .mod-tel-inner
+    color: #45330b
+
+// --------------------------------------------------------------------------
+
+// pat-item-tel-ig
+
+// --------------------------------------------------------------------------
+// -------------------------------------
+// pat-item-tel-ig comm
+// -------------------------------------
+=comm-style-pat-item-tel-ig
+  @extend %inlineBlock
+  margin: $mtTelM 0 0 0
+  padding: 0
+  .mod-tel-inner, .mod-ftel-inner
+    +common-set-font($fsTextHeaderM, nil, right, 1.0)
+    margin: 0
+  .mod-tel-inner2, .mod-ftel-inner2
+    +common-set-font($fsTelS, bold, nil, 1.0)
+    margin: 0
+    background-position: left center
+    background-repeat: no-repeat
+    word-break: break-all
+
+// -------------------------------------
+// pat-item-tel-ig size
+// -------------------------------------
+=size-style-pat-item-tel-g-side
+  .mod-tel-inner, .mod-ftel-inner
+    font-size: $fsTextSideS
+  .mod-tel-inner2, .mod-ftel-inner2
+    @if $layoutCode == "L25"
+      font-size: $fsTelSideM
+    @else if $layoutCode == "L30"
+      font-size: $fsTelSideM + 6
+
+// -------------------------------------
+//  pat-item-tel-ig modu
+// -------------------------------------
+=modu-style-pat-item-tel-ig
+  .mod-tel-inner, .mod-ftel-inner
+    padding: 0 0 0 40px
+  .mod-tel-inner2, .mod-ftel-inner2
+    font-weight: normal
+    font-size: 25px
+    padding: 3px 0 0 40px
+    background-position: left bottom
+  .mod-ftel-inner2
+    background-image: url("img/_pat-item/tel/ico-ftel-e.png")
+
+=modu-style-pat-item-tel-ig-side
+  .mod-tel-inner, .mod-ftel-inner
+    padding: 0 0 0 30px
+  .mod-tel-inner2, .mod-ftel-inner2
+    padding: 6px 0 0 30px
+  .mod-ftel-inner2
+    background-image: url("img/_pat-item/tel/ico-ftel-c.png")
+
+// -------------------------------------
+// pat-item-tel-ig deco
+// -------------------------------------
+=deco-style-pat-item-tel-ig-1
+  .mod-tel-inner, .mod-ftel-inner
+    color: $co-black-1
+  .mod-tel-inner2, .mod-ftel-inner2
+    color: $co-black-1
+  .mod-tel-inner2
+    background-image: url("img/_pat-item/tel/ico-tel-e.png")
+
+=deco-style-pat-item-tel-ig-2
+  .mod-tel-inner, .mod-ftel-inner
+    color: $co-black-1
+  .mod-tel-inner2, .mod-ftel-inner2
+    color: #0b2d63
+  .mod-tel-inner2
+    background-image: url("img/_pat-item/tel/ico-tel-e2.png")
+
+=deco-style-pat-item-tel-ig-3
+  .mod-tel-inner, .mod-ftel-inner
+    color: $co-gray-5
+  .mod-tel-inner2, .mod-ftel-inner2
+    color: #45320b
+  .mod-tel-inner2
+    background-image: url("img/_pat-item/tel/ico-tel-e3.png")
+
+=deco-style-pat-item-tel-ig-4
+  .mod-tel-inner, .mod-ftel-inner
+    color: #45320b
+  .mod-tel-inner2, .mod-ftel-inner2
+    color: $co-black-1
+  .mod-tel-inner2
+    background-image: url("img/_pat-item/tel/ico-tel-e.png")
+
+=deco-style-pat-item-tel-ig-side-1
+  .mod-tel-inner, .mod-ftel-inner
+    color: $co-black-1
+  .mod-tel-inner2, .mod-ftel-inner2
+    color: $co-orange-3
+  .mod-tel-inner2
+    background-image: url("img/_pat-item/tel/ico-tel-c.png")
+
+=deco-style-pat-item-tel-ig-side-2
+  .mod-tel-inner, .mod-ftel-inner
+    color: $co-black-1
+  .mod-tel-inner2, .mod-ftel-inner2
+    color: $co-blue-4
+  .mod-tel-inner2
+    background-image: url("img/_pat-item/tel/ico-tel-c2.png")
+
+=deco-style-pat-item-tel-ig-side-3
+  .mod-tel-inner, .mod-ftel-inner
+    color: $co-brown-6
+  .mod-tel-inner2, .mod-ftel-inner2
+    color: $co-orange-8
+  .mod-tel-inner2
+    background-image: url("img/_pat-item/tel/ico-tel-c3.png")
+
+
+// --------------------------------------------------------------------------
+
+// pat-item-tel-g
+
+// --------------------------------------------------------------------------
+// -------------------------------------
+// pat-item-tel-g comm
+// -------------------------------------
+=comm-style-pat-item-tel-g
+  @extend %inlineBlock
+  margin: $mtTelM 0 0 0
+  padding: 0
+  .mod-tel-inner, .mod-ftel-inner
+    +common-set-font($fsTextHeaderM, nil, right, 1.0)
+    margin: 0
+    padding: 0
+  .mod-tel-inner2, .mod-ftel-inner2
+    +common-set-font($fsTelS, bold, nil, 1.0)
+    margin: 0
+    word-break: break-all
+
+// -------------------------------------
+//  pat-item-tel-g modu
+// -------------------------------------
+=modu-style-pat-item-tel-g
+  .mod-tel-inner2, .mod-ftel-inner2
+    padding: 3px 0 0 0
+    font-weight: normal
+
+=modu-style-pat-item-tel-g-side
+  .mod-tel-inner2, .mod-ftel-inner2
+    padding: 6px 0 0 0
+
+// -------------------------------------
+//  pat-item-tel-g の個別設定
+// -------------------------------------
+=deco-style-pat-item-tel-g-1
+  .mod-tel-inner, .mod-ftel-inner
+    color: $co-black-1
+  .mod-tel-inner2, .mod-ftel-inner2
+    color: $co-black-1
+
+=deco-style-pat-item-tel-g-2
+  .mod-tel-inner, .mod-ftel-inner
+    color: $co-black-1
+  .mod-tel-inner2, .mod-ftel-inner2
+    color: #0b2d63
+
+=deco-style-pat-item-tel-g-3
+  .mod-tel-inner, .mod-ftel-inner
+    color: $co-gray-5
+  .mod-tel-inner2, .mod-ftel-inner2
+    color: #45320b
+
+=deco-style-pat-item-tel-g-4
+  .mod-tel-inner, .mod-ftel-inner
+    color: #45320b
+  .mod-tel-inner2, .mod-ftel-inner2
+    color: $co-black-1
+
+=deco-style-pat-item-tel-g-side-1
+  .mod-tel-inner, .mod-ftel-inner
+    color: $co-black-1
+  .mod-tel-inner2, .mod-ftel-inner2
+    color: $co-orange-3
+
+=deco-style-pat-item-tel-g-side-2
+  .mod-tel-inner, .mod-ftel-inner
+    color: $co-black-1
+  .mod-tel-inner2, .mod-ftel-inner2
+    color: $co-blue-4
+
+=deco-style-pat-item-tel-g-side-3
+  .mod-tel-inner, .mod-ftel-inner
+    color: $co-brown-6
+  .mod-tel-inner2, .mod-ftel-inner2
+    color: $co-orange-8
+
+// --------------------------------------------------------------------------
+
+// pat-item-tel-sitename
+
+// --------------------------------------------------------------------------
+// --------------------------------------------
+// 電話番号　pat-item-tel-sitename
+// --------------------------------------------
+=comm-style-pat-item-tel-sitename
+  display: table
+  vertical-align: bottom
+  margin: 0 auto
+  padding: 0
+  i
+    display: table-cell
+    width: 31px
+    background-position: left bottom
+    background-repeat: no-repeat
+  .mod-icon_ftel
+    background-image: url("img/_pat-item/tel/ico-ftel-d.png")
+  .mod-tel-inner
+    margin: 0
+    padding: 0 0 0 3px
+    display: table-cell
+  .mod-tel-inner.ex-first-child
+    > p.mod-telnum-sitename
+      font-size: $fsTelS + 3
+  .mod-tel-golo-sitename
+    +common-set-font($fsTextHeaderM, nil, right, 1.0)
+    margin: 7px 0 0 0
+    padding: 0
+  p.mod-telnum-sitename
+    +common-set-font($fsTelS, bold, nil, 1.0)
+    margin: 3px 0 0 0
+    word-break: break-all
+
+// -------------------------------------
+//  pat-item-tel-sitename modu-style
+// -------------------------------------
+=modu-style-pat-item-tel-sitename
+
+=modu-style-pat-item-tel-sitename-2
+  //toiawaseの中
+  p.mod-telnum-sitename
+    //margin: 0 auto
+    +common-set-font($fsTelS, normal, center, 0.9)
+    padding: 0 0 1px
+    color: $co-white-1
+
+=size-style-pat-item-tel-sitename-L
+  .mod-tel-inner.ex-first-child
+    > p.mod-telnum-sitename
+      font-size: $fsTelL
+  .mod-tel-golo-sitename
+    font-size: $fsTextHeaderM + 1
+  p.mod-telnum-sitename
+    font-size: $fsTelM
+
+// -------------------------------------
+//  pat-item-tel-sitename deco-style
+// -------------------------------------
+=deco-style-pat-item-tel-sitename-1
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-d.png")
+  .mod-telnum-sitename
+    color: $co-black-1
+
+=deco-style-pat-item-tel-sitename-2
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-d2.png")
+  .mod-telnum-sitename
+    color: $co-blue-5
+
+=deco-style-pat-item-tel-sitename-3
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-d3.png")
+  .mod-telnum-sitename
+    color: $co-brown-6
+
+=deco-style-pat-item-tel-sitename-4
+  　 .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-d4.png")
+  .mod-tel-golo-sitename
+    color: $co-white-1
+  .mod-telnum-sitename
+    color: $co-white-1
+
+=deco-style-pat-item-tel-sitename-5
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-d.png")
+  .mod-telnum-sitename
+    color: $co-brown-6
+
+=deco-style-pat-item-tel-sitename-6
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-d.png")
+  .mod-telnum-sitename
+    color: $co-blue-10
+
+=deco-style-pat-item-tel-sitename-7
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-d5.png")
+  .mod-telnum-sitename
+    color: $co-orange-3
+
+=deco-style-pat-item-tel-sitename-8
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-d6.png")
+  .mod-telnum-sitename
+    color: $co-brown-6
+
+=deco-style-pat-item-tel-sitename-9
+  //toiawaseの中
+  .mod-icon_tel
+    background-image: url("img/_pat-item/tel/ico-tel-d7.png")
+  .mod-tel-golo-sitename
+    color: $co-white-1
+  .mod-telnum-sitename
+    color: $co-white-1

@@ -215,41 +215,41 @@ p.mod-address-sitename {
 // --------------------------------------------
 // 電話番号　mod-telnum-sitename
 // --------------------------------------------
-.mod-tel-sitename {
-  // [class*=ex-style_01] &
-  @include module-style-mod-tel-sitename-1;
-  .ex-style_01A1 & {
-    @include deco-style01A1-mod-tel-sitename;
-  }
-  .ex-style_01A2 & {
-    @include deco-style01A2-mod-tel-sitename;
-  }
-  .ex-style_01A3 & {
-    @include deco-style01A3-mod-tel-sitename;
-  }
-  .ex-style_01B1 & {
-    @include deco-style01B1-mod-tel-sitename;
-  }
-  .ex-style_01B2 & {
-    @include deco-style01B2-mod-tel-sitename;
-  }
-  .ex-style_01B3 & {
-    @include deco-style01B3-mod-tel-sitename;
-  }
-  .ex-style_01C1 & {
-    @include deco-style01C1-mod-tel-sitename;
-  }
-  .ex-style_01C2 & {
-    @include deco-style01C2-mod-tel-sitename;
-  }
-  .ex-style_01C3 & {
-    @include deco-style01C3-mod-tel-sitename;
-  }
-  [data-parts-name^=part-header-088] &,
-  [data-parts-name^=part-header-089] &, {
-    @include module-style-mod-tel-sitename-2;
-  }
-}
+// .mod-tel-sitename {
+//   // [class*=ex-style_01] &
+//   @include module-style-mod-tel-sitename-1;
+//   .ex-style_01A1 & {
+//     @include deco-style01A1-mod-tel-sitename;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style01A2-mod-tel-sitename;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style01A3-mod-tel-sitename;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style01B1-mod-tel-sitename;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style01B2-mod-tel-sitename;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style01B3-mod-tel-sitename;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style01C1-mod-tel-sitename;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style01C2-mod-tel-sitename;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style01C3-mod-tel-sitename;
+//   }
+//   [data-parts-name^=part-header-088] &,
+//   [data-parts-name^=part-header-089] &, {
+//     @include module-style-mod-tel-sitename-2;
+//   }
+// }
 
 // --------------------------------------------
 // お気軽にお問合せ下さい ボックス　mod-set-toiawase1
@@ -257,7 +257,8 @@ p.mod-address-sitename {
 div.mod-set-toiawase-sitename {
   [class*=ex-style_01] & {
     @include common-style-pat-item-toiawase-sitename;
-    @include module-style-pat-item-toiawase-sitename;
+    //@include module-style-pat-item-toiawase-sitename;
+    .mod-tel-sitename {@include pat-item-tel-sitename-9;}
   }
   .ex-style_01A1 & {
     @include deco-style01A1-pat-item-toiawase-sitename;
