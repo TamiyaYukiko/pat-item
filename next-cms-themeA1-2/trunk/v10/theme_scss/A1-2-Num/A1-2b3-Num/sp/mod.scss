@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@import "compass";
+
+@import "../../dependency/common-variable";
+// PC-SP共通設定
+@import "../../../common/common-variable-color";
+@import "../../../common/extend";
+// SP共通設定
+@import "../../../sp/dependency/common-variable-font-size";
+@import "../../../sp/dependency/common-variable-margin";
+@import "../../../sp/dependency/common";
+// 必須設定
+@import "../../../common/required";
+
+// 旧(不要になったら削除)
+@import "old_variation_variable";
+@import "../../../sp/_old/old_import";
+
+//////////////////////////////////////////////////
+
+@import "../../../sp/pattern/pat-item-bnr";
+@import "../../../sp/pattern/pat-item-copy";
+@import "../../../sp/pattern/pat-item-list";
+@import "../../../sp/pattern/pat-item-midashi";
+@import "../../../sp/pattern/pat-item-rte-in2";
+@import "../../../sp/pattern/pat-item-tel";
+@import "../../../sp/pattern/pat-item-title";
+@import "../../../sp/pattern/pat-item-waku";
+@import "../../../sp/pattern/pat-item-h4";
+
+@import "../../../sp/module/mod-part";
+@import "../../../sp/module/mod-2column";
+@import "../../../sp/module/mod-3column";
+@import "../../../sp/module/mod-bnr";
+@import "../../../sp/module/mod-box";
+@import "../../../sp/module/mod-cell";
+@import "../../../sp/module/mod-email";
+@import "../../../sp/module/mod-fax";
+@import "../../../sp/module/mod-ftel";
+@import "../../../sp/module/mod-h";
+@import "../../../sp/module/mod-h_4";
+@import "../../../sp/module/mod-html";
+@import "../../../sp/module/mod-image";
+@import "../../../sp/module/mod-info";
+@import "../../../sp/module/mod-joint";
+@import "../../../sp/module/mod-link";
+@import "../../../sp/module/mod-rte";
+@import "../../../sp/module/mod-tel";
+@import "../../../sp/module/mod-table";
+@import "../../../sp/module/mod-text";
+@import "../../../sp/module/mod-title";
+@import "../../../sp/module/mod-ul";
+@import "../../../sp/module/mod-nav";
+@import "../../../sp/module/mod-sitename";
+@import "../../../sp/module/mod-un";
+@import "../../../sp/module/mod-bhform";
+
+@import "../../../sp/module/mod-set-bnr";
+@import "../../../sp/module/mod-set-copy-list";
+@import "../../../sp/module/mod-set-decolist";
+@import "../../../sp/module/mod-set-design";
+@import "../../../sp/module/mod-set-door";
+@import "../../../sp/module/mod-set-footer";
+@import "../../../sp/module/mod-set-fukidashi";
+@import "../../../sp/module/mod-set-h4";
+@import "../../../sp/module/mod-set-nagare";
+@import "../../../sp/module/mod-set-news";
+@import "../../../sp/module/mod-set-side";
+@import "../../../sp/module/mod-set-tokucho";
+@import "../../../sp/module/mod-set-tsuyomi";
+@import "../../../sp/module/mod-set-navi-footer";
+@import "../../../sp/module/mod-set-toiawase";
+@import "../../../sp/module/mod-set-service";
+@import "../../../sp/module/mod-set-pic-design";
+@import "../../../sp/module/mod-set-voice";

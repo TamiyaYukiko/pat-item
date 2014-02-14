@@ -1,0 +1,729 @@
+@charset "UTF-8";
+@import "../pc-style/mod-bnr-style";
+@import "../pattern/pat-item-bnr";
+
+.mod-bnr_ver2 {
+  .ex-style_01A1 & {
+    @include pat-item-bnr-b1;
+  }
+  .ex-style_01A2 & {
+    @include pat-item-bnr-b2;
+  }
+  .ex-style_01A3 & {
+    @include pat-item-bnr-b3;
+  }
+  .ex-style_01B1 & {
+    @include pat-item-bnr-c1;
+  }
+  .ex-style_01B2 & {
+    @include pat-item-bnr-c2;
+  }
+  .ex-style_01B3 & {
+    @include pat-item-bnr-c3;
+  }
+  .ex-style_01C1 & {
+    @include pat-item-bnr-d1;
+  }
+  .ex-style_01C2 & {
+    @include pat-item-bnr-d2;
+  }
+  .ex-style_01C3 & {
+    @include pat-item-bnr-d3;
+  }
+  .ex-style_02A1 & {
+    @include pat-item-bnr-b1;
+  }
+  .ex-style_02A2 & {
+    @include pat-item-bnr-b2;
+  }
+  .ex-style_02A3 & {
+    @include pat-item-bnr-b3;
+  }
+  .ex-style_02B1 & {
+    @include pat-item-bnr-c1;
+  }
+  .ex-style_02B2 & {
+    @include pat-item-bnr-c2;
+  }
+  .ex-style_02B3 & {
+    @include pat-item-bnr-c3;
+  }
+  .ex-style_02C1 & {
+    @include pat-item-bnr-d1;
+  }
+  .ex-style_02C2 & {
+    @include pat-item-bnr-d2;
+  }
+  .ex-style_02C3 & {
+    @include pat-item-bnr-d3;
+  }
+}
+
+
+.mod-bnr-pic {
+  .ex-style_01A1 & {
+    @include pat-item-bnr-pic-k1;
+  }
+  .ex-style_01A2 & {
+    @include pat-item-bnr-pic-k2;
+  }
+  .ex-style_01A3 & {
+    @include pat-item-bnr-pic-k3;
+  }
+  .ex-style_01B1 & {
+    @include pat-item-bnr-pic-k4;
+  }
+  .ex-style_01B2 & {
+    @include pat-item-bnr-pic-k5;
+  }
+  .ex-style_01B3 & {
+    @include pat-item-bnr-pic-k6;
+  }
+  .ex-style_01C1 & {
+    @include pat-item-bnr-pic-k7;
+  }
+  .ex-style_01C2 & {
+    @include pat-item-bnr-pic-k8;
+  }
+  .ex-style_01C3 & {
+    @include pat-item-bnr-pic-k9;
+  }
+}
+
+.mod-bnr-map {
+  @include common-style-mod-bnr;
+  @include module-style-mod-bnr-map;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-bnr-map;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-bnr-map;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-bnr-map;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-bnr-map;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-bnr-map;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-bnr-map;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-bnr-map;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-bnr-map;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-bnr-map;
+  }
+}
+
+.mod-bnr-1st-side,
+.mod-bnr-2nd-side,
+.mod-bnr-side {
+  .ex-style_01A1 & {
+    @include pat-item-bnr-side-f1;
+  }
+  .ex-style_01A2 & {
+    @include pat-item-bnr-side-f2;
+  }
+  .ex-style_01A3 & {
+    @include pat-item-bnr-side-f3;
+  }
+  .ex-style_01B1 & {
+    @include pat-item-bnr-side-f1;
+  }
+  .ex-style_01B2 & {
+    @include pat-item-bnr-side-f2;
+  }
+  .ex-style_01B3 & {
+    @include pat-item-bnr-side-f3;
+  }
+  .ex-style_01C1 & {
+    @include pat-item-bnr-side-f1;
+  }
+  .ex-style_01C2 & {
+    @include pat-item-bnr-side-f2;
+  }
+  .ex-style_01C3 & {
+    @include pat-item-bnr-side-f3;
+  }
+}
+.mod-bnr-pic-side {
+  @include common-style-mod-bnr;
+  @include module-style-mod-bnr-pic-side;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-bnr-pic-side;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-bnr-pic-side;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-bnr-pic-side;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-bnr-pic-side;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-bnr-pic-side;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-bnr-pic-side;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-bnr-pic-side;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-bnr-pic-side;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-bnr-pic-side;
+  }
+}
+
+.mod-bnr-picr-side {
+  @include common-style-mod-bnr;
+  @include module-style-mod-bnr-picr-side;
+  .ex-style_01A1 & {
+    @include deco-style01A1-mod-bnr-picr-side;
+  }
+  .ex-style_01A2 & {
+    @include deco-style01A2-mod-bnr-picr-side;
+  }
+  .ex-style_01A3 & {
+    @include deco-style01A3-mod-bnr-picr-side;
+  }
+  .ex-style_01B1 & {
+    @include deco-style01A1-mod-bnr-picr-side;
+  }
+  .ex-style_01B2 & {
+    @include deco-style01A2-mod-bnr-picr-side;
+  }
+  .ex-style_01B3 & {
+    @include deco-style01A3-mod-bnr-picr-side;
+  }
+  .ex-style_01C1 & {
+    @include deco-style01A1-mod-bnr-picr-side;
+  }
+  .ex-style_01C2 & {
+    @include deco-style01A2-mod-bnr-picr-side;
+  }
+  .ex-style_01C3 & {
+    @include deco-style01A3-mod-bnr-picr-side;
+  }
+}
+
+.mod-bnr-footer {
+  .ex-style_01A1 & {
+    @include pat-item-bnr-footer-b2;
+  }
+  .ex-style_01A2 & {
+    @include pat-item-bnr-footer-b3;
+  }
+  .ex-style_01A3 & {
+    @include pat-item-bnr-footer-b7;
+  }
+  .ex-style_01B1 & {
+    @include pat-item-bnr-footer-b8;
+  }
+  .ex-style_01B2 & {
+    @include pat-item-bnr-footer-b9;
+  }
+  .ex-style_01B3 & {
+    @include pat-item-bnr-footer-b10;
+  }
+  .ex-style_01C1 & {
+    @include pat-item-bnr-footer-d7;
+  }
+  .ex-style_01C2 & {
+    @include pat-item-bnr-footer-d8;
+  }
+  .ex-style_01C3 & {
+    @include pat-item-bnr-footer-d9;
+  }
+}
+
+
+// .mod-bnr-2col {
+//   @include common-style-mod-bnr;
+//   @include module-style-mod-bnr-2col;
+//   .ex-style_01A1 & {
+//     @include deco-style01A1-mod-bnr;
+//     @include deco-style01A1-mod-bnr-2col;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style01A2-mod-bnr;
+//     @include deco-style01A2-mod-bnr-2col;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style01A3-mod-bnr;
+//     @include deco-style01A3-mod-bnr-2col;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style01B1-mod-bnr;
+//     @include deco-style01B1-mod-bnr-2col;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style01B2-mod-bnr;
+//     @include deco-style01B2-mod-bnr-2col;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style01B3-mod-bnr;
+//     @include deco-style01B3-mod-bnr-2col;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style01C1-mod-bnr;
+//     @include deco-style01C1-mod-bnr-2col;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style01C2-mod-bnr;
+//     @include deco-style01C2-mod-bnr-2col;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style01C3-mod-bnr;
+//     @include deco-style01C3-mod-bnr-2col;
+//   }
+// }
+
+// .mod-bnr-3col {//mod-2colと同じ
+//   @include common-style-mod-bnr;
+//   @include module-style-mod-bnr-2col;
+//   .ex-style_01A1 & {
+//     @include deco-style01A1-mod-bnr;
+//     @include deco-style01A1-mod-bnr-2col;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style01A2-mod-bnr;
+//     @include deco-style01A2-mod-bnr-2col;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style01A3-mod-bnr;
+//     @include deco-style01A3-mod-bnr-2col;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style01B1-mod-bnr;
+//     @include deco-style01B1-mod-bnr-2col;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style01B2-mod-bnr;
+//     @include deco-style01B2-mod-bnr-2col;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style01B3-mod-bnr;
+//     @include deco-style01B3-mod-bnr-2col;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style01C1-mod-bnr;
+//     @include deco-style01C1-mod-bnr-2col;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style01C2-mod-bnr;
+//     @include deco-style01C2-mod-bnr-2col;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style01C3-mod-bnr;
+//     @include deco-style01C3-mod-bnr-2col;
+//   }
+// }
+
+// .mod-bnr-4col {
+//   @include common-style-mod-bnr;
+//   @include module-style-mod-bnr-4col;
+//   .ex-style_01A1 & {
+//     @include deco-style01A1-mod-bnr;
+//     @include deco-style01A1-mod-bnr-4col;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style01A2-mod-bnr;
+//     @include deco-style01A2-mod-bnr-4col;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style01A3-mod-bnr;
+//     @include deco-style01A3-mod-bnr-4col;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style01B1-mod-bnr;
+//     @include deco-style01B1-mod-bnr-4col;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style01B2-mod-bnr;
+//     @include deco-style01B2-mod-bnr-4col;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style01B3-mod-bnr;
+//     @include deco-style01B3-mod-bnr-4col;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style01C1-mod-bnr;
+//     @include deco-style01C1-mod-bnr-4col;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style01C2-mod-bnr;
+//     @include deco-style01C2-mod-bnr-4col;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style01C3-mod-bnr;
+//     @include deco-style01C3-mod-bnr-4col;
+//   }
+// }
+
+// .mod-bnr-mini {
+//   @include common-style-mod-bnr;
+//   @include module-style-mod-bnr-mini;
+//   .ex-style_01A1 & {
+//     @include deco-style01A1-mod-bnr;
+//     @include deco-style01A1-mod-bnr-mini;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style01A2-mod-bnr;
+//     @include deco-style01A2-mod-bnr-mini;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style01A3-mod-bnr;
+//     @include deco-style01A3-mod-bnr-mini;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style01B1-mod-bnr;
+//     @include deco-style01B1-mod-bnr-mini;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style01B2-mod-bnr;
+//     @include deco-style01B2-mod-bnr-mini;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style01B3-mod-bnr;
+//     @include deco-style01B3-mod-bnr-mini;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style01C1-mod-bnr;
+//     @include deco-style01C1-mod-bnr-mini;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style01C2-mod-bnr;
+//     @include deco-style01C2-mod-bnr-mini;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style01C3-mod-bnr;
+//     @include deco-style01C3-mod-bnr-mini;
+//   }
+// }
+
+// .mod-bnr-inbox {
+//   @include common-style-mod-bnr;
+//   @include module-style-mod-bnr-inbox;
+//   .ex-style_01A1 & {
+//     @include deco-style01A1-mod-bnr-inbox;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style01A2-mod-bnr-inbox;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style01A3-mod-bnr-inbox;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style01A1-mod-bnr-inbox;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style01A2-mod-bnr-inbox;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style01A3-mod-bnr-inbox;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style01A1-mod-bnr-inbox;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style01A2-mod-bnr-inbox;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style01A3-mod-bnr-inbox;
+//   }
+// }
+
+// .mod-bnr-header {
+//   @include common-style-mod-bnr;
+//   @include module-style-mod-bnr-header;
+//   .ex-style_01A1 & {
+//     @include deco-style01A1-mod-bnr-header;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style01A1-mod-bnr-header;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style01A1-mod-bnr-header;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style01A1-mod-bnr-header;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style01A1-mod-bnr-header;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style01A1-mod-bnr-header;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style01A1-mod-bnr-header;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style01A1-mod-bnr-header;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style01A1-mod-bnr-header;
+//   }
+// }
+
+// .mod-bnr-header2 {
+//   @include common-style-mod-bnr;
+//   @include module-style-mod-bnr-header2;
+//   .ex-style_01A1 & {
+//     @include deco-style01A1-mod-bnr-header2;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style01A1-mod-bnr-header2;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style01A1-mod-bnr-header2;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style01A1-mod-bnr-header2;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style01A1-mod-bnr-header2;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style01A1-mod-bnr-header2;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style01A1-mod-bnr-header2;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style01A1-mod-bnr-header2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style01A1-mod-bnr-header2;
+//   }
+// }
+
+// .mod-bnr3 {
+//   @include common-style-mod-bnr3;
+//   @include module-style-mod-bnr3;
+//   .ex-style_01A1 & {
+//     @include deco-style01A1-mod-bnr3;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style01A2-mod-bnr3;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style01A3-mod-bnr3;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style01B1-mod-bnr3;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style01B2-mod-bnr3;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style01B3-mod-bnr3;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style01C1-mod-bnr3;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style01C2-mod-bnr3;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style01C3-mod-bnr3;
+//   }
+// }
+// .mod-bnr3-header {
+//   @include common-style-mod-bnr;
+//   @include module-style-mod-bnr3-header;
+//   .ex-style_01A1 & {
+//     @include deco-style01A1-mod-bnr3-header;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style01A2-mod-bnr3-header;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style01A3-mod-bnr3-header;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style01B1-mod-bnr3-header;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style01B2-mod-bnr3-header;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style01B3-mod-bnr3-header;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style01C1-mod-bnr3-header;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style01C2-mod-bnr3-header;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style01C3-mod-bnr3-header;
+//   }
+// }
+
+
+//＊＊＊＊＊＊＊＊＊＊＊＊
+//現行モジュールへのスタイル取り込み
+//＊＊＊＊＊＊＊＊＊＊＊＊
+// .mod-bnr {
+//   @extend .mod-bnr;//旧mod-bnrの影響回避のための対応。新モジュール名は「mod-bnr」
+// }
+// .mod-bnr7 {
+//   @extend .mod-bnr;
+// }
+// .mod-bnr11 {
+//   @extend .mod-bnr-side;
+// }
+// .mod-bnr13 {
+//   @extend .mod-bnr-pic-side;
+// }
+// .mod-bnr14 {
+//   @extend .mod-bnr-picr-side;
+// }
+// .mod-bnr17 {
+//   @extend .mod-bnr-map;
+// }
+// .mod-bnr18 {
+//   @extend .mod-bnr;
+// }
+// .mod-bnr23 {
+//   @extend .mod-bnr;
+// }
+// .mod-bnr25 {
+//   @extend .mod-bnr;
+// }
+
+// .mod-bnr29 {
+//   @extend .mod-bnr-header;
+// }
+// .mod-bnr30 {
+//   @extend .mod-bnr-header2;
+// }
+// .mod-bnr31 {
+//   @extend .mod-bnr-side;
+// }
+// .mod-bnr32 {
+//   @extend .mod-bnr3-header;
+// }
+// .mod-bnr33 {
+//   @extend .mod-bnr;
+// }
+// .mod-bnr34 {
+//   @extend .mod-bnr-footer;
+// }
+// .mod-bnr36 {
+//   @extend .mod-bnr-pic;
+// }
+// .mod-bnr37 {
+//   @extend .mod-bnr;
+// }
+
+
+// *******************************
+// .mod-bnr-set4 set対応
+// .mod-bnr-set5 set対応
+// .mod-bnr-main2 {
+//   @include common-style-mod-bnr;
+//   @include module-style-mod-bnr-main2;
+//   .ex-style_01A1 & {
+//     @include deco-style01A1-mod-bnr-main2;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style01A2-mod-bnr-main2;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style01A3-mod-bnr-main2;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style01B1-mod-bnr-main2;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style01B2-mod-bnr-main2;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style01B3-mod-bnr-main2;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style01C1-mod-bnr-main2;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style01C2-mod-bnr-main2;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style01C3-mod-bnr-main2;
+//   }
+// }
+
+
+
+// .mod-bnr-footer {
+//   @include common-style-mod-bnr;
+//   @include module-style-mod-bnr-footer;
+//   .ex-style_01A1 & {
+//     @include deco-style01A1-mod-bnr-footer;
+//   }
+//   .ex-style_01A2 & {
+//     @include deco-style01A2-mod-bnr-footer;
+//   }
+//   .ex-style_01A3 & {
+//     @include deco-style01A3-mod-bnr-footer;
+//   }
+//   .ex-style_01B1 & {
+//     @include deco-style01B1-mod-bnr-footer;
+//   }
+//   .ex-style_01B2 & {
+//     @include deco-style01B2-mod-bnr-footer;
+//   }
+//   .ex-style_01B3 & {
+//     @include deco-style01B3-mod-bnr-footer;
+//   }
+//   .ex-style_01C1 & {
+//     @include deco-style01C1-mod-bnr-footer;
+//   }
+//   .ex-style_01C2 & {
+//     @include deco-style01C2-mod-bnr-footer;
+//   }
+//   .ex-style_01C3 & {
+//     @include deco-style01C3-mod-bnr-footer;
+//   }
+// }
+
+
+// .mod-bnr-set4 {
+//   @extend %cf;
+//   border: none;
+//   background-image: none;
+//   .mod-bnr-inner {
+//     float: left;
+//     @extend .mod-bnr1;
+//   }
+// }
+
+
+// .mod-bnr-set5 {
+//   @extend %cf;
+//   margin: 5px 0 0 0;
+//   position: absolute;
+//   bottom: 0px;
+//   .mod-bnr-inner {
+//     float: left;
+//     margin-right: 10px;
+//   }
+//   .mod-bnr-inner2 {
+//     float: right;
+//     text-align: left;
+//   }
+//   .mod-bnr-inner, .mod-bnr-inner2 {
+//     @extend .mod-bnr1;
+//   }
+// }
